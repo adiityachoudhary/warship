@@ -18,8 +18,8 @@ const topics = [
     }
   },
   {
-    id: 'linkedlist',
-    title: 'Linked List Class Vessel',
+    id: 'anwei',
+    title: 'Anwei (Type 920) ',
     img: 'src/2.jpg',
     description: 'Designed for dynamic operations and logistics — modular, flexible ships used for mid-sea refueling and supply transport.',
     details: {
@@ -32,8 +32,8 @@ const topics = [
     }
   },
   {
-    id: 'stack',
-    title: 'Stack Class Destroyer',
+    id: 'CAC J-7E. ',
+    title: 'CAC J-7E. ',
     img: 'src/3.jpg',
     description: 'A fast-attack destroyer optimized for anti-submarine and air defense operations in escort missions.',
     details: {
@@ -48,19 +48,68 @@ const topics = [
     }
   },
   {
-    id: 'tree',
-    title: 'Tree Class Frigate',
+    id: 'CAIG Z-8 Super Frelon. ',
+    title: 'CAIG Z-8 Super Frelon. ',
     img: 'src/4.jpg',
-    description: 'A multi-role frigate for anti-air, anti-submarine, and surface warfare operations, ideal for balanced naval fleets.',
+    description: 'A fast-attack destroyer optimized for anti-submarine and air defense operations in escort missions.',
     details: {
-      'Category': 'Frigate',
-      'Displacement': '4,200 tons',
-      'Speed': '28 knots',
-      'Range': '8,500 nautical miles',
-      'Armament': 'Missiles, torpedoes, CIWS',
-      'Radar': '3D phased-array radar',
-      'Sonar': 'Towed array sonar',
-      'Crew': '185 personnel'
+      'Category': 'Destroyer',
+      'Displacement': '1,500 tons',
+      'Speed': '35 knots',
+      'Range': '6,000 nautical miles',
+      'Armament': 'Torpedoes, anti-aircraft guns, missiles',
+      'Radar': 'AN/SPS-49 Air-search radar',
+      'Sonar': 'AN/SQS-56 hull-mounted sonar',
+      'Crew': '210 personnel'
+    }
+  },
+  {
+    id: 'Coastal patrol craft ',
+    title: 'Coastal patrol craft ',
+    img: 'src/7.jpg',
+
+    description: 'A fast-attack destroyer optimized for anti-submarine and air defense operations in escort missions.',
+    details: {
+      'Category': 'Destroyer',
+      'Displacement': '1,500 tons',
+      'Speed': '35 knots',
+      'Range': '6,000 nautical miles',
+      'Armament': 'Torpedoes, anti-aircraft guns, missiles',
+      'Radar': 'AN/SPS-49 Air-search radar',
+      'Sonar': 'AN/SQS-56 hull-mounted sonar',
+      'Crew': '210 personnel'
+    }
+  },
+  {
+    id: 'GONG BIAN 1301 (van Ginderen Collection)',
+    title: 'GONG BIAN 1301 (van Ginderen Collection)',
+    img: 'src/9.jpg',
+    description: 'A fast-attack destroyer optimized for anti-submarine and air defense operations in escort missions.',
+    details: {
+      'Category': 'Destroyer',
+      'Displacement': '1,500 tons',
+      'Speed': '35 knots',
+      'Range': '6,000 nautical miles',
+      'Armament': 'Torpedoes, anti-aircraft guns, missiles',
+      'Radar': 'AN/SPS-49 Air-search radar',
+      'Sonar': 'AN/SQS-56 hull-mounted sonar',
+      'Crew': '210 personnel'
+    }
+  },
+  {
+    id: 'Combatboat 90E',
+    title: 'Combatboat 90E',
+    img: 'src/12.jpg',
+    description: 'A fast-attack destroyer optimized for anti-submarine and air defense operations in escort missions.',
+    details: {
+      'Category': 'Destroyer',
+      'Displacement': '1,500 tons',
+      'Speed': '35 knots',
+      'Range': '6,000 nautical miles',
+      'Armament': 'Torpedoes, anti-aircraft guns, missiles',
+      'Radar': 'AN/SPS-49 Air-search radar',
+      'Sonar': 'AN/SQS-56 hull-mounted sonar',
+      'Crew': '210 personnel'
     }
   }
 ];
