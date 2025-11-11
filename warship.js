@@ -1,4 +1,4 @@
-// warship.js — enhanced for wide image + tabular details view
+// warship.js — polished: natural-size image, indigo active item, prev/next nav, search-friendly
 
 const topics = [
   {
@@ -20,7 +20,7 @@ const topics = [
   {
     id: 'linkedlist',
     title: 'Linked List Class Vessel',
-    img: 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=1400&auto=format&fit=crop',
+    img: 'src/2.jpg',
     description: 'Designed for dynamic operations and logistics — modular, flexible ships used for mid-sea refueling and supply transport.',
     details: {
       'Category': 'Support Ship',
@@ -34,7 +34,7 @@ const topics = [
   {
     id: 'stack',
     title: 'Stack Class Destroyer',
-    img: 'https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1400&auto=format&fit=crop',
+    img: 'src/3.jpg',
     description: 'A fast-attack destroyer optimized for anti-submarine and air defense operations in escort missions.',
     details: {
       'Category': 'Destroyer',
@@ -50,7 +50,7 @@ const topics = [
   {
     id: 'tree',
     title: 'Tree Class Frigate',
-    img: 'https://images.unsplash.com/photo-1527430253228-e93688616381?q=80&w=1400&auto=format&fit=crop',
+    img: 'src/4.jpg',
     description: 'A multi-role frigate for anti-air, anti-submarine, and surface warfare operations, ideal for balanced naval fleets.',
     details: {
       'Category': 'Frigate',
@@ -69,87 +69,165 @@ const topicsEl = document.getElementById('topics');
 const detailEl = document.getElementById('detail');
 const searchEl = document.getElementById('search');
 
-// Sidebar item creation
-function makeItem(t, i) {
+let currentIndex = null;      // index in original topics[]
+let visibleIndexes = [];      // indexes currently rendered in sidebar (after filtering)
+
+// Tailwind classes used when an item is active.
+// We toggle classes on the outer item and on the avatar for clear contrast.
+const ACTIVE_OUTER = ['bg-indigo-600', 'text-white'];
+const ACTIVE_AVATAR = ['from-indigo-700', 'to-indigo-500'];
+
+// create a sidebar item (idx is index in topics[])
+function makeItem(t, idx) {
   const el = document.createElement('div');
   el.className = 'topic-item p-3 rounded-lg bg-white border border-gray-100 flex items-center gap-3 cursor-pointer';
+  el.setAttribute('data-idx', idx);
+
+  // inner structure: avatar / text / chevron
   el.innerHTML = `
-    <div class="w-12 h-12 rounded-md bg-gradient-to-br from-indigo-400 to-sky-300 flex items-center justify-center text-white font-semibold">
+    <div class="avatar w-12 h-12 rounded-md bg-gradient-to-br from-indigo-400 to-sky-300 flex items-center justify-center text-white font-semibold">
       ${t.title.split(' ').map(s => s[0]).join('')}
     </div>
     <div class="flex-1">
-      <div class="font-medium">${t.title}</div>
-      <div class="text-xs text-gray-400">Tap to view</div>
+      <div class="font-medium title">${t.title}</div>
+      <div class="text-xs subtitle text-gray-400">Tap to view</div>
     </div>
-    <div class="text-xs text-gray-400">›</div>
+    <div class="text-xs text-gray-300">›</div>
   `;
-  el.addEventListener('click', () => showDetail(i));
+
+  el.addEventListener('click', () => {
+    const i = Number(el.getAttribute('data-idx'));
+    showDetail(i); // showDetail will call selectTopic internally
+  });
+
   return el;
 }
 
-// Dynamic detail section
+// render sidebar based on optional filter string
+function renderSidebar(filter = '') {
+  topicsEl.innerHTML = '';
+  visibleIndexes = [];
+
+  const q = (filter || '').toLowerCase().trim();
+  topics.forEach((t, i) => {
+    if (!q || t.title.toLowerCase().includes(q) || t.description.toLowerCase().includes(q)) {
+      topicsEl.appendChild(makeItem(t, i));
+      visibleIndexes.push(i);
+    }
+  });
+
+  if (visibleIndexes.length === 0) {
+    topicsEl.innerHTML = '<div class="text-gray-400 p-2 text-sm">No topics found</div>';
+  }
+
+  // apply active styles if currentIndex is visible
+  updateActiveSidebar();
+}
+
+// apply / remove active styles on sidebar items based on currentIndex
+function updateActiveSidebar() {
+  const items = topicsEl.querySelectorAll('[data-idx]');
+  items.forEach(el => {
+    const idx = Number(el.getAttribute('data-idx'));
+    const avatar = el.querySelector('.avatar');
+    const subtitle = el.querySelector('.subtitle');
+
+    if (idx === currentIndex) {
+      // outer
+      ACTIVE_OUTER.forEach(c => el.classList.add(c));
+      el.style.borderColor = '#4338ca'; // indigo-700 tint for border
+      // avatar: replace gradient to indigo shades for contrast
+      if (avatar) {
+        avatar.classList.remove('from-indigo-400', 'to-sky-300');
+        ACTIVE_AVATAR.forEach(c => avatar.classList.add(c));
+      }
+      // subtitle color
+      if (subtitle) subtitle.classList.remove('text-gray-400'), subtitle.classList.add('text-white/80');
+    } else {
+      // remove
+      ACTIVE_OUTER.forEach(c => el.classList.remove(c));
+      el.style.borderColor = '';
+      if (avatar) {
+        avatar.classList.remove(...ACTIVE_AVATAR);
+        avatar.classList.add('from-indigo-400', 'to-sky-300');
+      }
+      if (subtitle) subtitle.classList.remove('text-white/80'), subtitle.classList.add('text-gray-400');
+    }
+  });
+}
+
+// mark currentIndex and ensure sidebar scrolls to visible item (if present)
+function selectTopic(i) {
+  currentIndex = i;
+  updateActiveSidebar();
+  const item = topicsEl.querySelector(`[data-idx="${i}"]`);
+  if (item) item.scrollIntoView({ behavior: 'smooth', block: 'center' });
+}
+
+// show detail for topic index i
 function showDetail(i) {
   const t = topics[i];
+  if (!t) return;
 
-  // Generate dynamic table rows
-  const rows = Object.entries(t.details).map(([key, value]) => `
+  // build table rows dynamically
+  const rows = Object.entries(t.details).map(([k, v]) => `
     <tr class="border-b hover:bg-gray-50">
-      <td class="p-3 font-semibold bg-gray-50 w-1/3">${key}</td>
-      <td class="p-3">${value}</td>
+      <td class="p-3 font-semibold bg-gray-50 w-1/3">${k}</td>
+      <td class="p-3">${v}</td>
     </tr>
   `).join('');
 
+  // render detail panel. image uses natural aspect ratio (no forced height)
   detailEl.innerHTML = `
     <div class="fade-up">
-      <!-- Wide image -->
-      <div class="rounded-2xl overflow-hidden border border-gray-200 shadow-md mb-6">
-        <img loading="lazy" class="w-full h-96 object-cover" src="${t.img}" alt="${t.title}">
+      <div class="rounded-2xl overflow-hidden border border-gray-200 shadow-md mb-6 flex justify-center">
+        <img loading="lazy" class="max-w-full h-auto object-contain" src="${t.img}" alt="${t.title}" />
       </div>
 
-      <!-- Title and description -->
       <h2 class="text-3xl font-semibold mb-3 text-indigo-700">${t.title}</h2>
       <p class="text-gray-700 leading-relaxed mb-6">${t.description}</p>
 
-      <!-- Dynamic table -->
       <table class="w-full border border-gray-300 text-left text-gray-700 rounded-lg overflow-hidden shadow-sm">
         <tbody>${rows}</tbody>
       </table>
 
-      <!-- Buttons -->
-      <div class="mt-6 flex gap-4">
-        <button onclick="highlightKey()" class="px-5 py-2 rounded-md bg-indigo-500 text-white hover:bg-indigo-600">Highlight</button>
-        <button onclick="saveNote('${t.id}')" class="px-5 py-2 rounded-md border border-gray-300 hover:bg-gray-100">Add Note</button>
+      <div class="mt-6 flex items-center gap-4">
+        <button id="prevBtn" class="px-4 py-2 rounded-md border bg-indigo-100 hover:bg-gray-100">Previous</button>
+        <button id="nextBtn" class="px-4 py-2 rounded-md border bg-indigo-100 hover:bg-gray-100">Next</button>
+        <div class="flex-1"></div>
       </div>
     </div>
   `;
+
+  // wire nav buttons (safe: elements are recreated each time)
+  const prevBtn = document.getElementById('prevBtn');
+  const nextBtn = document.getElementById('nextBtn');
+  prevBtn && prevBtn.addEventListener('click', navigatePrevious);
+  nextBtn && nextBtn.addEventListener('click', navigateNext);
+
+  // update selection highlight
+  selectTopic(i);
 }
 
-// Highlight tip
-function highlightKey() {
-  alert('Tip: Summarize each ship in 2 lines and recall its key attribute (range, role, or radar).');
+// next/previous navigation (wraps around)
+function navigateNext() {
+  if (currentIndex === null) return;
+  let next = currentIndex + 1;
+  if (next >= topics.length) next = 0;
+  showDetail(next);
 }
 
-// Save notes locally
-function saveNote(id) {
-  const note = prompt('Quick note for topic:');
-  if (note !== null) {
-    localStorage.setItem('note_' + id, note);
-    alert('Saved! Notes are stored in your browser.');
-  }
+function navigatePrevious() {
+  if (currentIndex === null) return;
+  let prev = currentIndex - 1;
+  if (prev < 0) prev = topics.length - 1;
+  showDetail(prev);
 }
 
-// Populate sidebar
-topics.forEach((t, i) => topicsEl.appendChild(makeItem(t, i)));
+// initial render
+renderSidebar('');
 
-// Search functionality
+// search wiring
 searchEl.addEventListener('input', () => {
-  const q = searchEl.value.toLowerCase().trim();
-  topicsEl.innerHTML = '';
-  const filtered = topics.filter(t =>
-    t.title.toLowerCase().includes(q) ||
-    t.description.toLowerCase().includes(q)
-  );
-  filtered.forEach((t, i) => topicsEl.appendChild(makeItem(t, topics.indexOf(t))));
-  if (filtered.length === 0)
-    topicsEl.innerHTML = '<div class="text-gray-400 p-2 text-sm">No topics found</div>';
+  renderSidebar(searchEl.value);
 });

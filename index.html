@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -7,22 +8,65 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
-    :root{--glass: rgba(255,255,255,0.7)}
-    body{font-family:Inter,system-ui,Arial;background:linear-gradient(180deg,#f8fafc 0%, #eef2ff 100%)}
-    .sidebar-scroll::-webkit-scrollbar{width:8px}
-    .sidebar-scroll::-webkit-scrollbar-thumb{background:linear-gradient(180deg,#93c5fd,#60a5fa);border-radius:8px}
-    .topic-item{transition:transform .18s ease, box-shadow .18s ease}
-    .topic-item:hover{transform:translateY(-6px);box-shadow:0 8px 30px rgba(2,6,23,0.08)}
-    .topic-img{height:220px;object-fit:cover;border-radius:10px}
-    .fade-up{animation:fadeUp .32s ease both}
-    @keyframes fadeUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+
+    :root {
+      --glass: rgba(255, 255, 255, 0.7)
+    }
+
+    body {
+      font-family: Inter, system-ui, Arial;
+      background: linear-gradient(180deg, #f8fafc 0%, #eef2ff 100%)
+    }
+
+    .sidebar-scroll::-webkit-scrollbar {
+      width: 8px
+    }
+
+    .sidebar-scroll::-webkit-scrollbar-thumb {
+      background: linear-gradient(180deg, #93c5fd, #60a5fa);
+      border-radius: 8px
+    }
+
+    .topic-item {
+      transition: transform .18s ease, box-shadow .18s ease
+    }
+
+    .topic-item:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 8px 30px rgba(2, 6, 23, 0.08)
+    }
+
+    .topic-img {
+      height: 220px;
+      object-fit: cover;
+      border-radius: 10px
+    }
+
+    .fade-up {
+      animation: fadeUp .32s ease both
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(8px)
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0)
+      }
+    }
   </style>
 </head>
+
 <body>
   <div class="min-h-screen flex">
     <aside class="w-80 p-6 bg-white/70 backdrop-blur border-r border-gray-200">
       <div class="flex items-center gap-3 mb-6">
-        <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-indigo-500 to-sky-400 flex items-center justify-center text-white font-bold">ST</div>
+        <div
+          class="w-12 h-12 rounded-xl bg-gradient-to-br from-indigo-500 to-sky-400 flex items-center justify-center text-white font-bold">
+          ST</div>
         <div>
           <h1 class="text-xl font-semibold">Warships</h1>
           <p class="text-sm text-gray-500">SLT Pratik Raj</p>
@@ -30,13 +74,15 @@
       </div>
 
       <div class="mb-4">
-        <input id="search" type="search" placeholder="Search topics..." class="w-full px-3 py-2 rounded-lg border border-gray-200 focus:ring-2 focus:ring-sky-300 outline-none" />
+        <input id="search" type="search" placeholder="Search topics..."
+          class="w-full px-3 py-2 rounded-lg border border-gray-200 focus:ring-2 focus:ring-sky-300 outline-none" />
       </div>
 
       <div id="topics" class="space-y-3 overflow-auto sidebar-scroll" style="max-height:calc(100vh - 200px)"></div>
 
       <div class="mt-6 text-xs text-gray-500">
-        <div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-green-400 inline-block"></span> Click a topic to open</div>
+        <div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-green-400 inline-block"></span> Click
+          a topic to open</div>
       </div>
     </aside>
 
@@ -44,12 +90,19 @@
     <main class="flex-1 p-10">
       <div id="detail" class="bg-white rounded-2xl shadow-lg p-8 min-h-[64vh] fade-up overflow-hidden">
         <div id="empty" class="text-center text-gray-500">
-          <h2 class="text-2xl font-semibold mb-2">Select a topic</h2>
-          <p>Each topic shows a concise explanation and an illustrative image for quick study.</p>
+          <h2 class="text-2xl font-semibold mb-2">CBT</h2>
+          <p>Indian Navy</p>
+          <br>
+          
+          <div class="flex justify-center my-300"> 
+            <img src="src/navy.png" alt="navy" class="w-60 h-auto">
+          </div>
+
         </div>
       </div>
     </main>
   </div>
-<script src="warship.js"></script>
+  <script src="warship.js"></script>
 </body>
+
 </html>
