@@ -4,7 +4,7 @@ const topics = [
   {
     id: 'achelous',
     title: 'Achelous Class',
-    img: 'src/1.jpg',
+    images: ['src/1.jpg'],
     description: 'Landing craft repair ships used by the U.S. Navy during World War II for amphibious support and on-site repairs.',
     details: {
       'Category': 'Amphibious Warfare Ship',
@@ -20,7 +20,7 @@ const topics = [
   {
     id: 'anwei',
     title: 'Anwei Type 920 ',
-    img: 'src/2.jpg',
+    images: ['src/2.jpg'],
     description: 'Designed for dynamic operations and logistics — modular, flexible ships used for mid-sea refueling and supply transport.',
     details: {
       'Category': 'Support Ship',
@@ -34,7 +34,7 @@ const topics = [
   {
     id: 'CAC J-7E. ',
     title: 'CAC J-7E. ',
-    img: 'src/3.jpg',
+    images:[ 'src/3.jpg'],
     description: 'A fast-attack destroyer optimized for anti-submarine and air defense operations in escort missions.',
     details: {
       'Category': 'Destroyer',
@@ -50,7 +50,7 @@ const topics = [
   {
     id: 'CAIG Z-8 Super-Frelon. ',
     title: 'CAIG Z-8 Super-Frelon. ',
-    img: 'src/4.jpg',
+    images:[ 'src/4.jpg'],
     description: 'A fast-attack destroyer optimized for anti-submarine and air defense operations in escort missions.',
     details: {
       'Category': 'Destroyer',
@@ -66,7 +66,7 @@ const topics = [
   {
     id: 'Coastal Patrol Craft ',
     title: 'Coastal Patrol Craft ',
-    img: 'src/7.jpg',
+    images:[ 'src/7.jpg'],
 
     description: 'A fast-attack destroyer optimized for anti-submarine and air defense operations in escort missions.',
     details: {
@@ -83,7 +83,7 @@ const topics = [
   {
     id: 'GONG BIAN 1301',
     title: 'GONG BIAN 1301',
-    img: 'src/9.jpg',
+    images:[ 'src/9.jpg'],
     description: 'A fast-attack destroyer optimized for anti-submarine and air defense operations in escort missions.',
     details: {
       'Category': 'Destroyer',
@@ -99,7 +99,7 @@ const topics = [
   {
     id: 'Combatboat 90E',
     title: 'Combatboat 90E',
-    img: 'src/12.jpg',
+    images:[ 'src/12.jpg','src/13.jpg','src/14.jpg','src/15.jpg','src/16.jpg'],
     description: 'A fast-attack destroyer optimized for anti-submarine and air defense operations in escort missions.',
     details: {
       'Category': 'Destroyer',
@@ -229,9 +229,14 @@ function showDetail(i) {
   // render detail panel. image uses natural aspect ratio (no forced height)
   detailEl.innerHTML = `
     <div class="fade-up">
-      <div class="rounded-2xl overflow-hidden border border-gray-200 shadow-md mb-6 flex justify-center">
-        <img loading="lazy" class="max-w-full h-auto object-contain" src="${t.img}" alt="${t.title}" />
-      </div>
+     <div class="rounded-2xl overflow-hidden border border-gray-200 shadow-md mb-6 flex justify-center gap-4 flex-wrap">
+  ${
+    (t.images || [t.img]).map(src => `
+      <img loading="lazy" class="max-w-full h-auto object-contain rounded-lg" src="${src}" alt="${t.title}" />
+    `).join('')
+  }
+</div>
+
 
       <h2 class="text-3xl font-semibold mb-3 text-indigo-700">${t.title}</h2>
       <p class="text-gray-700 leading-relaxed mb-6">${t.description}</p>
