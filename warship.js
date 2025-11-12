@@ -1,4 +1,16 @@
-// warship.js — polished: natural-size image, indigo active item, prev/next nav, search-friendly
+/**
+ * Project: CBT System
+ * File: warship.js
+ * Description: catalogue.
+ * Author: Aditya Choudhary(Computer Science Graduate | Developer | Lifelong Learner)
+ * GitHub: https://github.com/adiityachoudhary
+ * Created: 12-Nov-2025
+ * Last Modified: 12-Nov-2025
+ * Version: 1.0.0
+ * License: MIT
+ * Signature: © 2025 Aditya Choudhary | All Rights Reserved
+ */
+
 
 const topics = [
   {
@@ -303,3 +315,8 @@ document.getElementById('homeBtn').addEventListener('click', () => {
   currentIndex = null;
   updateActiveSidebar(); // remove highlight
 });
+
+
+// === Developer Signature ===
+console.log("%c🚀 CBT System © 2025 | Designed & Developed by Aditya Choudhary", "color: indigo; font-weight: bold; font-size: 14px;");
+console.log("%c🔗 GitHub: https://github.com/adiityachoudhary", "color: gray; font-size: 12px;");
