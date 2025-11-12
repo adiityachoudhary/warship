@@ -19,7 +19,7 @@ const topics = [
   },
   {
     id: 'anwei',
-    title: 'Anwei (Type 920) ',
+    title: 'Anwei Type 920 ',
     img: 'src/2.jpg',
     description: 'Designed for dynamic operations and logistics — modular, flexible ships used for mid-sea refueling and supply transport.',
     details: {
@@ -48,8 +48,8 @@ const topics = [
     }
   },
   {
-    id: 'CAIG Z-8 Super Frelon. ',
-    title: 'CAIG Z-8 Super Frelon. ',
+    id: 'CAIG Z-8 Super-Frelon. ',
+    title: 'CAIG Z-8 Super-Frelon. ',
     img: 'src/4.jpg',
     description: 'A fast-attack destroyer optimized for anti-submarine and air defense operations in escort missions.',
     details: {
@@ -64,8 +64,8 @@ const topics = [
     }
   },
   {
-    id: 'Coastal patrol craft ',
-    title: 'Coastal patrol craft ',
+    id: 'Coastal Patrol Craft ',
+    title: 'Coastal Patrol Craft ',
     img: 'src/7.jpg',
 
     description: 'A fast-attack destroyer optimized for anti-submarine and air defense operations in escort missions.',
@@ -81,8 +81,8 @@ const topics = [
     }
   },
   {
-    id: 'GONG BIAN 1301 (van Ginderen Collection)',
-    title: 'GONG BIAN 1301 (van Ginderen Collection)',
+    id: 'GONG BIAN 1301',
+    title: 'GONG BIAN 1301',
     img: 'src/9.jpg',
     description: 'A fast-attack destroyer optimized for anti-submarine and air defense operations in escort missions.',
     details: {
@@ -139,7 +139,7 @@ function makeItem(t, idx) {
     </div>
     <div class="flex-1">
       <div class="font-medium title">${t.title}</div>
-      <div class="text-xs subtitle text-gray-400">Tap to view</div>
+      <div class="text-xs subtitle text-gray-400">Click to view</div>
     </div>
     <div class="text-xs text-gray-300">›</div>
   `;
@@ -279,4 +279,22 @@ renderSidebar('');
 // search wiring
 searchEl.addEventListener('input', () => {
   renderSidebar(searchEl.value);
+});
+
+
+
+// Home button functionality — reset to default "empty" view
+document.getElementById('homeBtn').addEventListener('click', () => {
+  detailEl.innerHTML = `
+    <div id="empty" class="text-center text-gray-500">
+      <h2 class="text-2xl font-semibold mb-2">CBT-Sortie</h2>
+      <p>Indian Navy</p>
+      <br>
+      <div class="flex justify-center my-300">
+        <img src="src/navy.png" alt="navy" class="w-60 h-auto">
+      </div>
+    </div>
+  `;
+  currentIndex = null;
+  updateActiveSidebar(); // remove highlight
 });
