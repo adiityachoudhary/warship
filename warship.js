@@ -17,113 +17,272 @@ const topics = [
     id: 'achelous',
     title: 'Achelous Class',
     images: ['src/1.jpg'],
-    description: 'Landing craft repair ships used by the U.S. Navy during World War II for amphibious support and on-site repairs.',
+    description: 'DAGUSHAN (ex-Hsiang An, ex-Achilles ARL 41, ex-LST 455) ',
     details: {
-      'Category': 'Amphibious Warfare Ship',
-      'Displacement': '4,100 tons (full load)',
-      'Length': '328 feet',
+      'Displacement': '1,625 light; 4,325 full load',
+      'Dimensions feet(meters)': '328 × 50 × 14 (100 × 15.2 × 4.3) ',
+      'Main machinery': '2 GM 12-567A diesels; 1,800 hp (1.34 MW); 2 shafts',
       'Speed': '12 knots',
-      'Range': '7,000 nautical miles',
-      'Armament': 'Light anti-aircraft guns',
-      'Radar': 'Basic surface search radar',
-      'Crew': '250 personnel'
+      'Armament': '12 China 37 mm/63 (6 twin). 4 China 14.5 mm/93 (2 twin)',
+      'Radar': 'Navigation: Fin Curve; I-band '
     }
   },
   {
     id: 'anwei',
     title: 'Anwei Type 920 ',
     images: ['src/2.jpg'],
-    description: 'Designed for dynamic operations and logistics — modular, flexible ships used for mid-sea refueling and supply transport.',
+    description: 'DAISHAN DAO (Annati Collection)',
     details: {
-      'Category': 'Support Ship',
-      'Displacement': '8,000 tons',
-      'Speed': '16 knots',
-      'Range': '10,000 nautical miles',
-      'Capacity': 'Large storage and refueling capability',
-      'Crew': '180 personnel'
+      'Displacement': '14200 tonnes (13975.7 (uk) t) (15652.8 t (short)) (14200000 kg)',
+      'Dimensions feet(meters)': '178.0 m (584.0 ft)',
+      'Main machinery': '2 diesels; 2 shafts',
+      'Speed': '20 kt (37.0 km/h) (23.0 mph) ',
+      'Capacity': '135',
+      'Armament': '12 China 37 mm/63 (6 twin). 4 China 14.5 mm/93 (2 twin)',
+      'Radar': 'To be announced. ',
+      'Helicopters': '1 Z-8JH'
     }
   },
   {
     id: 'CAC J-7E. ',
     title: 'CAC J-7E. ',
-    images:[ 'src/3.jpg'],
-    description: 'A fast-attack destroyer optimized for anti-submarine and air defense operations in escort missions.',
+    images: ['src/3.jpg'],
+    description: 'J-7E (Ships of the World)',
     details: {
-      'Category': 'Destroyer',
-      'Displacement': '1,500 tons',
-      'Speed': '35 knots',
-      'Range': '6,000 nautical miles',
-      'Armament': 'Torpedoes, anti-aircraft guns, missiles',
-      'Radar': 'AN/SPS-49 Air-search radar',
-      'Sonar': 'AN/SQS-56 hull-mounted sonar',
-      'Crew': '210 personnel'
+      'Speed': '1,175 kt (2,175 km/h).',
+      'Range': '804 n miles (1,490 km).',
+      'Armament': 'Fleet air defence fighter with limited strike role against enemy shipping or beachhead. Total of about 30 delivered from 1992. About 24 estimated in service. Sensors: Search attack radar, some ECM. Weapons: ASuW; 500 kg bombs or 36 rockets. Standard; two 30 mm cannon. AAM; PL-5B, PL-8. ',
+      'Service Ceiling': '61,680 ft (18,800 m). '
     }
   },
   {
     id: 'CAIG Z-8 Super-Frelon. ',
     title: 'CAIG Z-8 Super-Frelon. ',
-    images:[ 'src/4.jpg'],
+    images: ['src/4.jpg'],
     description: 'A fast-attack destroyer optimized for anti-submarine and air defense operations in escort missions.',
     details: {
-      'Category': 'Destroyer',
-      'Displacement': '1,500 tons',
-      'Speed': '35 knots',
-      'Range': '6,000 nautical miles',
-      'Armament': 'Torpedoes, anti-aircraft guns, missiles',
-      'Radar': 'AN/SPS-49 Air-search radar',
-      'Sonar': 'AN/SQS-56 hull-mounted sonar',
-      'Crew': '210 personnel'
+      'Speed': '134 kt (248 km/h)',
+      'Service Ceiling': '10,000 ft (3,050 m). ',
+      'Range': '440 n miles (815 km). ',
+      'Armament': 'Anti-submarine warfare (ASW), anti-surface (ASuW), Medivac and SAR roles. Derived from SA 321G Super Frelon initially supplied from France in 1977. 14 ASW/ASuW (Z-8J), 4 Medivac (Z-8JH), and about 20 utility (Z-8) believed to be in-service. Operate from shore or amphibious ships. Deployed on Type 071 LPH for counter piracy operations in 2010, 2013, and 2014. Sensors: surface search radar, Thomson-Sintra HS-12 dipping sonar. Some aircraft fitted with FLIR turret. Weapons: ASW; lightweight torpedoes (Yu-7). ASuW: YJ-83K missile, rockets, and machine guns. '
     }
   },
   {
-    id: 'Coastal Patrol Craft ',
+    id: 'Coastal Patrol Craft  ',
     title: 'Coastal Patrol Craft ',
-    images:[ 'src/7.jpg'],
+    images: ['src/7.jpg', 'src/8.jpg'],
+    description: '1: Gong Bian 4401,  2: Gong Bian 4407 ',
+    details: {
+      'Full Load': '59 tonnes (65 t (short)) (59000 kg) ',
+      'Length': '22.5 m (73.82 ft) ',
+      'Speed': '22 kt ',
+      'Range': '850 n miles at 11 kt',
+      'Capacity': '13',
+      'Machinery': '2 diesels; 1,600 hp(m) (1.18 MW); 2 shafts',
+      'Guns': '2-14.5 mm (twin). ',
+      'Radars': 'Surface search:  I-band.'
+    }
+  },
+  {
+    id: 'Gong Bian 1301 ',
+    title: 'Gong Bian 1301 ',
+    images: ['src/9.jpg'],
+    description: 'Gong Bian 1301 ',
+    details: {
+      'Full Load': '83 tonnes (91.5 t (short)) (83000 kg)',
+      'Length': '25 m (82.02 ft)  ',
+      'Speed': '14 kt',
+      'Range': '900 n miles at 11 kt',
+      'Capacity': '12',
+      'Machinery': '2 diesels; 900 hp(m) (662 kW); 2 shafts',
+      'Guns': '4-14.5 mm/93 2 (twin) ',
+      'Radars': 'Surface search:  Fin Curve; I-band.'
+    }
+  },
+  {
+    id: 'HAI GUAN 812-T-Hollingsbee ',
+    title: 'HAI GUAN 812-T-Hollingsbee ',
+    images: ['src/11.jpg'],
+    description: 'Building in Shanghai at about six a year since 1992. More may follow.  ',
+    details: {
+      'Full Load': '98 full load',
+      'Dimensions': '101.7 × 15.4 × 4.6 (31 × 4.7 × 1.4) ',
+      'Speed': '32 kt ',
+      // 'Range': '850 n miles at 11 kt',
+      // 'Capacity': '13',
+      'Machinery': '2 diesels; 2 shafts',
+      'Guns': '2 China 14.5 mm/93 (twin).',
+      'Radars': '  Surface search: Racal Decca ARPA; I-band. '
+    }
+  },
+  {
+    id: 'Combatboat 90E ',
+    title: 'Combatboat 90E ',
 
-    description: 'A fast-attack destroyer optimized for anti-submarine and air defense operations in escort missions.',
+    images: ['src/12.jpg'],
+
+    description: ' Two delivered to Hai Guan in April 1997. This is the transport version of the Swedish raiding craft and can lift two tons of stores or 6-10 troops.',
+
     details: {
-      'Category': 'Destroyer',
-      'Displacement': '1,500 tons',
-      'Speed': '35 knots',
-      'Range': '6,000 nautical miles',
-      'Armament': 'Torpedoes, anti-aircraft guns, missiles',
-      'Radar': 'AN/SPS-49 Air-search radar',
-      'Sonar': 'AN/SQS-56 hull-mounted sonar',
-      'Crew': '210 personnel'
+      'Full Load': '9 full load',
+      'Dimensions': '39 × 9.5 × 2.3 (11.9 × 2.9 × 0.7) ',
+      'Speed': '40 kt ',
+      // 'Range': '850 n miles at 11 kt',
+      // 'Capacity': '13',
+      'Machinery': '1 Scania AB DSI 14 diesel; 398 hp(m) (293 kW); waterjet ',
+      // 'Guns': '2 China 14.5 mm/93 (twin).',
+      // 'Radars': '  Surface search: Racal Decca ARPA; I-band. '
     }
   },
+
+
   {
-    id: 'GONG BIAN 1301',
-    title: 'GONG BIAN 1301',
-    images:[ 'src/9.jpg'],
-    description: 'A fast-attack destroyer optimized for anti-submarine and air defense operations in escort missions.',
+    id: 'Dachou (Type 917A) class',
+    title: 'Dachou Type 917A-class',
+
+    images: ['src/13.jpg'],
+
+    description: ' Bei Yun 530, Dong Yun 760, Nan Yun 846, Nan Yun 847 ',
+
     details: {
-      'Category': 'Destroyer',
-      'Displacement': '1,500 tons',
-      'Speed': '35 knots',
-      'Range': '6,000 nautical miles',
-      'Armament': 'Torpedoes, anti-aircraft guns, missiles',
-      'Radar': 'AN/SPS-49 Air-search radar',
-      'Sonar': 'AN/SQS-56 hull-mounted sonar',
-      'Crew': '210 personnel'
+      'Full Load': '9 full load',
+      'Dimensions': 'Length   overall: 67 m (219.8 ft) ',
+      // 'Speed': '40 kt ',
+      // 'Range': '850 n miles at 11 kt',
+      // 'Capacity': '13',
+      'Machinery': '2 diesels; 2 shafts',
+      // 'Guns': '2 China 14.5 mm/93 (twin).',
+      // 'Radars': ' To be announced.'
     }
   },
+
+
+
   {
-    id: 'Combatboat 90E',
-    title: 'Combatboat 90E',
-    images:[ 'src/12.jpg','src/13.jpg','src/14.jpg','src/15.jpg','src/16.jpg'],
-    description: 'A fast-attack destroyer optimized for anti-submarine and air defense operations in escort missions.',
+    id: 'Dadao Type 648-class ',
+    title: 'Dadao Type 648-class ',
+
+    images: ['src/14.jpg','src/15.jpg'],
+
+    description: ' Dong Xiu 911 , Builders: Bohai Shipyard , Huludao ',
+
     details: {
-      'Category': 'Destroyer',
-      'Displacement': '1,500 tons',
-      'Speed': '35 knots',
-      'Range': '6,000 nautical miles',
-      'Armament': 'Torpedoes, anti-aircraft guns, missiles',
-      'Radar': 'AN/SPS-49 Air-search radar',
-      'Sonar': 'AN/SQS-56 hull-mounted sonar',
-      'Crew': '210 personnel'
+      'Full Load': '1780 tonnes (1751.9 (uk) t) (1962.1 t (short)) (1780000 kg) ',
+      'Dimensions': 'Length   overall:78.7 m (258.2 ft) ',
+      'Speed': '16 kt (29.6 km/h) (18.4 mph) ',
+      // 'Range': '850 n miles at 11 kt',
+      // 'Capacity': '13',
+      'Machinery': '2 diesels; 2 shafts ',
+      'Guns': '8-25 mm (4 twin).',
+      'Radars': ' Navigation:  I-band. '
     }
-  }
+  },
+
+
+  
+
+  {
+    id: 'Dadie Type 814A-class',
+    title: 'Dadie Type 814A-class',
+
+    images: ['src/16.jpg'],
+
+    description: ' Bei Diao 900 (ex-Bei Diao 841 , ex-V 841) / Wuchang Shipyard , Wuhan 1986',
+
+    details: {
+      'Full Load': '2591 tonnes (2550.1 (uk) t) (2856.1 t (short)) (2591000 kg',
+      'Dimensions': 'Length   overall:     94 m (308.4 ft) ',
+      'Speed': '20 kt (37.0 km/h) (23.0 mph)',
+      // 'Range': '850 n miles at 11 kt',
+      'Capacity': '170',
+      'Machinery': '2 diesels; 2 shafts ',
+      'Guns': '4-14.5 mm',
+      'Radars': ' Navigation:  2 Type 753; I-band '
+    }
+  },
+
+
+
+
+
+
+  {
+    id: 'Dadong Type 946A-class',
+    title: 'Dadong Type 946A-class',
+
+    images: ['src/17.jpg'],
+
+    description: 'DADONG 304 ',
+
+    details: {
+      'Full Load': '1524 tonnes (1499.9 (uk) t) (1679.9 t (short)) (1524000 kg',
+      'Dimensions': 'Length   overall:     84.4 m (276.9 ft) ',
+      'Speed': '18 kt (33.3 km/h) (20.7 mph)',
+      // 'Range': '850 n miles at 11 kt',
+      'Capacity': '150',
+      'Machinery': '2 diesels; 7,400 hp(m) (5.44 MW); 2 shafts ',
+      'Guns': '4-25 mm/80 (2 twin). ',
+      'Radars': ' Navigation:  Type 756; F-band. '
+    }
+  },
+
+
+
+
+
+
+
+  {
+    id: 'Dahua Type 909/909A-class',
+    title: 'Dahua Type 909/909A-class',
+
+    images: ['src/18.jpg'],
+
+    description: 'Bi Sheng 891 (ex-970 , ex-909) Hudong-Zhonghua --Shanghai Dec 1997, Hua Luogeng 892 / Hudong-Zhonghua -- Shanghai 2012 ',
+
+    details: {
+      'Full Load': '6096 tonnes (5999.7 (uk) t) (6719.7 t (short)) (6096000 kg',
+      'Dimensions': 'Length   overall:     130.0 m (426.5 ft)  ',
+      'Speed': '20 kt (37.0 km/h) (23.0 mph)',
+      // 'Range': '850 n miles at 11 kt',
+      'Capacity': '80',
+      'Machinery': '2 diesels; 2 shafts ',
+      // 'Guns': '4-25 mm/80 (2 twin). ',
+      // 'Radars': ' Navigation:  Type 756; F-band. '
+      'Helicopters': ' Platform (891) for one medium.  '
+    }
+  },
+
+
+
+
+
+  {
+    id: 'Dajiang Type 925-class ',
+    title: 'Dajiang Type 925-class ',
+
+    images: ['src/19.jpg','src/20.jpg'],
+
+    description: 'CHONGMING DAO (Ships of the World), DAJIANG CLASS SILHOUETTE (Ian Sturton)  ',
+
+    details: {
+      'Full Load': '12167 tonnes (11974.8 (uk) t) (13411.8 t (short)) (12167000 kg)',
+      'Dimensions': 'Length   overall:     156.2 m (512.5 ft)  ',
+      'Speed': '20 kt (37.0 km/h) (23.0 mph)',
+      // 'Range': '850 n miles at 11 kt',
+      'Capacity': '308',
+      'Machinery': '2 MAN K9Z60/105E diesels; 18,000 hp(m) (13.4 MW); 2 shafts',
+      // 'Guns': '4-25 mm/80 (2 twin). ',
+      'Radars': ' Surface search:  Eye Shield; E-band, Navigation:  2 Fin Curve; I-band. ',
+      'Helicopters': ' 2 Z-8  '
+    }
+  },
+
+
+
+
+
+
 ];
 
 const topicsEl = document.getElementById('topics');
@@ -242,11 +401,10 @@ function showDetail(i) {
   detailEl.innerHTML = `
     <div class="fade-up">
      <div class="rounded-2xl overflow-hidden border border-gray-200 shadow-md mb-6 flex justify-center gap-4 flex-wrap">
-  ${
-    (t.images || [t.img]).map(src => `
+  ${(t.images || [t.img]).map(src => `
       <img loading="lazy" class="max-w-full h-auto object-contain rounded-lg" src="${src}" alt="${t.title}" />
     `).join('')
-  }
+    }
 </div>
 
 
