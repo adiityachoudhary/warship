@@ -283,6 +283,174 @@ const topics = [
 
 
 
+  {
+    id: 'Dalang II/III(Type 922III/IIIA)-class ',
+    title: 'Dalang II/III(Type 922III/IIIA)-class ',
+
+    images: ['src/21.jpg','src/22.jpg'],
+
+    description: 'Bei Ju 122, Bei Ju 138, Dong Ju 332, Nan Ju 510  ',
+
+    details: {
+      'Full Load': '4267 tonnes (4199.6 (uk) t) (4703.6 t (short)) (4267000 kg)',
+      'Dimensions': 'Length   overall:     111.9 m (367.1 ft)  ',
+      'Speed': '16 kt (29.6 km/h) (18.4 mph)',
+      'Range': '88000 n miles (14816.0 km) (9206.2 miles) at 14 kt (25.9 km/h) (16.1 mph)',
+      'Capacity': '180',
+      'Machinery': '2 diesels; 4,000 hp(m) (2.94 MW); 2 shafts',
+      'Guns': '4 Type 61/76 37 mm (2 twin) (122 [Dalang II]). ',
+      'Radars': ' Navigation:  Fin Curve; I-band.',
+      // 'Helicopters': ' 2 Z-8  '
+    }
+  },
+
+
+
+
+
+
+
+  {
+    id: 'Dalao Type 926-class  ',
+    title: 'Dalao Type 926-class  ',
+
+    images: ['src/23.jpg'],
+
+    description: 'Haiyang Dao, Liugong Dao, Chang Dao ',
+
+    details: {
+      'Full Load': '9652 tonnes (9499.6 (uk) t) (10639.5 t (short)) (9652000 kg)',
+      'Dimensions': 'Length   overall:   136 m (446.2 ft)   ',
+      // 'Speed': '16 kt (29.6 km/h) (18.4 mph)',
+      // 'Range': '88000 n miles (14816.0 km) (9206.2 miles) at 14 kt (25.9 km/h) (16.1 mph)',
+      // 'Capacity': '180',
+      'Machinery': 'To be announced ',
+      // 'Guns': '4 Type 61/76 37 mm (2 twin) (122 [Dalang II]). ',
+      'Radars': ' To be announced ',
+      'Helicopters': ' Flight deck only.  '
+    }
+  },
+
+
+
+
+
+
+  {
+    id: 'Danlin class  ',
+    title: 'Danlin class  ',
+
+    images: ['src/24.jpg','src/25.jpg'],
+
+    description: 'DANLIN 794 (Henry Dodds) ',
+
+    details: {
+      'Full Load': '1311 tonnes (1290.3 (uk) t) (1445.1 t (short)) (1311000 kg)',
+      'Dimensions': 'Length   overall:   60.5 m (198.5 ft)   ',
+      'Speed': '15 kt (27.8 km/h) (17.3 mph)',
+      // 'Range': '88000 n miles (14816.0 km) (9206.2 miles) at 14 kt (25.9 km/h) (16.1 mph)',
+      'Capacity': '35',
+      'Cargo capacity': '750-800 tons' ,
+      'Machinery': '1 USSR/PRC Type 6DRN 30/50 diesel; 750 hp(m) (551 kW); 1 shaft ',
+      'Guns': '4-25 mm/80 (2 twin). 4-14.5 mm (2 twin). ',
+      'Radars': ' Navigation:  Fin Curve or Skin Head; I-band. ',
+      // 'Helicopters': ' Flight deck only.  '
+    }
+  },
+
+
+
+
+
+  {
+    id: 'Danyao Type 904A/904B-class  ',
+    title: 'Danyao Type 904A/904B-class   ',
+
+    images: ['src/26.jpg'],
+
+    description: 'Fuxian Hu , Junshan Hu, Lugu Hu ',
+
+    details: {
+      'Full Load': '15241 tonnes (15000.3 (uk) t) (16800.3 t (short)) (15241000 kg)',
+      'Dimensions': 'Length   overall:   159.5 m (523.3 ft)  ',
+      // 'Speed': '15 kt (27.8 km/h) (17.3 mph)',
+      // 'Range': '88000 n miles (14816.0 km) (9206.2 miles) at 14 kt (25.9 km/h) (16.1 mph)',
+
+      // 'Capacity': '35',
+      // 'Cargo capacity': '750-800 tons' ,
+
+      'Machinery': '2 Shaanxi SEMT-Pielstick 16PC2.6V-400 diesels; 24,000 hp (17.9 MW); 2 shafts ',
+
+      'Guns': 'Type 904A: 4 H/PJ-76F 37 mm (2 twin) 400 rds/min to 9.4 km (5.1 n miles); weight of shell 0.73 kg. 4 Type 61 25 mm/60 (2 twin). Type 904B: 2 H/PJ-17 30 mm; 350 rds/min to 3 km (1.6 n miles) . ',
+      // 'Radars': ' Navigation:  Fin Curve or Skin Head; I-band. ',
+      'Helicopters': ' Type 904A: Platform for one medium. Type 904B: Z-8 or Ka-28. '
+    }
+  },
+
+
+
+
+
+
+  {
+    id: 'Daozha class   ',
+    title: 'Daozha class    ',
+
+    images: ['src/27.jpg','src/28.jpg'],
+
+    description: 'DAOZHA (Hachiro Nakai) ',
+
+    details: {
+      'Full Load': '4064 tonnes (3999.8 (uk) t) (4479.8 t (short)) (4064000 kg)',
+      'Dimensions': 'Length   overall:   84 m (275.6 ft) ',
+      'Speed': '18 kt (33.3 km/h) (20.7 mph)',
+      // 'Range': '88000 n miles (14816.0 km) (9206.2 miles) at 14 kt (25.9 km/h) (16.1 mph)',
+
+      'Capacity': '125',
+      // 'Cargo capacity': '750-800 tons' ,
+
+      'Machinery': '2 diesels; 8,600 hp(m) (6.32 MW); 2 shafts',
+
+      // 'Guns': 'Type 904A: 4 H/PJ-76F 37 mm (2 twin) 400 rds/min to 9.4 km (5.1 n miles); weight of shell 0.73 kg. 4 Type 61 25 mm/60 (2 twin). Type 904B: 2 H/PJ-17 30 mm; 350 rds/min to 3 km (1.6 n miles) . ',
+      // 'Radars': ' Navigation:  Fin Curve or Skin Head; I-band. ',
+      // 'Helicopters': ' Type 904A: Platform for one medium. Type 904B: Z-8 or Ka-28. '
+    }
+  },
+
+
+
+
+  {
+    id: 'Daxin Type 679 ',
+    title: 'Daxin Type 679 ',
+
+    images: ['src/27.jpg','src/28.jpg'],
+
+    description: 'Zheng He ',
+
+    details: {
+      'Full Load': '6000 tonnes (5905.2 (uk) t) (6613.9 t (short)) (6000000 kg)',
+      'Dimensions': 'Length   overall:  132 m (433.1 ft)',
+      'Speed': '15 kt (27.8 km/h) (17.3 mph)',
+      'Range': '5000 n miles (9260.0 km) (5753.9 miles) at 15 kt (27.8 km/h) (17.3 mph)',
+
+      'Capacity': 'crew: 400, instructors: 30, midshipmen: 200',
+      // 'Cargo capacity': '750-800 tons' ,
+
+      'Machinery': '2 SEMT Pielstick 6PC2.5L diesels; 7,800 hp(m) (5.73 MW); 2 shafts',
+
+      'Guns': '2-57 mm/70 (twin). 4 AK-230 30 mm/64 (2 twin). 4-12.7 mm MGs. ',
+      'Radars': ' Air/surface search:  Eye Shield; E-band.,  Surface search:  Type 756; I-band.,  Navigation:  Racal Decca 1290; I-band.,  Fire control:  Round Ball; I-band. ',
+      'Sonars': ' Echo Type 5; hull-mounted; active; high frequency. ',
+      'Helicopters': ' Platform only. '
+    }
+  },
+
+
+
+
+
+
 ];
 
 const topicsEl = document.getElementById('topics');
