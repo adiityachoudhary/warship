@@ -560,31 +560,39 @@ let visibleIndexes = [];      // indexes currently rendered in sidebar (after fi
 const ACTIVE_OUTER = ['bg-indigo-600', 'text-white'];
 const ACTIVE_AVATAR = ['from-indigo-700', 'to-indigo-500'];
 
-// create a sidebar item (idx is index in topics[])
+// create a sidebar item with SERIAL NUMBER
 function makeItem(t, idx) {
   const el = document.createElement('div');
   el.className = 'topic-item p-3 rounded-lg bg-white border border-gray-100 flex items-center gap-3 cursor-pointer';
   el.setAttribute('data-idx', idx);
 
-  // inner structure: avatar / text / chevron
+  // SERIAL NUMBER (idx+1)
+  const serialNumber = idx + 1;
+
   el.innerHTML = `
-    <div class="avatar w-12 h-12 rounded-md bg-gradient-to-br from-indigo-400 to-sky-300 flex items-center justify-center text-white font-semibold">
-      ${t.title.split(' ').map(s => s[0]).join('')}
+    <div class="avatar w-12 h-12 rounded-md bg-gradient-to-br from-indigo-400 to-sky-300
+                flex items-center justify-center text-white font-semibold">
+      ${serialNumber}
     </div>
+
     <div class="flex-1">
-      <div class="font-medium title">${t.title}</div>
+      <div class="font-medium title">
+        ${serialNumber}. ${t.title}
+      </div>
       <div class="text-xs subtitle text-gray-400">Click to view</div>
     </div>
+
     <div class="text-xs text-gray-300">›</div>
   `;
 
   el.addEventListener('click', () => {
     const i = Number(el.getAttribute('data-idx'));
-    showDetail(i); // showDetail will call selectTopic internally
+    showDetail(i);
   });
 
   return el;
 }
+
 
 // render sidebar based on optional filter string
 function renderSidebar(filter = '') {
