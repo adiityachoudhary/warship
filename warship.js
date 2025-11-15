@@ -424,7 +424,7 @@ const topics = [
     id: 'Daxin Type 679 ',
     title: 'Daxin Type 679 ',
 
-    images: ['src/27.jpg','src/28.jpg'],
+    images: ['src/29.jpg','src/30.jpg'],
 
     description: 'Zheng He ',
 
@@ -440,9 +440,104 @@ const topics = [
       'Machinery': '2 SEMT Pielstick 6PC2.5L diesels; 7,800 hp(m) (5.73 MW); 2 shafts',
 
       'Guns': '2-57 mm/70 (twin). 4 AK-230 30 mm/64 (2 twin). 4-12.7 mm MGs. ',
-      'Radars': ' Air/surface search:  Eye Shield; E-band.,  Surface search:  Type 756; I-band.,  Navigation:  Racal Decca 1290; I-band.,  Fire control:  Round Ball; I-band. ',
+     ' A/S Mortars': '2 FQF 2500 fixed 12-tubed launchers; range 1,200 m; warhead 34 kg.',
+      'Radars': 'Air/surface search:  Eye Shield E-band. , Surface search:  Type 756; I-band. , Navigation:  Racal Decca 1290 I-band. , Fire control:  Round Ball; I-band. ,  Navigation:  Racal Decca 1290 I-band.,  Fire control:  Roun,dBall; I-band. ',
       'Sonars': ' Echo Type 5; hull-mounted; active; high frequency. ',
       'Helicopters': ' Platform only. '
+    }
+  },
+
+
+
+  {
+    id: 'Dayun Type 904-class ',
+    title: 'Dayun Type 904-class ',
+
+    images: ['src/31.jpg','src/32.jpg'],
+
+    description: 'Dongting Hu  ',
+
+    details: {
+      'Full Load': '11151 tonnes (10974.9 (uk) t) (12291.9 t (short)) (11151000 kg)',
+      'Dimensions': 'Length   overall:  124.2 m (407.5 ft) ',
+      'Speed': '22 kt (40.7 km/h) (25.3 mph)',
+      // 'Range': '5000 n miles (9260.0 km) (5753.9 miles) at 15 kt (27.8 km/h) (17.3 mph)',
+
+      'Capacity': '240',
+      // 'Cargo capacity': '750-800 tons' ,
+
+      'Machinery': '2 diesels; 18,000 hp (13.2 MW); 2 shafts',
+
+      'Guns': '4-37 mm/63 (2 twin). 4-25 mm/80 (2 twin).',
+    //  ' A/S Mortars': '2 FQF 2500 fixed 12-tubed launchers; range 1,200 m; warhead 34 kg.',
+
+      'Radars': 'Navigation:  2 Type 756; I-band. ',
+      // 'Sonars': ' Echo Type 5; hull-mounted; active; high frequency. ',
+      'Helicopters': ' Flight deck only.  '
+    }
+  },
+
+
+
+
+  {
+    id: 'Dazhi class',
+    title: 'Dazhi class ',
+
+    images: ['src/33.jpg','src/34.jpg'],
+
+    description: 'DAZHI ',
+
+    details: {
+      'Full Load': '5,600 full load ',
+      'Dimensions': '350 × 50 × 20 (106.7 × 15.3 × 6.1)',
+      'Speed': '14 knots',
+      'Range': '6,000 at 14 kt',
+
+      // 'Capacity': '240',
+      'Cargo capacity': '500 tons dieso' ,
+
+      'Machinery': 'Diesel-electric; 2 diesel generators; 3,500 hp(m) (2.57 MW); 2 shafts',
+
+      'Guns': '4 China 37 mm/63 (2 twin). 4-25 mm/60 (2 twin). ',
+    //  ' A/S Mortars': '2 FQF 2500 fixed 12-tubed launchers; range 1,200 m; warhead 34 kg.',
+
+      'Radars': 'Fin Curve; I-band.',
+      // 'Sonars': ' Echo Type 5; hull-mounted; active; high frequency. ',
+      // 'Helicopters': ' Flight deck only.  '
+    }
+  },
+
+
+
+
+
+
+  {
+    id: 'Dazhou Type 946-class',
+    title: 'Dazhou Type 946-class ',
+
+    images: ['src/35.jpg'],
+
+    description: 'DAZHOU 502  ',
+
+    details: {
+      'Full Load': '1118 tonnes (1100.3 (uk) t) (1232.4 t (short)) (1118000 kg)',
+      'Dimensions': 'Length : 379 m (259.2 ft)',
+      'Speed': '18 kt (33.3 km/h) (20.7 mph)',
+      // 'Range': '6,000 at 14 kt',
+
+      'Capacity': '130',
+      // 'Cargo capacity': '500 tons dieso' ,
+
+      'Machinery': '2 diesels; 2 shafts',
+
+      'Guns': '2 China 37 mm/63 (twin). 4-14.5 mm/93 (2 twin).',
+    //  ' A/S Mortars': '2 FQF 2500 fixed 12-tubed launchers; range 1,200 m; warhead 34 kg.',
+
+      'Radars': 'Navigation:  Fin Curve; I-band.',
+      // 'Sonars': ' Echo Type 5; hull-mounted; active; high frequency. ',
+      // 'Helicopters': ' Flight deck only.  '
     }
   },
 
