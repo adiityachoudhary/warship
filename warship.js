@@ -546,6 +546,253 @@ const topics = [
 
 
 
+  {
+    id: 'Dongdiao (Type 815/815A/815B) class',
+    title: 'Dongdiao (Type 815/815A/815B) class ',
+
+    images: ['src/36.jpg','src/37.jpg'],
+
+    description: 'Beijixing, Tianwangxing,  Haiwangxing, Tianlangxing, Tianshuxing, Kaiyangxing, Tianquanxing, Yuhengxing, Jinxing',
+
+    details: {
+      'Full Load': '6096 tonnes (5999.7 (uk) t) (6719.7 t (short)) (6096000 kg) ',
+      'Dimensions': 'Length : 130 m (426.5 ft)',
+      'Speed': '20 kt (37.0 km/h) (23.0 mph)',
+      // 'Range': '6,000 at 14 kt',
+
+      'Capacity': '250',
+      // 'Cargo capacity': '500 tons dieso' ,
+
+      'Machinery': '2 diesels; 2 shafts',
+
+      'Guns': 'Type 815: 1-37 mm. 2-14.5 mm. Type 815A and B: 2 H/PJ-14 30 mm (fwd). 2-14.5 mm (aft) (852-859). ',
+    //  ' A/S Mortars': '2 FQF 2500 fixed 12-tubed launchers; range 1,200 m; warhead 34 kg.',
+
+      // 'Radars': 'Navigation:  Fin Curve; I-band.',
+      // 'Sonars': ' Echo Type 5; hull-mounted; active; high frequency. ',
+      'Helicopters': ' 1 Z-9 (can be embarked).  '
+    }
+  },
+
+
+
+  {
+    id: 'Donghai Dao class',
+    title: 'Donghai Dao class',
+
+    images: ['src/38.jpg'],
+
+    description: 'Donghai Dao ',
+
+    details: {
+      'Full Load': '20000 tonnes (19684.1 (uk) t) (22046.2 t (short)) (20000000 kg) ',
+      'Dimensions': 'Length : 175.5 m (575.8 ft)',
+      'Speed': '14 kt (25.9 km/h) (16.1 mph)',
+      // 'Range': '6,000 at 14 kt',
+
+      // 'Capacity': '250',
+      // 'Cargo capacity': '500 tons dieso' ,
+
+      'Machinery': 'To be announced.',
+
+      // 'Guns': 'Type 815: 1-37 mm. 2-14.5 mm. Type 815A and B: 2 H/PJ-14 30 mm (fwd). 2-14.5 mm (aft) (852-859). ',
+    //  ' A/S Mortars': '2 FQF 2500 fixed 12-tubed launchers; range 1,200 m; warhead 34 kg.',
+
+      'Radars': 'To be announced.',
+      // 'Sonars': ' Echo Type 5; hull-mounted; active; high frequency. ',
+      // 'Helicopters': ' 1 Z-9 (can be embarked).  '
+    }
+  },
+
+
+
+
+  {
+    id: 'Fuchi (Type 903/903A) class ',
+    title: 'Fuchi (Type 903/903A) class ',
+
+    images: ['src/39.jpg','src/40.jpg','src/41.jpg','src/42.jpg','src/43.jpg'],
+
+    description: '23369 tonnes (22999.9 (uk) t) (25759.9 t (short)) (23369000 kg) ',
+
+    details: {
+      'Full Load': '20000 tonnes (19684.1 (uk) t) (22046.2 t (short)) (20000000 kg) ',
+      'Dimensions': 'Length : 178.5 m (585.6 ft)',
+      'Speed': '19 kt (35.2 km/h) (21.9 mph)',
+      'Range': '10000 n miles (18520.0 km) (11507.8 miles) at 14 kt (25.9 km/h) (16.1 mph)',
+
+      'Capacity': '130',
+      'Cargo capacity': '10,500 tonnes fuel, 250 tonnes of water, 680 tonnes of ammunition and stores ' ,
+
+      'Machinery': '2 Shaanxi SEMT-Pielstick diesels; 24,000 hp (17.9 MW); 2 shafts',
+
+      'Guns': 'Type 903: 8 H/PJ-76F 37 mm/63 (4 twin); 400 rds/min to 9.4 km (5.1 n miles); weight of shell 0.73 kg. Type 903A: 4 H/PJ-14 30 mm; 350 rds/min to 3 km (1.6 n miles) .',
+    //  ' A/S Mortars': '2 FQF 2500 fixed 12-tubed launchers; range 1,200 m; warhead 34 kg.',
+
+      'Radars': 'To be announced.',
+      // 'Sonars': ' Echo Type 5; hull-mounted; active; high frequency. ',
+      'Helicopters': ' 1 Z-8/Z-18'
+    }
+  },
+
+
+
+
+  {
+    id: 'Fujian class ',
+    title: 'Fujian class ',
+
+    images: ['src/44.jpg'],
+
+    description: 'Bei You 400, Bei You 561, Bei You 562, Bei You 573, Dong You 630, Dong You 632, Dong You 634, Dong You 635, Dong You 638, Dong You 639, Dong You 650, Nan You 954, Nan You 965, 89 | Page, Nan You 962, Nan You 969, Nan You 970, Bei Shui 566, Bei Shui 581, Dong Shui 650, Nan Shui 970 ',
+
+    details: {
+      'Full Load': '2337 tonnes (2300.1 (uk) t) (2576.1 t (short)) (2337000 kg)',
+      'Dimensions': 'Length : 72 m (236.2 ft)',
+      'Speed': '10 kt (18.5 km/h) (11.5 mph)',
+      'Range': '1500 n miles (2778.0 km) (1726.2 miles) at 8 kt (14.8 km/h) (9.2 mph)',
+
+      'Capacity': '30',
+      // 'Cargo capacity': '10,500 tonnes fuel, 250 tonnes of water, 680 tonnes of ammunition and stores ' ,
+
+      'Machinery': '1 diesel; 600 hp(m) (441 kW); 1 shaft',
+
+      'Guns': '4-14.5 mm/93 (2 twin).',
+    //  ' A/S Mortars': '2 FQF 2500 fixed 12-tubed launchers; range 1,200 m; warhead 34 kg.',
+
+      'Radars': 'Navigation:  Fin Curve; I-band.',
+      // 'Sonars': ' Echo Type 5; hull-mounted; active; high frequency. ',
+      // 'Helicopters': ' 1 Z-8/Z-18'
+    }
+  },
+
+
+
+
+  {
+    id: 'Fulin class ',
+    title: 'Fulin class ',
+
+    images: ['src/45.jpg','src/46.jpg'],
+
+    description: 'FULIN 629  ',
+
+    details: {
+      'Full Load': '2134 tonnes (2100.3 (uk) t) (2352.3 t (short)) (2134000 kg)',
+      'Dimensions': 'Length : 63.5 m (208.3 ft)',
+      'Speed': '11 kt (20.4 km/h) (12.7 mph)',
+      // 'Range': '1500 n miles (2778.0 km) (1726.2 miles) at 8 kt (14.8 km/h) (9.2 mph)',
+
+      'Capacity': '35',
+      'Cargo capacity': '600 tons' ,
+
+      'Machinery': '1 diesel; 600 hp(m) (441 kW); 1 shaft',
+
+      'Guns': '4-25 mm/80 (2 twin). 4-14.5 mm/93 (2 twin).',
+    //  ' A/S Mortars': '2 FQF 2500 fixed 12-tubed launchers; range 1,200 m; warhead 34 kg.',
+
+      'Radars': 'Navigation:  Fin Curve; I-band.',
+      // 'Sonars': ' Echo Type 5; hull-mounted; active; high frequency. ',
+      // 'Helicopters': ' 1 Z-8/Z-18'
+    }
+  },
+
+
+
+
+  {
+    id: 'Fuqing (Type 905) class ',
+    title: 'Fuqing (Type 905) class ',
+
+    images: ['src/47.jpg','src/48.jpg','src/49.jpg'],
+
+    description: 'Poyang Hu (exFencang) ',
+
+    details: {
+      'Full Load': '22099 tonnes (21750.0 (uk) t) (24360.0 t (short)) (22099000 kg)',
+      'Dimensions': 'Length : 168.2 m (551.8 ft)',
+      'Speed': '18 kt (33.3 km/h) (20.7 mph)',
+      'Range': '18000 n miles (33336.0 km) (20714.0 miles) at 14 kt (25.9 km/h) (16.1 mph)',
+
+      'Capacity': 'crew: 130, officers: 24 ',
+      'Cargo capacity': '10,550 tonnes fuel; 1,000 tonnes dieso; 200 tonnes feed water; 200 tonnes drinking water; 4 small cranes' ,
+
+      'Machinery': '1 Sulzer 8RL B66 diesel; 15,000 hp(m) (11 MW) sustained; 1 shaft',
+
+      'Guns': '8-37 mm (4 twin) (may be fitted).',
+    //  ' A/S Mortars': '2 FQF 2500 fixed 12-tubed launchers; range 1,200 m; warhead 34 kg.',
+
+      'Radars': 'Navigation:  Fin Curve or Racal Decca 1290; I-band.',
+      // 'Sonars': ' Echo Type 5; hull-mounted; active; high frequency. ',
+      'Helicopters': 'Platform for 1 medium.'
+    }
+  },
+
+
+
+  {
+    id: 'Fusu (Type 908) class  ',
+    title: 'Fusu (Type 908) class  ',
+
+    images: ['src/50.jpg','src/51.jpg'],
+
+    description: 'Qinghai Hu (ex-Nancang , ex-Vladimir Peregudov) ',
+
+    details: {
+      'Full Load': '37594 tonnes (37000.3 (uk) t) (41440.3 t (short)) (37594000 kg) ',
+      'Dimensions': 'Length : 188.9 m (619.8 ft)',
+      'Speed': '16 kt (29.6 km/h) (18.4 mph)',
+      // 'Range': '18000 n miles (33336.0 km) (20714.0 miles) at 14 kt (25.9 km/h) (16.1 mph)',
+
+      'Capacity': '125',
+      'Cargo capacity': '9,630 tons fuel' ,
+
+      'Machinery': '1 B&W diesel; 11,600 hp(m) (8.53 MW); 1 shaft',
+
+      // 'Guns': '8-37 mm (4 twin) (may be fitted).',
+    //  ' A/S Mortars': '2 FQF 2500 fixed 12-tubed launchers; range 1,200 m; warhead 34 kg.',
+
+      // 'Radars': 'Navigation:  Fin Curve or Racal Decca 1290; I-band.',
+      // 'Sonars': ' Echo Type 5; hull-mounted; active; high frequency. ',
+      'Helicopters': '1 Z-8 Super Frelon. '
+    }
+  },
+
+
+
+  {
+    id: 'Futi class (Type 312)',
+    title: 'Futi class (Type 312)',
+
+    images: ['src/52.jpg'],
+
+    description: 'DRONE Type 312 (CSSC)  ',
+
+    details: {
+      'Full Load': '48 tonnes (47.2 (uk) t) (52.9 t (short)) (48000 kg)',
+      'Dimensions': 'Length : 20.9 m (68.6 ft)',
+      'Speed': '12 kt (22.2 km/h) (13.8 mph)',
+      'Range': '144 n miles (266.7 km) (165.7 miles) at 12 kt (22.2 km/h) (13.8 mph)',
+
+      'Capacity': '3',
+      // 'Cargo capacity': '9,630 tons fuel' ,
+
+      'Machinery': 'Diesel-electric; 1 Type 12V 150C diesel generator; 300 hp(m) (220 kW); 1 motor; cp prop ',
+
+      // 'Guns': '8-37 mm (4 twin) (may be fitted).',
+    //  ' A/S Mortars': '2 FQF 2500 fixed 12-tubed launchers; range 1,200 m; warhead 34 kg.',
+
+      // 'Radars': 'Navigation:  Fin Curve or Racal Decca 1290; I-band.',
+      // 'Sonars': ' Echo Type 5; hull-mounted; active; high frequency. ',
+      'Helicopters': '1 Z-8 Super Frelon. '
+    }
+  },
+
+
+
+
+
+
 ];
 
 const topicsEl = document.getElementById('topics');
