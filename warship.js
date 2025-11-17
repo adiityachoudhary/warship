@@ -791,6 +791,308 @@ const topics = [
 
 
 
+  {
+    id: 'Ganzhu class',
+    title: 'Ganzhu class',
+
+    images: ['src/53.jpg','src/54.jpg'],
+
+    description: 'GANZHU 420  ',
+
+    details: {
+      'Full Load': '1016 tonnes (1000.0 (uk) t) (1119.9 t (short)) (1016000 kg)',
+      'Dimensions': 'Length : 65 m (213.3 ft) ',
+      'Speed': '20 kt (37.0 km/h) (23.0 mph)',
+      // 'Range': '144 n miles (266.7 km) (165.7 miles) at 12 kt (22.2 km/h) (13.8 mph)',
+
+      'Capacity': '125',
+      // 'Cargo capacity': '9,630 tons fuel' ,
+
+      'Machinery': '4 diesels; 4,400 hp(m) (3.23 MW); 2 shafts',
+
+      'Guns': '4-37 mm/63 (2 twin); 8-14.5 mm (4 twin).',
+    //  ' A/S Mortars': '2 FQF 2500 fixed 12-tubed launchers; range 1,200 m; warhead 34 kg.',
+
+      // 'Radars': 'Navigation:  Fin Curve or Racal Decca 1290; I-band.',
+      // 'Sonars': ' Echo Type 5; hull-mounted; active; high frequency. ',
+      // 'Helicopters': '1 Z-8 Super Frelon. '
+    }
+  },
+
+
+
+
+  {
+    id: 'Golf class (Type 031) ',
+    title: 'Golf class (Type 031) ',
+
+    images: ['src/55.jpg','src/56.jpg'],
+
+    description: 'GOLF 200 (Ships of the World)  ',
+
+    details: {
+      'Full Load': '2388 tonnes (2350.3 (uk) t) (2632.3 t (short)) (2388000 kg)',
+      'Dimensions': 'Length : 97.5 m (319.9 ft)',
+      'Speed': 'top speed: 17 kt (31.5 km/h) (19.6 mph), dived: 13 kt (24.1 km/h) (15.0 mph), surfaced: 17 kt (31.5 km/h) (19.6 mph) ',
+      'Range': '6000 n miles (11112.0 km) (6904.7 miles) at 15 kt (27.8 km/h) (17.3 mph)',
+
+      'Capacity': 'crew: 86, officers: 12',
+      // 'Cargo capacity': '9,630 tons fuel' ,
+
+      'Machinery': 'Diesel-electric; 3 Type 37-D diesels; 6,000 hp(m) (4.41 MW); 3 motors; 5,500 hp(m) (4 MW); 3 shafts',
+
+      'Torpedoes': '10-21 in (533 mm) tubes (6 bow, 4 stern). 12 Type Yu-4 (SAET-50); passive homing to 15 km (8.1 n miles) at 30 kt; warhead 309 kg.',
+     ' Missiles': 'SLBM:  1 JL-2 (CSS-NX-5); 3-stage solid fuel; stellar inertial guidance to 8,000 km (4,320 n miles); single nuclear warhead of 1 MT or 3-8 MIRV of smaller yield. CEP 300 m approx',
+
+      'Radars': 'Navigation:  Snoop Plate; I-band.',
+      'Sonars': 'Pike Jaw; hull-mounted; active/passive search; medium frequency. ',
+      // 'Helicopters': '1 Z-8 Super Frelon. '
+    }
+  },
+
+
+
+
+
+  {
+    id: 'Guangzhou class ',
+    title: 'Guangzhou class ',
+
+    images: ['src/57.jpg'],
+
+    description: 'GUANGZHOU 645 (Chris Sattler) ',
+
+    details: {
+      'Full Load': '539 tonnes (530.5 (uk) t) (594.1 t (short)) (539000 kg)',
+      'Dimensions': '49 m (160.8 ft)',
+      'Speed': '10 kt (18.5 km/h) (11.5 mph)',
+      // 'Range': '6000 n miles (11112.0 km) (6904.7 miles) at 15 kt (27.8 km/h) (17.3 mph)',
+
+      'Capacity': 'crew: 19',
+      // 'Cargo capacity': '9,630 tons fuel' ,
+
+      'Machinery': '1 diesel; 1 shaft ',
+
+      // 'Torpedoes': '10-21 in (533 mm) tubes (6 bow, 4 stern). 12 Type Yu-4 (SAET-50); passive homing to 15 km (8.1 n miles) at 30 kt; warhead 309 kg.',
+    //  ' Missiles': 'SLBM:  1 JL-2 (CSS-NX-5); 3-stage solid fuel; stellar inertial guidance to 8,000 km (4,320 n miles); single nuclear warhead of 1 MT or 3-8 MIRV of smaller yield. CEP 300 m approx',
+
+    //   'Radars': 'Navigation:  Snoop Plate; I-band.',
+    //   'Sonars': 'Pike Jaw; hull-mounted; active/passive search; medium frequency. ',
+      // 'Helicopters': '1 Z-8 Super Frelon. '
+    }
+  },
+
+
+
+
+  {
+    id: 'HAIG Z-9C/9D (Haitun) ',
+    title: 'HAIG Z-9C/9D (Haitun)',
+
+    images: ['src/58.jpg'],
+
+    description: 'Z-9C (Michael Nitz) ',
+
+    details: {
+      // 'Full Load': '539 tonnes (530.5 (uk) t) (594.1 t (short)) (539000 kg)',
+      // 'Dimensions': '49 m (160.8 ft)',
+      'Speed': '236 n miles (437 km).',
+      'Range': '6000 n miles (11112.0 km) (6904.7 miles) at 15 kt (27.8 km/h) (17.3 mph)',
+
+      // 'Capacity': 'crew: 19',
+      // 'Cargo capacity': '9,630 tons fuel' ,
+
+      // 'Machinery': '1 diesel; 1 shaft ',
+
+      'Role/Weapom systems': 'ASW (Z-9C), ASuW (Z-9D) and SAR. Licensed assembly of 50 Aerospatiale AS365N Dauphin/AS565MA Panther for PLA and PLAN commenced 1980. Production by HAIG commenced 1988. Z-9C ASW variant may carry dipping sonar or torpedoes but not both. Someaircraft equipped with dipping sonar similar in appearance to Helras sonar.Aircraft adapted for SAR role fitted with EO turret (TV and FLIR), searchlightand winch. Aircraft deployed on counter-piracy operations may be fittedwith 12.7 mm machine gun and 57 mm rocket launcher. Z-9D anti-ship variant capable of carrying 4 short range AShMs. Widely deployed on Type 054A frigates. Sensors: Thomson-CSF Agrion-15 or KLC-1 surface search I/Jband radar; Thomson-Sintra HS-12 or Type 605 dipping sonar. Weapons: ASW; 2 lightweight torpedoes (Yu-7). ASuW; 4 KJ-10B anti-ship missiles.',
+    //  ' Missiles': 'SLBM:  1 JL-2 (CSS-NX-5); 3-stage solid fuel; stellar inertial guidance to 8,000 km (4,320 n miles); single nuclear warhead of 1 MT or 3-8 MIRV of smaller yield. CEP 300 m approx',
+
+    //   'Radars': 'Navigation:  Snoop Plate; I-band.',
+    //   'Sonars': 'Pike Jaw; hull-mounted; active/passive search; medium frequency. ',
+      // 'Helicopters': '1 Z-8 Super Frelon. '
+    }
+  },
+
+
+
+  {
+    id: 'Hainan (Type 037) class ',
+    title: 'Hainan (Type 037) class',
+
+    images: ['src/59.jpg','src/60.jpg','src/61.jpg'],
+
+    description: 'HAINAN CLASS (A Sheldon-Duplaix) ',
+
+    details: {
+      'Full Load': '398 tonnes (391.7 (uk) t) (438.7 t (short)) (398000 kg)',
+      'Dimensions': '58.8 m (192.9 ft) ',
+      'Speed': '30.5 kt (56.5 km/h) (35.1 mph)',
+      'Range': '1300 n miles (2407.6 km) (1496.0 miles) at 15 kt (27.8 km/h) (17.3 mph)',
+
+      'Capacity': 'crew: 78',
+      // 'Cargo capacity': '9,630 tons fuel' ,
+
+      'Machinery': '4 PCR/Kolomna Type 9D8 diesels; 4,000 hp(m) (2.94 MW) sustained; 4 shafts ',
+
+      'Guns': '4-57 mm/70 (2 twin); 120 rds/min to 12 km (6.5 n miles); weight of shell 6.31 kg. 4-25 mm/60 (2 twin).',
+
+     ' Missiles': ' Can be fitted with 4 YJ-1 launchers in lieu of the after 57 mm gun. ',
+
+     ' A/S Mortars': ' RPS Uragan system; 4 RBU-1200 5-barrel launchers; RGB-12 rocketpropelled depth charges; range 400-1,200 m; depth 15-350 m; warhead 30 kg.',
+
+     ' Mines': ' Rails fitted for 12. ',
+     ' Depth charges': ' 2 BMB-2 projectors; 2 racks. 18 DCs.  ',
+
+      'Radars': 'Surface search:  Type 351; Pot Head or Skin Head; E/F-band.  IFF:  High Pole.',
+      'Sonars': 'Stag Ear; hull-mounted; active search and attack; high frequency. Thomson Sintra SS 12 (in some); VDS.',
+      // 'Helicopters': '1 Z-8 Super Frelon. '
+    }
+  },
+
+
+
+
+  {
+    id: 'Haiqing (Type 037/1S) class ',
+    title: 'Haiqing (Type 037/1S) class',
+
+    images: ['src/62.jpg'],
+
+    description: 'Zhangqiu, Renqiu, Baofeng, Yichuan, Longhai, Yunhe, Fuyang, Xiaoshan, Shangyu',
+
+    details: {
+      'Full Load': '486 tonnes (478.3 (uk) t) (535.7 t (short)) (486000 kg)',
+      'Dimensions': 'Length: 62.8 m (206.0 ft)',
+      'Speed': '28 kt (51.9 km/h) (32.2 mph)',
+      'Range': '1300 n miles (2407.6 km) (1496.0 miles) at 15 kt (27.8 km/h) (17.3 mph)',
+
+      'Capacity': 'crew: 71',
+      // 'Cargo capacity': '9,630 tons fuel' ,
+
+      'Machinery': '4 PR 230ZC diesels; 4,000 hp(m) (2.94 MW) sustained; 4 shafts ',
+
+      'Guns': '4 Type 76 37 mm/63 (2 twin); 4 Type 69 14.5 mm (2 twin).',
+
+    //  ' Missiles': ' Can be fitted with 4 YJ-1 launchers in lieu of the after 57 mm gun. ',
+
+     ' A/S Mortars': '2 Type 87; 6-barrelled fixed launchers; range 1,200 m; warhead 34 kg. ',
+
+    //  ' Mines': ' Rails fitted for 12. ',
+    //  ' Depth charges': ' 2 BMB-2 projectors; 2 racks. 18 DCs.  ',
+
+      'Radars': 'Surface search:  Anritsu RA 723; I-band.',
+      'Sonars': 'Hull mounted; active search and attack; medium frequency.',
+      // 'Helicopters': '1 Z-8 Super Frelon. '
+    }
+  },
+
+
+
+
+  {
+    id: 'Haixun I class  ',
+    title: 'Haixun I class ',
+
+    images: ['src/63.jpg'],
+
+    description: 'HAIXUN 21 (A Sheldon-Duplaix)  ',
+
+    details: {
+      'Full Load': '1583 tonnes (1558.0 (uk) t) (1745.0 t (short)) (1583000 kg)',
+      'Dimensions': 'Length: 93.2 m (305.8 ft) ',
+      'Speed': '22 kt (40.7 km/h) (25.3 mph)',
+      // 'Range': '1300 n miles (2407.6 km) (1496.0 miles) at 15 kt (27.8 km/h) (17.3 mph)',
+
+      // 'Capacity': 'crew: 78',
+      // 'Cargo capacity': '9,630 tons fuel' ,
+
+      'Machinery': '2 Niigata 16MG26HX diesels; 10,014 hp (7.37 MW); 2 shafts',
+
+      // 'Guns': '4-57 mm/70 (2 twin); 120 rds/min to 12 km (6.5 n miles); weight of shell 6.31 kg. 4-25 mm/60 (2 twin).',
+
+    //  ' Missiles': ' Can be fitted with 4 YJ-1 launchers in lieu of the after 57 mm gun. ',
+
+    //  ' A/S Mortars': ' RPS Uragan system; 4 RBU-1200 5-barrel launchers; RGB-12 rocketpropelled depth charges; range 400-1,200 m; depth 15-350 m; warhead 30 kg.',
+
+    //  ' Mines': ' Rails fitted for 12. ',
+    //  ' Depth charges': ' 2 BMB-2 projectors; 2 racks. 18 DCs.  ',
+
+      'Radars': 'Navigation',
+      // 'Sonars': 'Stag Ear; hull-mounted; active search and attack; high frequency. Thomson Sintra SS 12 (in some); VDS.',
+      'Helicopters': 'Platform for one medium. '
+    }
+  },
+
+
+
+
+  {
+    id: 'Haixun II (Type 718) class ',
+    title: 'Haixun II (Type 718) class',
+
+    images: ['src/64.jpg'],
+
+    description: 'Haijing 31101 (ex-Haijing 1001)  ',
+
+    details: {
+      'Full Load': '1617 tonnes (1591.5 (uk) t) (1782.4 t (short)) (1617000 kg)',
+      'Dimensions': 'Length: 95.6 m (313.6 ft)  ',
+      // 'Speed': '30.5 kt (56.5 km/h) (35.1 mph)',
+      // 'Range': '1300 n miles (2407.6 km) (1496.0 miles) at 15 kt (27.8 km/h) (17.3 mph)',
+
+      // 'Capacity': 'crew: 78',
+      // 'Cargo capacity': '9,630 tons fuel' ,
+
+      'Machinery': 'To be announced',
+
+      'Guns': '1-37 mm. ',
+
+    //  ' Missiles': ' Can be fitted with 4 YJ-1 launchers in lieu of the after 57 mm gun. ',
+
+    //  ' A/S Mortars': ' RPS Uragan system; 4 RBU-1200 5-barrel launchers; RGB-12 rocketpropelled depth charges; range 400-1,200 m; depth 15-350 m; warhead 30 kg.',
+
+    //  ' Mines': ' Rails fitted for 12. ',
+    //  ' Depth charges': ' 2 BMB-2 projectors; 2 racks. 18 DCs.  ',
+
+      'Radars': 'Surface search:  E/F-band.  Navigation:  I-band',
+      // 'Sonars': ' ',
+      'Helicopters': 'Platform only'
+    }
+  },
+
+
+
+
+  {
+    id: 'Haizhui/Shanghai III (Type 062/1) class ',
+    title: 'Haizhui/Shanghai III (Type 062/1) class ',
+
+    images: ['src/65.jpg','src/66.jpg'],
+
+    description: 'HAIZHUI 1205-1208 (Kürsener Collection)',
+
+    details: {
+      'Full Load': '173 tonnes (170.3 (uk) t) (190.7 t (short)) (173000 kg)',
+      'Dimensions': 'Lenght: 41 m (134.5 ft) ',
+      'Speed': '25 kt (46.3 km/h) (28.8 mph)',
+      'Range': '750 n miles (1389.0 km) (863.1 miles) at 17 kt (31.5 km/h) (19.6 mph)',
+
+      'Capacity': 'crew: 43',
+      // 'Cargo capacity': '9,630 tons fuel' ,
+
+      'Machinery': '4 HND L12-180A diesels; 4,400 hp(m) (3.22 MW) sustained; 4 shafts',
+
+      'Guns': '4-37 mm/63 (2 twin); 180 rds/min to 8.5 km (4.6 n miles); weight of shell 1.42 kg. 4 Type 69 14.5 mm (2 twin) or 4-25 mm (2 twin).',
+
+      'Radars': 'Surface search:  Type 351 (Pot Head) or Anritsu 726; I-band.',
+      'Sonars': 'Stag Ear; hull-mounted; active search; high frequency (in some). ',
+      // 'Helicopters': '1 Z-8 Super Frelon. '
+    }
+  },
+
+
+
+
 
 
 ];
