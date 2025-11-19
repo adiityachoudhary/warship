@@ -1093,6 +1093,355 @@ const topics = [
 
 
 
+  {
+    id: 'Han class (Type 091/091G) ',
+    title: 'Han class (Type 091/091G) ',
+
+    images: ['src/67.jpg','src/68.jpg'],
+
+    description: 'HAN 404 (Ships of the World), Changzheng 03/04/05  ',
+
+    details: {
+      'Full Load': '4572 tonnes (4499.8 (uk) t) (5039.8 t (short)) (4572000 kg)',
+      'Dimensions': 'Lenght: 96 m (315.0 ft)  (403) , 101 m (331.4 ft) (404-405) ',
+      'Speed': 'top speed: 25 kt (46.3 km/h) (28.8 mph), dived: 25 kt (46.3 km/h) (28.8 mph), surfaced: 12 kt (22.2 km/h) (13.8 mph) ',
+
+      // 'Range': '750 n miles (1389.0 km) (863.1 miles) at 17 kt (31.5 km/h) (19.6 mph)',
+
+      'Capacity': 'crew: 75',
+      // 'Cargo capacity': '9,630 tons fuel' ,
+
+      'Machinery': 'Nuclear; turbo-electric; 1 PWR; 90 MW; 1 shaft',
+
+      // 'Guns': '4-37 mm/63 (2 twin); 180 rds/min to 8.5 km (4.6 n miles); weight of shell 1.42 kg. 4 Type 69 14.5 mm (2 twin) or 4-25 mm (2 twin).',
+      'Missiles': 'SSM:  YJ-82; inertial guidance and active radar terminal homing to 33.3 km (18 n miles) at Mach 0.9; warhead 165 kg; sea-skimmer. ',
+      'Torpedoes': '6-533 mm bow tubes; combination of Yu-3 (SET-65E); passive homing to 13 km (7 n miles) at 35 kt; electric; warhead 205 kg; depth to 350 m and Yu-4B; wire-guided and active/passive homing to 15 km (8.1 n miles) at 40 kt; electric; warhead 309 kg. ',
+      'Mines': '36 in lieu of torpedoes.',
+      'Electronic countermeasures:': 'ESM:  Type 921-A; radar warning.',
+
+      'Radars': 'Surface search:  Snoop Tray; I-band. ',
+      'Sonars': 'Trout Cheek; hull-mounted; active/passive search and attack; medium frequency. DUUX-5; passive ranging and intercept; low frequency. ',
+      // 'Helicopters': '1 Z-8 Super Frelon. '
+    }
+  },
+
+
+
+
+  {
+    id: 'Harbin H-5 (Il-28 Beagle).',
+    title: 'Harbin H-5 (Il-28 Beagle).',
+
+    images: ['src/69.jpg'],
+
+    description: 'H-5 (Romanian colours) (Lindsay Peacock) ',
+
+    details: {
+      // 'Full Load': '4572 tonnes (4499.8 (uk) t) (5039.8 t (short)) (4572000 kg)',
+      // 'Dimensions': 'Lenght: 96 m (315.0 ft)  (403) , 101 m (331.4 ft) (404-405) ',
+      'Speed': '487 kt (902 km/h). ',
+
+      'Range': '1,175 n miles (2,180 km).',
+
+      // 'Capacity': 'crew: 75',
+      // 'Cargo capacity': '9,630 tons fuel' ,
+
+      // 'Machinery': 'Nuclear; turbo-electric; 1 PWR; 90 MW; 1 shaft',
+
+      // 'Guns': '4-37 mm/63 (2 twin); 180 rds/min to 8.5 km (4.6 n miles); weight of shell 1.42 kg. 4 Type 69 14.5 mm (2 twin) or 4-25 mm (2 twin).',
+      // 'Missiles': 'SSM:  YJ-82; inertial guidance and active radar terminal homing to 33.3 km (18 n miles) at Mach 0.9; warhead 165 kg; sea-skimmer. ',
+//       'Torpedoes': '6-533 mm bow tubes; combination of Yu-3 (SET-65E); passive homing to 13 km (7 n miles) at 35 kt; electric; warhead 205 kg; depth to 350 m and Yu-4B; wire-guided and active/passive homing to 15 km (8.1 n miles) at 40 kt; electric; warhead 309 kg. ',
+      'Role/Weapon systems': 'Overwater strike aircraft with ASW/ASVW roles. Numbers are doubtful as some have been phased out and others moved into second line roles suchas target towing and ECM training. Weapons: ASW; two torpedoes or four depth bombs. ASVW; one torpedo + mines. Standard; four 23 mm cannon. ',
+      // 'Electronic countermeasures:': 'ESM:  Type 921-A; radar warning.',
+
+      // 'Radars': 'Surface search:  Snoop Tray; I-band. ',
+      // 'Sonars': 'Trout Cheek; hull-mounted; active/passive search and attack; medium frequency. DUUX-5; passive ranging and intercept; low frequency. ',
+      // 'Helicopters': '1 Z-8 Super Frelon. '
+    }
+  },
+
+
+
+  {
+    id: 'Hongqi class',
+    title: 'Hongqi class',
+
+    images: ['src/70.jpg','src/71.jpg'],
+
+    description: 'HONGQI CLASS (Bob Fildes) ,Fleetlist: Bei Yun 443, Bei Yun 528, Dong Yun 755, Dong Yun 756, Dong Yun 771, Nan Yun 835, Nan Yun 836 ',
+
+    details: {
+      'Full Load': '1981 tonnes (1949.7 (uk) t) (2183.7 t (short)) (1981000 kg)',
+      'Dimensions': 'Lenght: 62 m (203.4 ft) ',
+      'Speed': '14 kt (25.9 km/h) (16.1 mph) ',
+
+      'Range': '2500 n miles (4630.0 km) (2876.9 miles) at 11 kt (20.4 km/h) (12.7 mph)',
+
+      'Capacity': 'crew: 35',
+      // 'Cargo capacity': '9,630 tons fuel' ,
+
+      'Machinery': '1 diesel; 1 shaft',
+
+      'Guns': '4 Type 4 25 mm/80 (2 twin). ',
+      // 'Missiles': 'SSM:  YJ-82; inertial guidance and active radar terminal homing to 33.3 km (18 n miles) at Mach 0.9; warhead 165 kg; sea-skimmer. ',
+//       'Torpedoes': '6-533 mm bow tubes; combination of Yu-3 (SET-65E); passive homing to 13 km (7 n miles) at 35 kt; electric; warhead 205 kg; depth to 350 m and Yu-4B; wire-guided and active/passive homing to 15 km (8.1 n miles) at 40 kt; electric; warhead 309 kg. ',
+      // 'Electronic countermeasures:': 'ESM:  Type 921-A; radar warning.',
+
+      // 'Radars': 'Surface search:  Snoop Tray; I-band. ',
+      // 'Sonars': 'Trout Cheek; hull-mounted; active/passive search and attack; medium frequency. DUUX-5; passive ranging and intercept; low frequency. ',
+      // 'Helicopters': '1 Z-8 Super Frelon. '
+    }
+  },
+
+
+
+
+  {
+    id: 'Houjian (Type 037/2) class',
+    title: 'Houjian (Type 037/2) class',
+
+    images: ['src/74.jpg'],
+
+    description: 'Yangjiang, Shunde, Nanhai, Panyu, Lianjiang, Xinhui ',
+
+    details: {
+      'Full Load': '528 tonnes (519.7 (uk) t) (582.0 t (short)) (528000 kg)',
+      'Dimensions': 'Lenght: 65.4 m (214.6 ft) ',
+      'Speed': '32 kt (59.3 km/h) (36.8 mph)',
+
+      'Range': '1800 n miles (3333.6 km) (2071.4 miles) at 18 kt (33.3 km/h) (20.7 mph) ',
+
+      'Capacity': 'crew: 75',
+      // 'Cargo capacity': '9,630 tons fuel' ,
+
+      'Machinery': '3 SEMT-Pielstick 12PA6-280 diesels; 15,840 hp(m) (11.7 MW) sustained; 3 shafts ',
+
+      'Guns': '2 Type 76A 37 mm/63 (twin); 360 rds/min to 8.5 km (4.6 n miles); weight of shell 0.73 kg. 4 Type 69 30 mm/65 (2 twin); 600 rds/min to 7 km (3.8 n miles). ',
+
+      'Missiles': 'SSM:  6 YJ-83 (CSS-N-8 Saccade) (2 triple); inertial guidance and active radar terminal homing to 180 km (97.2 n miles) at Mach 0.9; warhead 165 or 190 kg; sea skimmer. ',
+
+      'Physical countermeasures:': 'Decoys:  16 Type 945G 18-barrelled launcher. ',
+      'Electronic countermeasures:': ' ESM:  Type 928; intercept. ',
+
+      'Radars': 'Surface search:  Type 363; E/F-band, Fire control:  Type 344 (MR 34) I-band, Navigation:  Type 765; I-band.',
+      // 'Sonars': 'Trout Cheek; hull-mounted; active/passive search and attack; medium frequency. DUUX-5; passive ranging and intercept; low frequency. ',
+      // 'Weapon control systems': 'Type JM-83 optronic director. '
+    }
+  },
+
+
+
+  {
+    id: 'Houku (type 024) class ',
+    title: 'Houku (type 024) class ',
+
+    images: ['src/75.jpg'],
+
+    description: 'HOUKU (A Sheldon Duplaix) ',
+
+    details: {
+      'Full Load': '68 standard; 79.2 full load ',
+      'Dimensions': 'Lenght: 88.6 × 20.7 × 4.3 (27 × 6.3 × 1.3) (28.6 m-Hema class)',
+      'Speed': '37.5',
+
+      'Range': '400 at 30 kt',
+
+      'Complement': 'crew: 17 (2 officers)',
+      // 'Cargo capacity': '9,630 tons fuel' ,
+
+      'Machinery': '4 Type L-12V-180 diesels; 4,800 hp(m) (3.53 MW); 4 shafts ',
+
+      'Guns': '2 USSR 25 mm/60 (twin) (4 (2 twin) in Hema class); 270 rds/min to 3 km (1.6 n miles) anti-aircraft; weight of shell 0.34 kg ',
+
+      'Missiles': 'SSM: 2 SY-1 (CSS-N-1 Scrubbrush); inertial cruise; active radar homing to 45 km (24.3 n miles) at 0.9 Mach; warhead 513 kg. 1 C-801 in one of the class ',
+
+      // 'Physical countermeasures:': 'Decoys:  16 Type 945G 18-barrelled launcher. ',
+      // 'Electronic countermeasures:': ' ESM:  Type 928; intercept. ',
+
+      'Radars': 'Surface search: Square Tie; I-band; range 73 km (40 n miles) ',
+      // 'Sonars': 'Trout Cheek; hull-mounted; active/passive search and attack; medium frequency. DUUX-5; passive ranging and intercept; low frequency. ',
+      'IFF': 'High pole A'
+    }
+  },
+
+
+
+
+  {
+    id: 'Huangfen (Type 021) (Osa I Type) ',
+    title: 'Huangfen (Type 021) (Osa I Type)  ',
+
+    images: ['src/78.jpg','src/79.jpg'],
+
+    description: 'HUANGFEN 6120 (Ships of the World)',
+
+    details: {
+      'Load': 'standard: 174 tonnes (171.3 (uk) t) (191.8 t (short)) (174000 kg) full load: 208 tonnes (204.7 (uk) t) (229.3 t (short)) (208000 kg) ',
+      'Dimensions': 'Lenght: 38.6 m (126.6 ft)',
+      'Speed': '35 kt (64.8 km/h) (40.3 mph)',
+
+      'Range': '800 n miles (1481.6 km) (920.6 miles) at 30 kt (55.6 km/h) (34.5 mph)',
+
+      'Complement': 'crew: 28',
+      // 'Cargo capacity': '9,630 tons fuel' ,
+
+      'Machinery': '3 Type 42-160 diesels; 12,000 hp(m) (8.8 MW) sustained; 3 shafts',
+      
+      'Missiles': 'SSM:  4 C-201 (HY-2/CSS-N-3 Seersucker) (2 twin) launchers; active radar or IR homing to 95 km (51 n miles) at 0.9 Mach; warhead 513 kg.',
+
+      'Guns': '4 USSR 25 mm/60 (2 twin); 270 rds/min to 3 km (1.6 n miles) anti-aircraft. Replaced in some by 4 USSR 30 mm/65 (2 twin) AK 230.',
+
+
+      // 'Physical countermeasures:': 'Decoys:  16 Type 945G 18-barrelled launcher. ',
+      // 'Electronic countermeasures:': ' ESM:  Type 928; intercept. ',
+
+      'Radars': 'Surface search:  Type 352C; Square Tie; I-band.  Fire control:  Type 331 Round Ball or Type 341 Rice Lamp; H/I-band.  IFF:  2 Square Head; High Pole A. ',
+      // 'Sonars': 'Trout Cheek; hull-mounted; active/passive search and attack; medium frequency. DUUX-5; passive ranging and intercept; low frequency. ',
+      // 'IFF': 'High pole A'
+    }
+  },
+
+
+
+
+
+  {
+    id: 'Huchuan (type 025/026) class',
+    title: 'Huchuan (type 025/026) class ',
+
+    images: ['src/80.jpg'],
+
+    description: 'HUCHUAN (CSSC)',
+
+    details: {
+      'Displacement, tons': '39 standard; 45.8 full load',
+      'Dimensions': '71.5 × 20.7 oa × 11.8 ft (hullborne) (21.8 × 6.3 × 3.6 metres) ',
+      'Speed': '50 foilborne ',
+
+      'Range': '500 at 30 kt',
+
+      'Complement': 'crew: 16',
+      // 'Cargo capacity': '9,630 tons fuel' ,
+
+      'Machinery': '3 Type M 50 diesels; 3,300 hp(m) (2.42 MW) sustained; 3 shafts',
+      
+      // 'Missiles': 'SSM:  4 C-201 (HY-2/CSS-N-3 Seersucker) (2 twin) launchers; active radar or IR homing to 95 km (51 n miles) at 0.9 Mach; warhead 513 kg.',
+
+      'Guns': '4 China 14.5 mm (2 twin); 600 rds/min to 7 km (3.8 n miles)',
+      'Torpedoes': '2-21 in (533 mm) tubes. Yu-1; anti-ship; to 9.2 km (5 n miles) at 39 kt or 3.7 km (2.1 n miles) at 51 kt; warhead 400 kg',
+
+
+      // 'Physical countermeasures:': 'Decoys:  16 Type 945G 18-barrelled launcher. ',
+      // 'Electronic countermeasures:': ' ESM:  Type 928; intercept. ',
+
+      'Radars': 'Surface search: Skin Head or China Type 753; I-band',
+      // 'Sonars': 'Trout Cheek; hull-mounted; active/passive search and attack; medium frequency. DUUX-5; passive ranging and intercept; low frequency. ',
+      // 'IFF': 'High pole A'
+    }
+  },
+
+
+
+
+
+  {
+    id: 'Hudong class (submarine rescue ship)',
+    title: 'Hudong class (submarine rescue ship)',
+
+    images: ['src/81.jpg'],
+
+    description: 'HAIJUI 512 ',
+
+    details: {
+      'Displacement, tons': '4,500 standard; 4,900 full load',
+      'Dimensions': '308.5 × 55.8 × 15.1 ft (94 × 17 × 4.6 metres) ',
+      'Speed': '16 knots',
+
+      'Range': '5,000 at 12 kt',
+
+      'Complement': '225(est)',
+      // 'Cargo capacity': '9,630 tons fuel' ,
+
+      'Machinery': '2 diesels; 3,600 hp(m) (2.64 MW); 2 shafts',
+      
+      // 'Missiles': 'SSM:  4 C-201 (HY-2/CSS-N-3 Seersucker) (2 twin) launchers; active radar or IR homing to 95 km (51 n miles) at 0.9 Mach; warhead 513 kg.',
+
+      'Guns': '4 China 37 mm/63 (2 twin). 4 China 14.5 mm/93 (2 twin)',
+      // 'Torpedoes': '2-21 in (533 mm) tubes. Yu-1; anti-ship; to 9.2 km (5 n miles) at 39 kt or 3.7 km (2.1 n miles) at 51 kt; warhead 400 kg',
+
+
+      // 'Physical countermeasures:': 'Decoys:  16 Type 945G 18-barrelled launcher. ',
+      // 'Electronic countermeasures:': ' ESM:  Type 928; intercept. ',
+
+      'Radars': 'Navigation: Fin Curve; I-band ',
+      // 'Sonars': 'Trout Cheek; hull-mounted; active/passive search and attack; medium frequency. DUUX-5; passive ranging and intercept; low frequency. ',
+      // 'IFF': 'High pole A'
+    }
+  },
+
+
+
+
+  {
+    id: 'Huludao class (Type 206) ',
+    title: 'Huludao class (Type 206) ',
+
+    images: ['src/82.jpg'],
+
+    description: 'HAI GONG HULUDAO ',
+
+    details: {
+      'Displacement, tons': '180 full load ',
+      'Dimensions': '147.6 × 21 × 5.6 ft (45 × 6.4 × 1.7 metres)',
+      'Speed': '29 knots',
+
+      'Range': '1,000 at 15 kt ',
+
+      'Complement': '24 (6 officers) ',
+      // 'Cargo capacity': '9,630 tons fuel' ,
+
+      'Machinery': '3 MWM TBD604BV12 diesels; 5,204 hp(m) (3.82 MW) sustained; 3 shafts ',
+      
+      'Guns': '6 China 14.5 mm Type 82 (3 twin); 600 rds/min to 7 km (3.8 n miles); weight of shell 1.42 kg. ',
+
+      // 'Radars': 'Navigation: Fin Curve; I-band ',
+      // 'Sonars': 'Trout Cheek; hull-mounted; active/passive search and attack; medium frequency. DUUX-5; passive ranging and intercept; low frequency. ',
+    }
+  },
+
+
+
+
+  {
+    id: 'Huxin class',
+    title: 'Huxin class  ',
+
+    images: ['src/83.jpg'],
+
+    description: 'HUXIN 44091 ',
+
+    details: {
+      'Displacement': '168 tonnes (185.2 t (short)) (168000 kg)',
+      'Dimensions': 'Length: 28 m (91.86 ft) ',
+      'Speed': '17 knots',
+
+      'Range': '400 n miles at 10 kt',
+
+      'Complement': '26 ',
+      // 'Cargo capacity': '9,630 tons fuel' ,
+
+      'Machinery': '2 diesels; 1,000 hp(m) (735 kW); 2 shafts',
+      
+      'Guns': '2 China 14.5 mm/93 (twin). ',
+
+      'Radars': 'Surface search:  Skin Head; I-band. ',
+      // 'Sonars': 'Trout Cheek; hull-mounted; active/passive search and attack; medium frequency. DUUX-5; passive ranging and intercept; low frequency. ',
+    }
+  },
+
+
+
+
 
 
 ];
