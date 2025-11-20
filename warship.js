@@ -14,320 +14,281 @@
 
 const topics = [
   {
-    id: 'achelous',
-    title: 'Achelous Class',
-    images: ['src/1.jpg'],
-    description: 'DAGUSHAN (ex-Hsiang An, ex-Achilles ARL 41, ex-LST 455) ',
+    id: 'Liaoning (type 001)',
+    title: 'Liaoning (type 001)',
+    images: ['src/pla/44.jpg'],
+    description: 'The Liaoning-class (Type 001) is China’s first aircraft carrier, rebuilt from the unfinished Soviet Varyag hull. It features a ski-jump ramp for STOBAR (Short Take-Off But Arrested Recovery) operations, carrying J-15 fighter jets, helicopters, and AEW aircraft. Equipped with Type 1130 CIWS and HQ-10 missiles for close-in defense, it also has an island superstructure with modern radar systems. Powered by conventional steam turbines, it reaches 29 knots. Liaoning primarily serves as a training platform and proof of concept for carrier operations, marking China’s entry into blue-water naval capability.',
     details: {
-      'Displacement': '1,625 light; 4,325 full load',
-      'Dimensions feet(meters)': '328 × 50 × 14 (100 × 15.2 × 4.3) ',
-      'Main machinery': '2 GM 12-567A diesels; 1,800 hp (1.34 MW); 2 shafts',
-      'Speed': '12 knots',
-      'Armament': '12 China 37 mm/63 (6 twin). 4 China 14.5 mm/93 (2 twin)',
-      'Radar': 'Navigation: Fin Curve; I-band '
+      // 'Displacement': '1,625 light; 4,325 full load',
     }
   },
-  {
-    id: 'anwei',
-    title: 'Anwei Type 920 ',
-    images: ['src/2.jpg'],
-    description: 'DAISHAN DAO (Annati Collection)',
-    details: {
-      'Displacement': '14200 tonnes (13975.7 (uk) t) (15652.8 t (short)) (14200000 kg)',
-      'Dimensions feet(meters)': '178.0 m (584.0 ft)',
-      'Main machinery': '2 diesels; 2 shafts',
-      'Speed': '20 kt (37.0 km/h) (23.0 mph) ',
-      'Capacity': '135',
-      'Armament': '12 China 37 mm/63 (6 twin). 4 China 14.5 mm/93 (2 twin)',
-      'Radar': 'To be announced. ',
-      'Helicopters': '1 Z-8JH'
-    }
-  },
-  {
-    id: 'CAC J-7E. ',
-    title: 'CAC J-7E. ',
-    images: ['src/3.jpg'],
-    description: 'J-7E (Ships of the World)',
-    details: {
-      'Speed': '1,175 kt (2,175 km/h).',
-      'Range': '804 n miles (1,490 km).',
-      'Armament': 'Fleet air defence fighter with limited strike role against enemy shipping or beachhead. Total of about 30 delivered from 1992. About 24 estimated in service. Sensors: Search attack radar, some ECM. Weapons: ASuW; 500 kg bombs or 36 rockets. Standard; two 30 mm cannon. AAM; PL-5B, PL-8. ',
-      'Service Ceiling': '61,680 ft (18,800 m). '
-    }
-  },
-  {
-    id: 'CAIG Z-8 Super-Frelon. ',
-    title: 'CAIG Z-8 Super-Frelon. ',
-    images: ['src/4.jpg'],
-    description: 'A fast-attack destroyer optimized for anti-submarine and air defense operations in escort missions.',
-    details: {
-      'Speed': '134 kt (248 km/h)',
-      'Service Ceiling': '10,000 ft (3,050 m). ',
-      'Range': '440 n miles (815 km). ',
-      'Armament': 'Anti-submarine warfare (ASW), anti-surface (ASuW), Medivac and SAR roles. Derived from SA 321G Super Frelon initially supplied from France in 1977. 14 ASW/ASuW (Z-8J), 4 Medivac (Z-8JH), and about 20 utility (Z-8) believed to be in-service. Operate from shore or amphibious ships. Deployed on Type 071 LPH for counter piracy operations in 2010, 2013, and 2014. Sensors: surface search radar, Thomson-Sintra HS-12 dipping sonar. Some aircraft fitted with FLIR turret. Weapons: ASW; lightweight torpedoes (Yu-7). ASuW: YJ-83K missile, rockets, and machine guns. '
-    }
-  },
-  {
-    id: 'Coastal Patrol Craft  ',
-    title: 'Coastal Patrol Craft ',
-    images: ['src/7.jpg', 'src/8.jpg'],
-    description: '1: Gong Bian 4401,  2: Gong Bian 4407 ',
-    details: {
-      'Full Load': '59 tonnes (65 t (short)) (59000 kg) ',
-      'Length': '22.5 m (73.82 ft) ',
-      'Speed': '22 kt ',
-      'Range': '850 n miles at 11 kt',
-      'Capacity': '13',
-      'Machinery': '2 diesels; 1,600 hp(m) (1.18 MW); 2 shafts',
-      'Guns': '2-14.5 mm (twin). ',
-      'Radars': 'Surface search:  I-band.'
-    }
-  },
-  {
-    id: 'Gong Bian 1301 ',
-    title: 'Gong Bian 1301 ',
-    images: ['src/9.jpg'],
-    description: 'Gong Bian 1301 ',
-    details: {
-      'Full Load': '83 tonnes (91.5 t (short)) (83000 kg)',
-      'Length': '25 m (82.02 ft)  ',
-      'Speed': '14 kt',
-      'Range': '900 n miles at 11 kt',
-      'Capacity': '12',
-      'Machinery': '2 diesels; 900 hp(m) (662 kW); 2 shafts',
-      'Guns': '4-14.5 mm/93 2 (twin) ',
-      'Radars': 'Surface search:  Fin Curve; I-band.'
-    }
-  },
-  {
-    id: 'HAI GUAN 812-T-Hollingsbee ',
-    title: 'HAI GUAN 812-T-Hollingsbee ',
-    images: ['src/11.jpg'],
-    description: 'Building in Shanghai at about six a year since 1992. More may follow.  ',
-    details: {
-      'Full Load': '98 full load',
-      'Dimensions': '101.7 × 15.4 × 4.6 (31 × 4.7 × 1.4) ',
-      'Speed': '32 kt ',
-      // 'Range': '850 n miles at 11 kt',
-      // 'Capacity': '13',
-      'Machinery': '2 diesels; 2 shafts',
-      'Guns': '2 China 14.5 mm/93 (twin).',
-      'Radars': '  Surface search: Racal Decca ARPA; I-band. '
-    }
-  },
-  {
-    id: 'Combatboat 90E ',
-    title: 'Combatboat 90E ',
 
-    images: ['src/12.jpg'],
+  {
+    id: 'Shandong (type 002)',
+    title: 'Shandong (type 002) ',
+    images: ['src/pla/45.jpg'],
+    description: 'The Shandong-class (Type 002) is China’s first domestically built aircraft carrier, based on the Soviet Kuznetsov design. It features a ski-jump ramp for STOBAR (Short Take-Off But Arrested Recovery) operations, carrying J-15 fighter jets, helicopters, and AEW aircraft. Equipped with Type 1130 CIWS and HQ-10 missiles for self-defense, it has an island superstructure with modern radar. Powered by conventional steam turbines.',
+    details: {
+      // 'Displacement': '14200 tonnes (13975.7 (uk) t) (15652.8 t (short)) (14200000 kg)',
+    }
+  },
+  {
+    id: 'Fujian (type 003)',
+    title: 'Fujian (type 003)',
+    images: ['src/pla/46.jpg'],
+    description: 'The Fujian-class (Type 003) is China’s most advanced aircraft carrier, featuring a CATOBAR (Catapult Assisted Take-Off But Arrested Recovery) system with electromagnetic catapults (EMALS) for launching heavier aircraft. It has a large flight deck, an island superstructure with advanced radar, and can carry a mix of J-35 stealth fighters, J-15B jets, and KJ-600 AEW aircraft. Powered by conventional steam turbines, it is China’s first carrier designed for true blue-water operations. Fujian significantly enhances the PLA Navy’s power projection and carrier strike capabilities. Assembly of the new aircraft carrier,  commenced at Jiangnan shipyard, Changxingdao',
+    details: {
+      // 'Speed': '1,175 kt (2,175 km/h).',
+    }
+  },
+  {
+    id: 'Renhai (type 055) x8',
+    title: 'Renhai (type 055) x8',
+    images: ['src/pla/49.jpg'],
+    description: 'Renhai class is associated with the Type 055 destroyers. These are large, advanced, and modern vessels used by the PLA Navy. These have a displacement of around 12,000 tons, making them some of the heaviest and most capable destroyers in the Chinese fleet. These ships can be distinguished by their stealth design. The most advanced guided-missile cruiser, featuring a dual-band AES (active electrnic scaaned array)  radar and a 112-cell VLS for HHQ-9 air-defense, YJ-18 anti-ship, CJ-10 land-attack, and Yu-8 ASW missiles. It is armed with a 130mm naval gun, Type 1130 CIWS, HQ-10 SAMs, and torpedoes for multi-role combat. A stealthy design, integrated mast, and advanced sensors enhance survivability. It carries two Z-20 helicopters for ASW and reconnaissance. Powered by gas turbines, it reaches 32 knots, serving as a key blue-water fleet leader.',
+    details: {
+      // 'Speed': '134 kt (248 km/h)',
+    }
+  },
+  {
+    id: 'Luyang III (type 052D) x26 ',
+    title: 'Luyang III (type 052D) x26 ',
+    images: ['src/pla/50.jpg'],
+    description: 'The Luyang III-class destroyers are a class of advanced multi-role warships operated by the PLA NAvy. These ships are also known as Type 052D destroyers. These have a displacement of about 7,500 tons, slightly smaller than Renhai class, making them mid-sized for modern destroyers. It is a highly advanced multi-role destroyer, featuring a phased-array radar and a 64-cell vertical launch system (VLS) for HHQ-9 air-defense, YJ-18 anti-ship, and CJ-10 land-attack missiles. It is equipped with a 130mm naval gun, Type 1130 CIWS, torpedoes, and ASW rockets for comprehensive combat capabilities. A Z-20 or Z-9C helicopter enhances anti-submarine and reconnaissance roles. Powered by gas turbines, it reaches 31 knots. It is the backbone of China’s modern navy, excelling in air defense, strike, and escort missions.',
+    details: {
+      // 'Full Load': '59 tonnes (65 t (short)) (59000 kg) ',
+    }
+  },
 
-    description: ' Two delivered to Hai Guan in April 1997. This is the transport version of the Swedish raiding craft and can lift two tons of stores or 6-10 troops.',
+  {
+    id: 'Luyang II (type 052C) x6',
+    title: 'Luyang II (type 052C) x6',
+    images: ['src/pla/51.jpg'],
+    description: '',
+    details: {
+      // 'Full Load': '83 tonnes (91.5 t (short)) (83000 kg)',
+    }
+  },
+  {
+    id: 'Luyang II (type 052D) Destroyer',
+    title: 'Luyang II (type 052D) Destroyer',
+    images: ['src/pla/52.jpg'],
+    description: 'The Luyang II-class destroyers, also known as the Type 052C destroyers, are an earlier class of Chinese multi-role warships compared to the more advanced Luyang III-class. It has a displacement of approximately 7,000 tons. The Luyang II-class (Type 052C) is China’s first destroyer with a phased-array radar and a modern area air-defense system. Armed with HHQ-9 long-range surface-to-air missiles, YJ-62 anti-ship missiles, and a 100mm naval gun, it excels in fleet defense and strike missions. Type 730 CIWS ensures close-range protection, while torpedoes and ASW rockets enhance anti-submarine warfare. A Z-9C helicopter supports extended operations. Powered by gas turbines, it reaches 31 knots. It laid the foundation for China’s advanced naval air-defense capabilities. ',
+    details: {
+      // 'Full Load': '98 full load',
+    }
+  },
+  {
+    id: 'Luyang I (type 052B) x2',
+    title: 'Luyang I (type 052B) x2 ',
+
+    images: ['src/pla/53.jpg'],
+
+    description: ' ',
 
     details: {
-      'Full Load': '9 full load',
-      'Dimensions': '39 × 9.5 × 2.3 (11.9 × 2.9 × 0.7) ',
-      'Speed': '40 kt ',
-      // 'Range': '850 n miles at 11 kt',
-      // 'Capacity': '13',
-      'Machinery': '1 Scania AB DSI 14 diesel; 398 hp(m) (293 kW); waterjet ',
-      // 'Guns': '2 China 14.5 mm/93 (twin).',
-      // 'Radars': '  Surface search: Racal Decca ARPA; I-band. '
+      // 'Full Load': '9 full load',
     }
   },
 
 
   {
-    id: 'Dachou (Type 917A) class',
-    title: 'Dachou Type 917A-class',
+    id: 'Luyang I (type 052B) x2',
+    title: 'Luyang I (type 052B) x2',
 
-    images: ['src/13.jpg'],
+    images: ['src/pla/54.jpg'],
 
-    description: ' Bei Yun 530, Dong Yun 760, Nan Yun 846, Nan Yun 847 ',
+    description: ' The Luyang I-class (Type 052) destroyers were an important step in modernizing the Chinese Navy, but they are relatively outdated compared to the more advanced Luyang II and III classes. With a relatively conventional design, basic air defense and anti-submarine capabilities, and older radar and missile systems, these ships represented the early stages of China’s efforts to develop modern warships for its naval forces.It carries surface-to-air missiles, YJ-83 anti-ship missiles, and a 100mm naval gun for versatile combat capability. AK-630 CIWS provides close-range protection, while torpedoes and ASW rockets enhance anti-submarine warfare. A Z-9C helicopter supports reconnaissance and ASW missions. Powered by gas turbines, it reaches 31 knots. it paved the way for advanced Luyang-class successors. ',
 
     details: {
-      'Full Load': '9 full load',
-      'Dimensions': 'Length   overall: 67 m (219.8 ft) ',
-      // 'Speed': '40 kt ',
-      // 'Range': '850 n miles at 11 kt',
-      // 'Capacity': '13',
-      'Machinery': '2 diesels; 2 shafts',
-      // 'Guns': '2 China 14.5 mm/93 (twin).',
-      // 'Radars': ' To be announced.'
+      // 'Full Load': '9 full load',
     }
   },
 
 
 
   {
-    id: 'Dadao Type 648-class ',
-    title: 'Dadao Type 648-class ',
+    id: 'Luzhou (type 051C) x2 ',
+    title: 'Luzhou (type 051C) x2 ',
 
-    images: ['src/14.jpg','src/15.jpg'],
+    images: ['src/pla/55.jpg'],
 
-    description: ' Dong Xiu 911 , Builders: Bohai Shipyard , Huludao ',
+    description: '',
 
     details: {
-      'Full Load': '1780 tonnes (1751.9 (uk) t) (1962.1 t (short)) (1780000 kg) ',
-      'Dimensions': 'Length   overall:78.7 m (258.2 ft) ',
-      'Speed': '16 kt (29.6 km/h) (18.4 mph) ',
-      // 'Range': '850 n miles at 11 kt',
-      // 'Capacity': '13',
-      'Machinery': '2 diesels; 2 shafts ',
-      'Guns': '8-25 mm (4 twin).',
-      'Radars': ' Navigation:  I-band. '
+      // 'Full Load': '1780 tonnes (1751.9 (uk) t) (1962.1 t (short)) (1780000 kg) ',
     }
   },
 
 
-  
-
   {
-    id: 'Dadie Type 814A-class',
-    title: 'Dadie Type 814A-class',
+    id: 'Luzhou (type 051C) x2',
+    title: 'Luzhou (type 051C) x2',
 
-    images: ['src/16.jpg'],
+    images: ['src/pla/56.jpg'],
 
-    description: ' Bei Diao 900 (ex-Bei Diao 841 , ex-V 841) / Wuchang Shipyard , Wuhan 1986',
+    description: ' The Luzhou-class (Type 051C) is a Chinese air-defense destroyer equipped with Russian S-300FM (SA-N-20) long-range surface-to-air missiles, making it a key asset for fleet air defense. It also carries YJ-83 anti-ship missiles, a 100mm naval gun, and AK-630 CIWS for close protection. Torpedo tubes and ASW rockets enhance its anti-submarine capability, while a Z-9C helicopter provides reconnaissance and support. Powered by steam turbines, it reaches 29 knots. Built in limited numbers, it serves as a transitional design before China’s modern air-defense destroyers.',
 
     details: {
-      'Full Load': '2591 tonnes (2550.1 (uk) t) (2856.1 t (short)) (2591000 kg',
-      'Dimensions': 'Length   overall:     94 m (308.4 ft) ',
-      'Speed': '20 kt (37.0 km/h) (23.0 mph)',
-      // 'Range': '850 n miles at 11 kt',
-      'Capacity': '170',
-      'Machinery': '2 diesels; 2 shafts ',
-      'Guns': '4-14.5 mm',
-      'Radars': ' Navigation:  2 Type 753; I-band '
+      // 'Full Load': '2591 tonnes (2550.1 (uk) t) (2856.1 t (short)) (2591000 kg',
     }
   },
 
 
 
-
-
-
   {
-    id: 'Dadong Type 946A-class',
-    title: 'Dadong Type 946A-class',
+    id: 'Luhai (type 051B) x1',
+    title: 'Luhai (type 051B) x1',
 
-    images: ['src/17.jpg'],
+    images: ['src/pla/57.jpg'],
 
     description: 'DADONG 304 ',
 
     details: {
-      'Full Load': '1524 tonnes (1499.9 (uk) t) (1679.9 t (short)) (1524000 kg',
-      'Dimensions': 'Length   overall:     84.4 m (276.9 ft) ',
-      'Speed': '18 kt (33.3 km/h) (20.7 mph)',
-      // 'Range': '850 n miles at 11 kt',
-      'Capacity': '150',
-      'Machinery': '2 diesels; 7,400 hp(m) (5.44 MW); 2 shafts ',
-      'Guns': '4-25 mm/80 (2 twin). ',
-      'Radars': ' Navigation:  Type 756; F-band. '
-    }
-  },
-
-
-
-
-
-
-
-  {
-    id: 'Dahua Type 909/909A-class',
-    title: 'Dahua Type 909/909A-class',
-
-    images: ['src/18.jpg'],
-
-    description: 'Bi Sheng 891 (ex-970 , ex-909) Hudong-Zhonghua --Shanghai Dec 1997, Hua Luogeng 892 / Hudong-Zhonghua -- Shanghai 2012 ',
-
-    details: {
-      'Full Load': '6096 tonnes (5999.7 (uk) t) (6719.7 t (short)) (6096000 kg',
-      'Dimensions': 'Length   overall:     130.0 m (426.5 ft)  ',
-      'Speed': '20 kt (37.0 km/h) (23.0 mph)',
-      // 'Range': '850 n miles at 11 kt',
-      'Capacity': '80',
-      'Machinery': '2 diesels; 2 shafts ',
-      // 'Guns': '4-25 mm/80 (2 twin). ',
       // 'Radars': ' Navigation:  Type 756; F-band. '
-      'Helicopters': ' Platform (891) for one medium.  '
     }
   },
 
 
 
 
-
   {
-    id: 'Dajiang Type 925-class ',
-    title: 'Dajiang Type 925-class ',
+    id: 'Luhai (type 051B) x1',
+    title: 'Luhai (type 051B) x1',
 
-    images: ['src/19.jpg','src/20.jpg'],
+    images: ['src/pla/58.jpg'],
 
-    description: 'CHONGMING DAO (Ships of the World), DAJIANG CLASS SILHOUETTE (Ian Sturton)  ',
+    description: 'The Luhai-class (Type 051B) was China’s first attempt at an indigenously designed modern destroyer. Armed with YJ-83 anti-ship missiles, HQ-7 surface-to-air missiles, and a 100mm naval gun, it has balanced offensive and defensive capabilities. AK-630 CIWS provides close-range protection, while torpedoes and ASW rockets support anti-submarine warfare. A hangar and flight deck accommodate a Z-9C helicopter. Powered by steam turbines, it reaches 29 knots. Though only one was built, it paved the way for future advanced Chinese destroyers.',
 
     details: {
-      'Full Load': '12167 tonnes (11974.8 (uk) t) (13411.8 t (short)) (12167000 kg)',
-      'Dimensions': 'Length   overall:     156.2 m (512.5 ft)  ',
-      'Speed': '20 kt (37.0 km/h) (23.0 mph)',
-      // 'Range': '850 n miles at 11 kt',
-      'Capacity': '308',
-      'Machinery': '2 MAN K9Z60/105E diesels; 18,000 hp(m) (13.4 MW); 2 shafts',
-      // 'Guns': '4-25 mm/80 (2 twin). ',
-      'Radars': ' Surface search:  Eye Shield; E-band, Navigation:  2 Fin Curve; I-band. ',
-      'Helicopters': ' 2 Z-8  '
+      // 'Full Load': '6096 tonnes (5999.7 (uk) t) (6719.7 t (short)) (6096000 kg',
     }
   },
 
 
 
-
-
-
   {
-    id: 'Dalang II/III(Type 922III/IIIA)-class ',
-    title: 'Dalang II/III(Type 922III/IIIA)-class ',
+    id: 'Luhu (type 052) x2 ',
+    title: 'Luhu (type 052) x2 ',
 
-    images: ['src/21.jpg','src/22.jpg'],
+    images: ['src/pla/59.jpg'],
 
-    description: 'Bei Ju 122, Bei Ju 138, Dong Ju 332, Nan Ju 510  ',
+    description: ' ',
 
     details: {
-      'Full Load': '4267 tonnes (4199.6 (uk) t) (4703.6 t (short)) (4267000 kg)',
-      'Dimensions': 'Length   overall:     111.9 m (367.1 ft)  ',
-      'Speed': '16 kt (29.6 km/h) (18.4 mph)',
-      'Range': '88000 n miles (14816.0 km) (9206.2 miles) at 14 kt (25.9 km/h) (16.1 mph)',
-      'Capacity': '180',
-      'Machinery': '2 diesels; 4,000 hp(m) (2.94 MW); 2 shafts',
-      'Guns': '4 Type 61/76 37 mm (2 twin) (122 [Dalang II]). ',
-      'Radars': ' Navigation:  Fin Curve; I-band.',
-      // 'Helicopters': ' 2 Z-8  '
+      // 'Full Load': '12167 tonnes (11974.8 (uk) t) (13411.8 t (short)) (12167000 kg)',
     }
   },
 
 
+  {
+    id: 'Luhu (type 052) x2',
+    title: 'Luhu (type 052) x2 ',
 
+    images: ['src/pla/60.jpg'],
 
+    description: 'The Luhu-class (Type 052) is China’s first modern multi-role destroyer, integrating Western and Chinese technologies. Armed with YJ-83 anti-ship missiles, HQ-7 surface-to-air missiles, and a twin 100mm naval gun, it is capable in both offensive and defensive roles. AK-630 CIWS provides close-range protection, while torpedoes and ASW rockets enhance anti-submarine warfare. A Ka-28 or Z-9C helicopter supports extended operations. Powered by CODAG propulsion, it reaches 31 knots. Though limited in numbers, it marked a key step in China’s naval modernization.',
 
+    details: {
+      // 'Full Load': '4267 tonnes (4199.6 (uk) t) (4703.6 t (short)) (4267000 kg)',
+    }
+  },
 
 
   {
-    id: 'Dalao Type 926-class  ',
-    title: 'Dalao Type 926-class  ',
+    id: 'Sovremenny (type 956e/em) x4  ',
+    title: 'Sovremenny (type 956e/em) x4  ',
 
-    images: ['src/23.jpg'],
+    images: ['src/pla/61.jpg'],
 
     description: 'Haiyang Dao, Liugong Dao, Chang Dao ',
 
     details: {
-      'Full Load': '9652 tonnes (9499.6 (uk) t) (10639.5 t (short)) (9652000 kg)',
-      'Dimensions': 'Length   overall:   136 m (446.2 ft)   ',
-      // 'Speed': '16 kt (29.6 km/h) (18.4 mph)',
-      // 'Range': '88000 n miles (14816.0 km) (9206.2 miles) at 14 kt (25.9 km/h) (16.1 mph)',
-      // 'Capacity': '180',
-      'Machinery': 'To be announced ',
-      // 'Guns': '4 Type 61/76 37 mm (2 twin) (122 [Dalang II]). ',
-      'Radars': ' To be announced ',
-      'Helicopters': ' Flight deck only.  '
+    }
+  },
+
+
+
+  {
+    id: 'Sovremenny (type 956e/em) x4  ',
+    title: 'Sovremenny (type 956e/em) x4 ',
+
+    images: ['src/pla/62.jpg'],
+
+    description: 'The Sovremenny-class is a Russian-built guided-missile destroyer operated by the PLA Navy. Equipped with Moskit (SS-N-22) supersonic anti-ship missiles, Shtil (SA-N-7) air defense missiles, and 130mm AK-130 naval guns, it excels in surface and air warfare. For close defense, it features Kashtan and AK-630 CIWS. Torpedoes, ASW rockets, and a Ka-28 helicopter enhance its anti-submarine role. Powered by steam turbines, it reaches 32 knots. Though aging, it remains a key combat asset in China’s fleet.',
+
+    details: {
+    }
+  },
+
+
+
+  {
+    id: 'Jiangkai I (type 54) ',
+    title: 'Jiangkai I (type 54)  ',
+
+    images: ['src/pla/64.jpg'],
+
+    description: 'The Jiangkai I-class (Type 054) is a class of multi-role frigates used by the PLA Navy. These ships, commissioned in the mid-2000s, are designed for various surface combat tasks and are equipped with advanced radar and weapons systems. They feature a stealthy hull design with sloped surfaces to reduce radar cross-section. It has a displacement of 3500 tonnes. There are 2 ships in this class, namely Ma’Anshan and Wenzhou. Both ofthese ships are based in the east sea fleet and have been deployed oncounter piracy operations.',
+
+    details: {
+    }
+  },
+
+
+
+  {
+    id: 'Jiangkai II (type 54a)',
+    title: 'Jiangkai II (type 54a) ',
+
+    images: ['src/pla/65.jpg'],
+
+    description: 'The Jiangkai II-class (Type 054A) is an advanced version of the Type 054 (Jiangkai I) frigate, serving in the PLA Navy. It was designed for multi-role surface combat operations, featuring improved sensors, weapons, and overall capabilities compared to their predecessors, Jiangkai I. Displacement – 3500 tonnes This class has a total 35 ships, out of which 30 were launched in 2006-18. Jiankgai III (Type 054B), a guided missile frigate is being built for the Chinese Navy. The first ship of this class, the Luohe was commissioned by China in early 2025. 4 ships of this class were ordered by Pakistan in 2017/18. ',
+
+    details: {
+    }
+  },
+
+
+
+  {
+    id: 'Tughril-class frigates',
+    title: 'Tughril-class frigates',
+
+    images: ['src/pla/66.jpg'],
+
+    description: 'The Tughril-class frigates, formally classified as the Type 054A/P (Jiangkai II) frigates, are a series of modified guided-missile frigates built by China for the Pakistan Navy. Tughril class ',
+
+    details: {
+    }
+  },
+
+
+
+  {
+    id: 'Jiangwei ii (type 53h3) ',
+    title: 'Jiangwei ii (type 53h3) ',
+
+    images: ['src/pla/67.jpg'],
+
+    description: 'The Jiangwei II class, designated as Type 053H3 by the PLA Navy, is a series of multi-role guided-missile frigates that entered service between 1999 and 2005. These vessels were developed as an enhancement over the earlier Jiangwei I class (Type 053H2G), incorporating several notable design and armament improvements. Displacement – 2250 tonnes These enhancements make the Jiangwei II class a significant advancement over its predecessor, offering improved offensive and defensive capabilities, as well as extended operational range and endurance. 4 ships of this class of a modified design were built for Pakistan (F-22P/ Sword class).  ',
+
+    details: {
+    }
+  },
+
+
+
+
+  {
+    id: 'Zufiquar class',
+    title: 'Zufiquar class ',
+
+    images: ['src/pla/68.jpg'],
+
+    description: 'The Zulfiquar-class frigate also known as F-22P or Sword class, is a class of multi-mission guided missile frigates. The class is based on an updated model of the Chinese Type 053H3 ( Jiangwei Class)  ',
+
+    details: {
     }
   },
 
@@ -337,53 +298,14 @@ const topics = [
 
 
   {
-    id: 'Danlin class  ',
-    title: 'Danlin class  ',
+    id: 'Jiangdao (type 56/56a)',
+    title: 'Jiangdao (type 56/56a)',
 
-    images: ['src/24.jpg','src/25.jpg'],
+    images: ['src/pla/72.jpg'],
 
-    description: 'DANLIN 794 (Henry Dodds) ',
-
-    details: {
-      'Full Load': '1311 tonnes (1290.3 (uk) t) (1445.1 t (short)) (1311000 kg)',
-      'Dimensions': 'Length   overall:   60.5 m (198.5 ft)   ',
-      'Speed': '15 kt (27.8 km/h) (17.3 mph)',
-      // 'Range': '88000 n miles (14816.0 km) (9206.2 miles) at 14 kt (25.9 km/h) (16.1 mph)',
-      'Capacity': '35',
-      'Cargo capacity': '750-800 tons' ,
-      'Machinery': '1 USSR/PRC Type 6DRN 30/50 diesel; 750 hp(m) (551 kW); 1 shaft ',
-      'Guns': '4-25 mm/80 (2 twin). 4-14.5 mm (2 twin). ',
-      'Radars': ' Navigation:  Fin Curve or Skin Head; I-band. ',
-      // 'Helicopters': ' Flight deck only.  '
-    }
-  },
-
-
-
-
-
-  {
-    id: 'Danyao Type 904A/904B-class  ',
-    title: 'Danyao Type 904A/904B-class   ',
-
-    images: ['src/26.jpg'],
-
-    description: 'Fuxian Hu , Junshan Hu, Lugu Hu ',
+    description: 'The Jiangdao-class corvette, designated as Type 056 by the PLA Navy, is a class of littoral combat-oriented corvettes that entered service starting in 2012. These vessels are primarily tasked with missions such as patrolling, guarding, escorting, and anti-submarine operations, either independently or in coordination with other forces. They have a standard displacement of around 1,300 tons and a full load displacement of approximately 1,440 tons. The Jiangdao-class corvettes are primarily used for coastal defense and patrol missions, providing a balance between stealth, firepower, and operational range. They are well-suited for tasks within the First Island Chain, contributing to China’s maritime security and power projection capabilities in regional waters.',
 
     details: {
-      'Full Load': '15241 tonnes (15000.3 (uk) t) (16800.3 t (short)) (15241000 kg)',
-      'Dimensions': 'Length   overall:   159.5 m (523.3 ft)  ',
-      // 'Speed': '15 kt (27.8 km/h) (17.3 mph)',
-      // 'Range': '88000 n miles (14816.0 km) (9206.2 miles) at 14 kt (25.9 km/h) (16.1 mph)',
-
-      // 'Capacity': '35',
-      // 'Cargo capacity': '750-800 tons' ,
-
-      'Machinery': '2 Shaanxi SEMT-Pielstick 16PC2.6V-400 diesels; 24,000 hp (17.9 MW); 2 shafts ',
-
-      'Guns': 'Type 904A: 4 H/PJ-76F 37 mm (2 twin) 400 rds/min to 9.4 km (5.1 n miles); weight of shell 0.73 kg. 4 Type 61 25 mm/60 (2 twin). Type 904B: 2 H/PJ-17 30 mm; 350 rds/min to 3 km (1.6 n miles) . ',
-      // 'Radars': ' Navigation:  Fin Curve or Skin Head; I-band. ',
-      'Helicopters': ' Type 904A: Platform for one medium. Type 904B: Z-8 or Ka-28. '
     }
   },
 
@@ -393,27 +315,54 @@ const topics = [
 
 
   {
-    id: 'Daozha class   ',
-    title: 'Daozha class    ',
+    id: 'Fuyu (type 901)',
+    title: 'Fuyu (type 901) ',
 
-    images: ['src/27.jpg','src/28.jpg'],
+    images: ['src/pla/74.jpg'],
 
-    description: 'DAOZHA (Hachiro Nakai) ',
+    description: 'The Type 901 Fuyu-class is China’s largest fast combat support ship, built to resupply aircraft carriers and naval task forces at sea. With a displacement of 45,000+ tons, it carries fuel, ammunition, and supplies, using multiple underway replenishment (UNREP) stations. A large flight deck supports helicopter operations. Gas turbine propulsion gives it a speed of 25 knots, allowing it to keep up with carrier groups. The Type 901 is vital for China’s expanding blue-water navy, ensuring extended operations far from home.',
 
     details: {
-      'Full Load': '4064 tonnes (3999.8 (uk) t) (4479.8 t (short)) (4064000 kg)',
-      'Dimensions': 'Length   overall:   84 m (275.6 ft) ',
-      'Speed': '18 kt (33.3 km/h) (20.7 mph)',
-      // 'Range': '88000 n miles (14816.0 km) (9206.2 miles) at 14 kt (25.9 km/h) (16.1 mph)',
+    }
+  },
 
-      'Capacity': '125',
-      // 'Cargo capacity': '750-800 tons' ,
 
-      'Machinery': '2 diesels; 8,600 hp(m) (6.32 MW); 2 shafts',
 
-      // 'Guns': 'Type 904A: 4 H/PJ-76F 37 mm (2 twin) 400 rds/min to 9.4 km (5.1 n miles); weight of shell 0.73 kg. 4 Type 61 25 mm/60 (2 twin). Type 904B: 2 H/PJ-17 30 mm; 350 rds/min to 3 km (1.6 n miles) . ',
-      // 'Radars': ' Navigation:  Fin Curve or Skin Head; I-band. ',
-      // 'Helicopters': ' Type 904A: Platform for one medium. Type 904B: Z-8 or Ka-28. '
+  {
+    id: 'Danyao (type 904 a/b)',
+    title: 'Danyao (type 904 a/b)',
+
+    images: ['src/pla/75.jpg'],
+
+    description: 'The Danyao-class (Type 904) is a logistics support ship used by the PLA Navy to resupply island outposts and naval forces. With a displacement of around 15,000 tons, it carries food, fuel, and equipment for remote bases. It features a large cargo deck, cranes, and a flight deck for helicopter operations. Diesel-powered, it cruises at around 20 knots. The Type 904 plays a key role in sustaining China’s presence in the South China Sea and other strategic areas.',
+
+    details: {
+    }
+  },
+
+
+  {
+    id: 'Dayun (type 904) ',
+    title: 'Dayun (type 904) ',
+
+    images: ['src/pla/76.jpg'],
+
+    description: 'The Dayun-class (Type 904) is a logistics support ship used by the PLA Navy to resupply remote island bases and naval units. With a displacement of 10,000+ tons, it carries food, fuel, and equipment. It has a large cargo deck, cranes, and a flight deck for helicopter operations. Diesel-powered, it sails at around 20 knots. The Type 904 is essential for sustaining China’s military presence in the South China Sea and other distant regions.',
+
+    details: {
+    }
+  },
+
+
+  {
+    id: 'Fuchi (type 903/903a) ',
+    title: 'Fuchi (type 903/903a) ',
+
+    images: ['src/pla/77.jpg'],
+
+    description: 'The Fuchi-class (Type 903) is a fleet replenishment oiler used by the PLA Navy to resupply warships at sea. With a displacement of 23,000+ tons, it carries fuel, dry stores, and ammunition. It has multiple underway replenishment (UNREP) stations and a flight deck for helicopter operations. Diesel-powered, it cruises at around 20 knots. The Type 903 is crucial for extending the range of China’s naval operations, supporting carrier groups and distant deployments.',
+
+    details: {
     }
   },
 
@@ -421,90 +370,14 @@ const topics = [
 
 
   {
-    id: 'Daxin Type 679 ',
-    title: 'Daxin Type 679 ',
+    id: 'fusu (type 908) ',
+    title: 'fusu (type 908) ',
 
-    images: ['src/29.jpg','src/30.jpg'],
+    images: ['src/pla/78.jpg'],
 
-    description: 'Zheng He ',
-
-    details: {
-      'Full Load': '6000 tonnes (5905.2 (uk) t) (6613.9 t (short)) (6000000 kg)',
-      'Dimensions': 'Length   overall:  132 m (433.1 ft)',
-      'Speed': '15 kt (27.8 km/h) (17.3 mph)',
-      'Range': '5000 n miles (9260.0 km) (5753.9 miles) at 15 kt (27.8 km/h) (17.3 mph)',
-
-      'Capacity': 'crew: 400, instructors: 30, midshipmen: 200',
-      // 'Cargo capacity': '750-800 tons' ,
-
-      'Machinery': '2 SEMT Pielstick 6PC2.5L diesels; 7,800 hp(m) (5.73 MW); 2 shafts',
-
-      'Guns': '2-57 mm/70 (twin). 4 AK-230 30 mm/64 (2 twin). 4-12.7 mm MGs. ',
-     ' A/S Mortars': '2 FQF 2500 fixed 12-tubed launchers; range 1,200 m; warhead 34 kg.',
-      'Radars': 'Air/surface search:  Eye Shield E-band. , Surface search:  Type 756; I-band. , Navigation:  Racal Decca 1290 I-band. , Fire control:  Round Ball; I-band. ,  Navigation:  Racal Decca 1290 I-band.,  Fire control:  Roun,dBall; I-band. ',
-      'Sonars': ' Echo Type 5; hull-mounted; active; high frequency. ',
-      'Helicopters': ' Platform only. '
-    }
-  },
-
-
-
-  {
-    id: 'Dayun Type 904-class ',
-    title: 'Dayun Type 904-class ',
-
-    images: ['src/31.jpg','src/32.jpg'],
-
-    description: 'Dongting Hu  ',
+    description: 'The Fusu-class (Type 908) is a fleet replenishment oiler used by the PLA Navy for at-sea resupply of warships. Originally built for the Ukrainian Navy, it was acquired by China in 1996. With a displacement of 37,000+ tons, it carries fuel, ammunition, and supplies. It features underway replenishment (UNREP) stations and a flight deck for helicopter operations. Diesel-powered, it sails at around 19 knots. The Type 908 enhances China’s blue-water capabilities, supporting long-range naval missions.  ',
 
     details: {
-      'Full Load': '11151 tonnes (10974.9 (uk) t) (12291.9 t (short)) (11151000 kg)',
-      'Dimensions': 'Length   overall:  124.2 m (407.5 ft) ',
-      'Speed': '22 kt (40.7 km/h) (25.3 mph)',
-      // 'Range': '5000 n miles (9260.0 km) (5753.9 miles) at 15 kt (27.8 km/h) (17.3 mph)',
-
-      'Capacity': '240',
-      // 'Cargo capacity': '750-800 tons' ,
-
-      'Machinery': '2 diesels; 18,000 hp (13.2 MW); 2 shafts',
-
-      'Guns': '4-37 mm/63 (2 twin). 4-25 mm/80 (2 twin).',
-    //  ' A/S Mortars': '2 FQF 2500 fixed 12-tubed launchers; range 1,200 m; warhead 34 kg.',
-
-      'Radars': 'Navigation:  2 Type 756; I-band. ',
-      // 'Sonars': ' Echo Type 5; hull-mounted; active; high frequency. ',
-      'Helicopters': ' Flight deck only.  '
-    }
-  },
-
-
-
-
-  {
-    id: 'Dazhi class',
-    title: 'Dazhi class ',
-
-    images: ['src/33.jpg','src/34.jpg'],
-
-    description: 'DAZHI ',
-
-    details: {
-      'Full Load': '5,600 full load ',
-      'Dimensions': '350 × 50 × 20 (106.7 × 15.3 × 6.1)',
-      'Speed': '14 knots',
-      'Range': '6,000 at 14 kt',
-
-      // 'Capacity': '240',
-      'Cargo capacity': '500 tons dieso' ,
-
-      'Machinery': 'Diesel-electric; 2 diesel generators; 3,500 hp(m) (2.57 MW); 2 shafts',
-
-      'Guns': '4 China 37 mm/63 (2 twin). 4-25 mm/60 (2 twin). ',
-    //  ' A/S Mortars': '2 FQF 2500 fixed 12-tubed launchers; range 1,200 m; warhead 34 kg.',
-
-      'Radars': 'Fin Curve; I-band.',
-      // 'Sonars': ' Echo Type 5; hull-mounted; active; high frequency. ',
-      // 'Helicopters': ' Flight deck only.  '
     }
   },
 
@@ -513,192 +386,36 @@ const topics = [
 
 
 
-  {
-    id: 'Dazhou Type 946-class',
-    title: 'Dazhou Type 946-class ',
 
-    images: ['src/35.jpg'],
 
-    description: 'DAZHOU 502  ',
 
-    details: {
-      'Full Load': '1118 tonnes (1100.3 (uk) t) (1232.4 t (short)) (1118000 kg)',
-      'Dimensions': 'Length : 379 m (259.2 ft)',
-      'Speed': '18 kt (33.3 km/h) (20.7 mph)',
-      // 'Range': '6,000 at 14 kt',
 
-      'Capacity': '130',
-      // 'Cargo capacity': '500 tons dieso' ,
 
-      'Machinery': '2 diesels; 2 shafts',
 
-      'Guns': '2 China 37 mm/63 (twin). 4-14.5 mm/93 (2 twin).',
-    //  ' A/S Mortars': '2 FQF 2500 fixed 12-tubed launchers; range 1,200 m; warhead 34 kg.',
 
-      'Radars': 'Navigation:  Fin Curve; I-band.',
-      // 'Sonars': ' Echo Type 5; hull-mounted; active; high frequency. ',
-      // 'Helicopters': ' Flight deck only.  '
-    }
-  },
 
 
 
 
 
 
-  {
-    id: 'Dongdiao (Type 815/815A/815B) class',
-    title: 'Dongdiao (Type 815/815A/815B) class ',
 
-    images: ['src/36.jpg','src/37.jpg'],
 
-    description: 'Beijixing, Tianwangxing,  Haiwangxing, Tianlangxing, Tianshuxing, Kaiyangxing, Tianquanxing, Yuhengxing, Jinxing',
 
-    details: {
-      'Full Load': '6096 tonnes (5999.7 (uk) t) (6719.7 t (short)) (6096000 kg) ',
-      'Dimensions': 'Length : 130 m (426.5 ft)',
-      'Speed': '20 kt (37.0 km/h) (23.0 mph)',
-      // 'Range': '6,000 at 14 kt',
 
-      'Capacity': '250',
-      // 'Cargo capacity': '500 tons dieso' ,
 
-      'Machinery': '2 diesels; 2 shafts',
 
-      'Guns': 'Type 815: 1-37 mm. 2-14.5 mm. Type 815A and B: 2 H/PJ-14 30 mm (fwd). 2-14.5 mm (aft) (852-859). ',
-    //  ' A/S Mortars': '2 FQF 2500 fixed 12-tubed launchers; range 1,200 m; warhead 34 kg.',
 
-      // 'Radars': 'Navigation:  Fin Curve; I-band.',
-      // 'Sonars': ' Echo Type 5; hull-mounted; active; high frequency. ',
-      'Helicopters': ' 1 Z-9 (can be embarked).  '
-    }
-  },
 
 
 
-  {
-    id: 'Donghai Dao class',
-    title: 'Donghai Dao class',
 
-    images: ['src/38.jpg'],
 
-    description: 'Donghai Dao ',
 
-    details: {
-      'Full Load': '20000 tonnes (19684.1 (uk) t) (22046.2 t (short)) (20000000 kg) ',
-      'Dimensions': 'Length : 175.5 m (575.8 ft)',
-      'Speed': '14 kt (25.9 km/h) (16.1 mph)',
-      // 'Range': '6,000 at 14 kt',
 
-      // 'Capacity': '250',
-      // 'Cargo capacity': '500 tons dieso' ,
 
-      'Machinery': 'To be announced.',
 
-      // 'Guns': 'Type 815: 1-37 mm. 2-14.5 mm. Type 815A and B: 2 H/PJ-14 30 mm (fwd). 2-14.5 mm (aft) (852-859). ',
-    //  ' A/S Mortars': '2 FQF 2500 fixed 12-tubed launchers; range 1,200 m; warhead 34 kg.',
-
-      'Radars': 'To be announced.',
-      // 'Sonars': ' Echo Type 5; hull-mounted; active; high frequency. ',
-      // 'Helicopters': ' 1 Z-9 (can be embarked).  '
-    }
-  },
-
-
-
-
-  {
-    id: 'Fuchi (Type 903/903A) class ',
-    title: 'Fuchi (Type 903/903A) class ',
-
-    images: ['src/39.jpg','src/40.jpg','src/41.jpg','src/42.jpg','src/43.jpg'],
-
-    description: '23369 tonnes (22999.9 (uk) t) (25759.9 t (short)) (23369000 kg) ',
-
-    details: {
-      'Full Load': '20000 tonnes (19684.1 (uk) t) (22046.2 t (short)) (20000000 kg) ',
-      'Dimensions': 'Length : 178.5 m (585.6 ft)',
-      'Speed': '19 kt (35.2 km/h) (21.9 mph)',
-      'Range': '10000 n miles (18520.0 km) (11507.8 miles) at 14 kt (25.9 km/h) (16.1 mph)',
-
-      'Capacity': '130',
-      'Cargo capacity': '10,500 tonnes fuel, 250 tonnes of water, 680 tonnes of ammunition and stores ' ,
-
-      'Machinery': '2 Shaanxi SEMT-Pielstick diesels; 24,000 hp (17.9 MW); 2 shafts',
-
-      'Guns': 'Type 903: 8 H/PJ-76F 37 mm/63 (4 twin); 400 rds/min to 9.4 km (5.1 n miles); weight of shell 0.73 kg. Type 903A: 4 H/PJ-14 30 mm; 350 rds/min to 3 km (1.6 n miles) .',
-    //  ' A/S Mortars': '2 FQF 2500 fixed 12-tubed launchers; range 1,200 m; warhead 34 kg.',
-
-      'Radars': 'To be announced.',
-      // 'Sonars': ' Echo Type 5; hull-mounted; active; high frequency. ',
-      'Helicopters': ' 1 Z-8/Z-18'
-    }
-  },
-
-
-
-
-  {
-    id: 'Fujian class ',
-    title: 'Fujian class ',
-
-    images: ['src/44.jpg'],
-
-    description: 'Bei You 400, Bei You 561, Bei You 562, Bei You 573, Dong You 630, Dong You 632, Dong You 634, Dong You 635, Dong You 638, Dong You 639, Dong You 650, Nan You 954, Nan You 965, 89 | Page, Nan You 962, Nan You 969, Nan You 970, Bei Shui 566, Bei Shui 581, Dong Shui 650, Nan Shui 970 ',
-
-    details: {
-      'Full Load': '2337 tonnes (2300.1 (uk) t) (2576.1 t (short)) (2337000 kg)',
-      'Dimensions': 'Length : 72 m (236.2 ft)',
-      'Speed': '10 kt (18.5 km/h) (11.5 mph)',
-      'Range': '1500 n miles (2778.0 km) (1726.2 miles) at 8 kt (14.8 km/h) (9.2 mph)',
-
-      'Capacity': '30',
-      // 'Cargo capacity': '10,500 tonnes fuel, 250 tonnes of water, 680 tonnes of ammunition and stores ' ,
-
-      'Machinery': '1 diesel; 600 hp(m) (441 kW); 1 shaft',
-
-      'Guns': '4-14.5 mm/93 (2 twin).',
-    //  ' A/S Mortars': '2 FQF 2500 fixed 12-tubed launchers; range 1,200 m; warhead 34 kg.',
-
-      'Radars': 'Navigation:  Fin Curve; I-band.',
-      // 'Sonars': ' Echo Type 5; hull-mounted; active; high frequency. ',
-      // 'Helicopters': ' 1 Z-8/Z-18'
-    }
-  },
-
-
-
-
-  {
-    id: 'Fulin class ',
-    title: 'Fulin class ',
-
-    images: ['src/45.jpg','src/46.jpg'],
-
-    description: 'FULIN 629  ',
-
-    details: {
-      'Full Load': '2134 tonnes (2100.3 (uk) t) (2352.3 t (short)) (2134000 kg)',
-      'Dimensions': 'Length : 63.5 m (208.3 ft)',
-      'Speed': '11 kt (20.4 km/h) (12.7 mph)',
-      // 'Range': '1500 n miles (2778.0 km) (1726.2 miles) at 8 kt (14.8 km/h) (9.2 mph)',
-
-      'Capacity': '35',
-      'Cargo capacity': '600 tons' ,
-
-      'Machinery': '1 diesel; 600 hp(m) (441 kW); 1 shaft',
-
-      'Guns': '4-25 mm/80 (2 twin). 4-14.5 mm/93 (2 twin).',
-    //  ' A/S Mortars': '2 FQF 2500 fixed 12-tubed launchers; range 1,200 m; warhead 34 kg.',
-
-      'Radars': 'Navigation:  Fin Curve; I-band.',
-      // 'Sonars': ' Echo Type 5; hull-mounted; active; high frequency. ',
-      // 'Helicopters': ' 1 Z-8/Z-18'
-    }
-  },
-
-
-
+  
 
   {
     id: 'Fuqing (Type 905) class ',
@@ -1438,6 +1155,251 @@ const topics = [
       // 'Sonars': 'Trout Cheek; hull-mounted; active/passive search and attack; medium frequency. DUUX-5; passive ranging and intercept; low frequency. ',
     }
   },
+
+
+
+
+  {
+    id: 'Inshore patrol craft',
+    title: 'Inshore patrol craft ',
+
+    images: ['src/84.jpg','src/85.jpg'],
+
+    description: 'GONG BIAN 3110, GONG BIAN SPEEDBOAT (T Hollingsbee) ',
+
+    details: {
+      'Displacement': '33 tonnes (36.4 t (short)) (33000 kg)',
+      'Dimensions': 'Length: 18.9 m (62.01 ft)',
+      'Speed': '15 knots',
+
+      // 'Range': '400 n miles at 10 kt',
+
+      'Complement': 'crew: 5',
+      // 'Cargo capacity': '9,630 tons fuel' ,
+
+      'Machinery': '2 diesels; 900 hp(m) (662 kW); 2 shafts',
+      
+      'Guns': '1-12.7 mm MG.',
+
+      // 'Radars': 'Surface search:  Skin Head; I-band. ',
+      // 'Sonars': 'Trout Cheek; hull-mounted; active/passive search and attack; medium frequency. DUUX-5; passive ranging and intercept; low frequency. ',
+    }
+  },
+
+
+
+
+
+  {
+    id: 'Jiangdao (Type 056), Jiangdao (Type 056A)',
+    title: 'Jiangdao (Type 056), Jiangdao (Type 056A)',
+
+    images: ['src/86.jpg','src/87.jpg','src/88.jpg'],
+
+    description: 'BENGBU (Ships of the World), TYPE 056 (Ian Sturton), TYPE 056A (Kürsener Collection)',
+
+    details: {
+      'Displacement': '1500 tonnes (1476.3 (uk) t) (1653.5 t (short)) (1500000 kg)',
+      'Dimensions': 'Length: 89.0 m (292.0 ft) ',
+      'Speed': '25 kt (46.3 km/h) (28.8 mph)',
+
+      'Range': '3500 n miles (6482.0 km) (4027.7 miles) at 16 kt (29.6 km/h) (18.4 mph)',
+
+      'Complement': 'crew: 60, officers: 18 ',
+      // 'Cargo capacity': '9,630 tons fuel' ,
+
+      'Machinery': '2 diesels; 2 shafts; cp props ',
+
+      'Missiles': 'Four slant-mounted containerised missile launchers [Ref 1], containing either:  SSM:  4 YJ-83 (CSS-N-8 Saccade) (2 twin); inertial guidance and active radar terminal homing to 180 km (97.2 n miles) at Mach 0.9; warhead 165 or 190 kg; sea-skimmer [Ref 1] or  ASW:  4 ASROC-type torpedo-carrying missiles (possibly canister launched version of Cy-5 or Yu-8 derivative).  SAM:  1 HHQ-10 8-cell launcher [Ref 2]; passive IR/anti-radiation homing to 9.0 km (4.9 n miles).',
+
+      
+      'Guns': '1 H/PJ-26 76 mm/59 (AK-176); 120 rds/min to 15 km (8.1 n miles); weight of shell 5.9 kg [Ref 3]. 2 H/PJ-17 30 mm; 350 rds/min to 3 km (1.6 n miles) [Ref 4]. 2-12.7 mm or 14.5 mm machine guns (Hong Kong-based ships).',
+      
+      'Torpedoes': '6-324 mm (2 triple) tubes; Yu-7; active/passive homing to 14 km (7.6 n miles) at 43 kt; thermal; warhead 45 kg. ',
+
+      'Physical countermeasures': 'Decoys:  2 9-barrelled launchers',
+
+      'Electronic countermeasures': 'ESM:  To be announced. ',
+
+      'Radars': 'Air/surface search:  Type 364 (Seagull C 5) [Ref 5] G-band,  Navigation:  Type 760 I-band [Ref 6],  Fire control:  Type 347G (LR66) [Ref 7] I-band. ',
+
+      'Sonars': 'Bow mounted. VDS and SJG-206 towed array (ASW variant).',
+      'Combat data systems ': 'ZKJ-5 II Combat Command System. SATCOM. ',
+      'Electro-optic systems': 'IR-17 optronic sensor.',
+      'Helicopters': 'Platform for 1 Z-9C/D.',
+    }
+  },
+
+
+
+  {
+    id: 'Jianghu I/I Upgrade (Type 053H1/053H1G) class',
+    title: 'Jianghu I/I Upgrade (Type 053H1/053H1G) class',
+
+    images: ['src/89.jpg','src/90.jpg','src/91.jpg','src/92.jpg','src/93.jpg'],
+
+    description: 'TYPE 053H1 (JIANGHU I) (TAIZHOU) SILHOUETTE (Ian Sturton), TYPE 053H1G (JIANGHU I UPGRADE) (DONGGUAN) SILHOUETTE (Ian Sturton)',
+
+    details: {
+      'Displacement': '1500 tonnes (1476.3 (uk) t) (1653.5 t (short)) (1500000 kg)',
+      'Dimensions': 'Length: 89.0 m (292.0 ft) ',
+      'Speed': '25 kt (46.3 km/h) (28.8 mph)',
+
+      'Range': '3500 n miles (6482.0 km) (4027.7 miles) at 16 kt (29.6 km/h) (18.4 mph)',
+
+      'Complement': 'crew: 60, officers: 18 ',
+      // 'Cargo capacity': '9,630 tons fuel' ,
+
+      'Machinery': '2 diesels; 2 shafts; cp props ',
+
+      'Missiles': 'Four slant-mounted containerised missile launchers [Ref 1], containing either:  SSM:  4 YJ-83 (CSS-N-8 Saccade) (2 twin); inertial guidance and active radar terminal homing to 180 km (97.2 n miles) at Mach 0.9; warhead 165 or 190 kg; sea-skimmer [Ref 1] or  ASW:  4 ASROC-type torpedo-carrying missiles (possibly canister launched version of Cy-5 or Yu-8 derivative).  SAM:  1 HHQ-10 8-cell launcher [Ref 2]; passive IR/anti-radiation homing to 9.0 km (4.9 n miles).',
+
+      
+      'Guns': '1 H/PJ-26 76 mm/59 (AK-176); 120 rds/min to 15 km (8.1 n miles); weight of shell 5.9 kg [Ref 3]. 2 H/PJ-17 30 mm; 350 rds/min to 3 km (1.6 n miles) [Ref 4]. 2-12.7 mm or 14.5 mm machine guns (Hong Kong-based ships).',
+      
+      'Torpedoes': '6-324 mm (2 triple) tubes; Yu-7; active/passive homing to 14 km (7.6 n miles) at 43 kt; thermal; warhead 45 kg. ',
+
+      'Physical countermeasures': 'Decoys:  2 9-barrelled launchers',
+
+      'Electronic countermeasures': 'ESM:  To be announced. ',
+
+      'Radars': 'Air/surface search:  Type 364 (Seagull C 5) [Ref 5] G-band,  Navigation:  Type 760 I-band [Ref 6],  Fire control:  Type 347G (LR66) [Ref 7] I-band. ',
+
+      'Sonars': 'Bow mounted. VDS and SJG-206 towed array (ASW variant).',
+      'Combat data systems ': 'ZKJ-5 II Combat Command System. SATCOM. ',
+      'Electro-optic systems': 'IR-17 optronic sensor.',
+      'Helicopters': 'Platform for 1 Z-9C/D.',
+    }
+  },
+
+
+
+
+  {
+    id: 'Jianghu III (Type 053H2) class ',
+    title: 'Jianghu III (Type 053H2) class ',
+
+    images: ['src/94.jpg','src/95.jpg','src/96.jpg'],
+
+    description: 'CANGZHOU (Ian Sturton), CANGZHOU (Ships of the World)',
+
+    details: {
+      'Displacement': '1955 tonnes (1924.1 (uk) t) (2155.0 t (short)) (1955000 kg)',
+      'Dimensions': 'Length: 103.2 m (338.6 ft) ',
+      'Speed': '26 kt (48.2 km/h) (29.9 mph)',
+
+      'Range': '4000 n miles (7408.0 km) (4603.1 miles) at, 15 kt (27.8 km/h) (17.3 mph), 2700 n miles (5000.4 km) (3107.1 miles) at, 18 kt (33.3 km/h) (20.7 mph)',
+
+      'Complement': 'crew: 130',
+      // 'Cargo capacity': '9,630 tons fuel' ,
+
+      'Machinery': '2 Type 18E 390V diesels; 14,400 hp(m) (10.6 MW) sustained; 2 shafts',
+
+      'Missiles': 'SSM:  8 YJ-83 (CSS-N-8 Saccade) (2 quad) [Ref 1]; inertial guidance and active radar terminal homing to 180 km (97.2 n miles) at Mach 0.9; warhead 165 or 190 kg; sea-skimmer.',
+
+      'Guns': '4 H/PJ-87 100 mm/56 (2 twin) [Ref 2]; 25 rds/min to 22 km (12 n miles); weight of shell 15.6 kg. 8-37 mm/63 (4 twin) [Ref 3]; 180 rds/min to 8.5 km (4.6 n miles) anti-aircraft; weight of shell 1.42 kg. ',
+
+      'A/S Mortars': 'RPS Uragan system; 2 RBU-1200 5-barrel launchers [Ref 4]; RGB-12 rocket-propelled depth charges; range 400-1,200 m; depth 15-350 m; warhead 30 kg.',
+
+      'Mines': 'Can carry up to 60.',
+      'Depth Charges': '2 BMB-2 projectors; 2 racks. ',
+      
+      'Physical countermeasures': 'Decoys:  2 China 26-barrelled chaff launchers.',
+
+      'Electronic countermeasures': 'ESM:  Elettronica Newton; radar warning., ECM:  Elettronica 929 (Type 981); jammer.',
+
+      'Radars': 'Air search:  Type 517 (Knife Rest) [Ref 5]; A-band., Air/surface search:  Type 354 (Eye Shield) [Ref 6]; G-band., Surface search/fire control:  Type 352 (Square Tie) [Ref 7]; I-band., Navigation:  Fin Curve; I-band., Fire control:  Type 347G (Rice Bowl) [Ref 8]; I/J-band. Type 343, (Wok Won) [Ref 9]; I-band., IFF:  High Pole A. Square Head. ',
+
+      'Sonars': 'Echo Type 5; hull-mounted; active search and attack; medium frequency.',
+      'Combat data systems ': 'ZKJ-3. ',
+      // 'Electro-optic systems': 'IR-17 optronic sensor.',
+      // 'Helicopters': 'Platform for 1 Z-9C/D.',
+    }
+  },
+
+
+
+
+  {
+    id: 'Jianghu IV (Type 053HTH)',
+    title: 'Jianghu IV (Type 053HTH)',
+
+    images: ['src/97.jpg','src/98.jpg','src/99.jpg'],
+
+    description: 'Lushun (ex-Siping) ',
+
+    details: {
+      'Displacement': 'standard: 1575 tonnes (1550.1 (uk) t) (1736.1 t (short)) (1575000 kg), full load: 1895 tonnes (1865.1 (uk) t) (2088.9 t (short)) (1895000 kg)',
+      'Dimensions': 'Length: 103.2 m (338.6 ft) ',
+      'Speed': '26 kt (48.2 km/h) (29.9 mph) ',
+
+      'Range': '4000 n miles (7408.0 km) (4603.1 miles) at 15 kt (27.8 km/h) (17.3 mph) 2700 n miles (5000.4 km) (3107.1 miles) at 18 kt (33.3 km/h) (20.7 mph)',
+
+      'Complement': 'crew: 185, officers: 30 ',
+      // 'Cargo capacity': '9,630 tons fuel' ,
+
+      'Machinery': '2 Type 12E 390V diesels; 14,400 hp(m) (10.6 MW) sustained; 2 shafts ',
+
+      'Missiles': 'SSM:  2 HY-2 (CSSC-3 Seersucker) (twin) launchers [Ref 1]; active radar or IR homing to 95 km (51 n miles) at Mach 0.9; warhead 513 kg. ',
+
+      'Guns': '1 Creusot-Loire 100 mm/55 [Ref 2]; 60-80 rds/min to 17 km (9.3 n miles); weight of shell 13.5 kg. 8-37 mm/63 (4 twin) [Ref 3]; 180 rds/min to 8.5 km (4.6 n miles) anti-aircraft; weight of shell 1.42 kg.',
+
+      'Torpedoes': '6-324 mm ILAS (2 triple) tubes [Ref 4]. Yu-7 active/passive homing to 14 km (7.6 n miles) at 43 kt; warhead 45 kg.',
+
+      'A/S Mortars': 'RPS Uragan system; 2 RBU-1200 5-barrel launchers [Ref 5]; RGB-12 rocket-propelled depth charges; range 400-1,200 m; depth 15-350 m; warhead 30 kg.',
+
+      'Physical countermeasures': 'Decoys:  2 SRBOC Mk 33 6-barrelled chaff launchers or 2 China 26-barrelled launchers.',
+
+      'Radars': 'Air/surface search:  Type 354 (Eye Shield) [Ref 6]; G-band.,  Surface search/fire control:  Type 352 (Square Tie) [Ref 7]; I-band.,  Navigation:  Don 2 or Fin Curve; I-band.,  IFF:  High Pole A. Yard Rake or Square Head. ',
+
+      'Sonars': 'Echo Type 5; hull-mounted; active search and attack; medium frequency.',
+      'Weapon control systems ': 'CSEE Naja optronic director for 100 mm gun. ',
+      'Helicopters': '1 Z-9C [Ref 8].',
+    }
+  },
+
+
+
+
+  {
+    id: 'Jiangkai I (Type 054) class ',
+    title: 'Jiangkai I (Type 054) class ',
+
+    images: ['src/100.jpg','src/101.jpg','src/102.jpg'],
+
+    description: 'MA\'ANSHAN (Ian Sturton) ',
+
+    details: {
+      'Displacement': 'standard: 1575 tonnes (1550.1 (uk) t) (1736.1 t (short)) (1575000 kg), full load: 1895 tonnes (1865.1 (uk) t) (2088.9 t (short)) (1895000 kg)',
+      'Dimensions': 'Length: 103.2 m (338.6 ft) ',
+      'Speed': '26 kt (48.2 km/h) (29.9 mph) ',
+
+      'Range': '4000 n miles (7408.0 km) (4603.1 miles) at 15 kt (27.8 km/h) (17.3 mph) 2700 n miles (5000.4 km) (3107.1 miles) at 18 kt (33.3 km/h) (20.7 mph)',
+
+      'Complement': 'crew: 185, officers: 30 ',
+      // 'Cargo capacity': '9,630 tons fuel' ,
+
+      'Machinery': '2 Type 12E 390V diesels; 14,400 hp(m) (10.6 MW) sustained; 2 shafts ',
+
+      'Missiles': 'SSM:  2 HY-2 (CSSC-3 Seersucker) (twin) launchers [Ref 1]; active radar or IR homing to 95 km (51 n miles) at Mach 0.9; warhead 513 kg. ',
+
+      'Guns': '1 Creusot-Loire 100 mm/55 [Ref 2]; 60-80 rds/min to 17 km (9.3 n miles); weight of shell 13.5 kg. 8-37 mm/63 (4 twin) [Ref 3]; 180 rds/min to 8.5 km (4.6 n miles) anti-aircraft; weight of shell 1.42 kg.',
+
+      'Torpedoes': '6-324 mm ILAS (2 triple) tubes [Ref 4]. Yu-7 active/passive homing to 14 km (7.6 n miles) at 43 kt; warhead 45 kg.',
+
+      'A/S Mortars': 'RPS Uragan system; 2 RBU-1200 5-barrel launchers [Ref 5]; RGB-12 rocket-propelled depth charges; range 400-1,200 m; depth 15-350 m; warhead 30 kg.',
+
+      'Physical countermeasures': 'Decoys:  2 SRBOC Mk 33 6-barrelled chaff launchers or 2 China 26-barrelled launchers.',
+
+      'Radars': 'Air/surface search:  Type 354 (Eye Shield) [Ref 6]; G-band.,  Surface search/fire control:  Type 352 (Square Tie) [Ref 7]; I-band.,  Navigation:  Don 2 or Fin Curve; I-band.,  IFF:  High Pole A. Yard Rake or Square Head. ',
+
+      'Sonars': 'Echo Type 5; hull-mounted; active search and attack; medium frequency.',
+      'Weapon control systems ': 'CSEE Naja optronic director for 100 mm gun. ',
+      'Helicopters': '1 Z-9C [Ref 8].',
+    }
+  },
+
+
 
 
 
