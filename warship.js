@@ -1591,16 +1591,7 @@ searchEl.addEventListener('input', () => {
 
 // Home button functionality — reset to default "empty" view
 document.getElementById('homeBtn').addEventListener('click', () => {
-  detailEl.innerHTML = `
-     <div id="empty" class="text-center text-gray-500">
-          <h2 class="text-2xl font-black mb-2">Warship Catalogue</h2>
-          <p class="font-sans">INDIAN NAVY</p>
-          <br>
-          <div class="flex justify-center my-300 pb-7">
-            <img src="src/navy.png" alt="navy" class="w-60 h-auto logo">
-          </div>
-        </div>
-  `;
+ window.location.href = "index.html"; ;
   currentIndex = null;
   updateActiveSidebar(); // remove highlight
 });
