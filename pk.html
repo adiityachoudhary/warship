@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+  <!-- ======= META SIGNATURE ======= -->
+  <meta name="author" content="Aditya">
+  <meta name="description"
+    content="Computer-Based Training System developed by Aditya Choudhary(Computer Science Graduate | Developer | Scholar)">
+  <meta name="keywords"
+    content="CBT, Computer Science, Aditya Choudhary, Web Development, JavaScript, Tailwind, Education, GitHub">
+  <meta name="github" content="https://github.com/adiityachoudhary">
+
+
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+  <title>Pakistan Navy</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+    :root {
+      --glass: rgba(255, 255, 255, 0.7)
+    }
+
+    body {
+      font-family: Inter, system-ui, Arial;
+      background: linear-gradient(180deg, #d3dcff 0%, #fff3df 100%)
+    }
+
+    .logo {
+      filter: drop-shadow(0px 10px 10px rgba(46, 41, 143, 0.488));
+    }
+
+    .sidebar-scroll::-webkit-scrollbar {
+      width: 5px
+    }
+
+    .sidebar-scroll::-webkit-scrollbar-thumb {
+      background: linear-gradient(180deg, #bbdbff, #bbdaff);
+      border-radius: 8px
+    }
+
+    .topic-item {
+      transition: transform .18s ease, box-shadow .18s ease
+    }
+
+    .topic-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 30px rgba(2, 6, 23, 0.08)
+    }
+
+    .topic-img {
+      height: 220px;
+      object-fit: cover;
+      border-radius: 10px
+    }
+
+    .fade-up {
+      animation: fadeUp .32s ease both
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(8px)
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0)
+      }
+    }
+  </style>
+</head>
+
+<body class="min-h-screen">
+  <div class="min-h-screen flex">
+    <!-- Sidebar: make it sticky and full-height so it doesn't move when main scrolls -->
+    <aside class="w-80 p-6 bg-white/70 backdrop-blur border-r border-gray-200 sticky top-0 h-screen">
+
+      <!-- Home Button -->
+      <div class="flex items-center gap-3 mb-6 cursor-pointer" id="homeBtn">
+        <div
+          class="w-12 h-12 rounded-xl bg-gradient-to-br from-emerald-500 to-sky-400 flex items-center justify-center text-white font-bold">
+          CBT
+        </div>
+        <div>
+          <h1 class="text-xl font-semibold">Pakistan Navy</h1>
+        </div>
+      </div>
+
+
+      <!-- make the topics list the scrollable area inside the sticky sidebar -->
+      <div id="topics" class="space-y-3 overflow-auto sidebar-scroll" style="max-height:calc(100vh - 200px)"></div>
+
+      <div class="mt-6 text-xs text-gray-500">
+        <div class="flex items-center gap-2">
+          <span class="relative flex size-3">
+            <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75"></span>
+            <span class="relative inline-flex size-3 rounded-full bg-green-500"></span>
+          </span> Click a topic to open
+        </div>
+      </div>
+    </aside>
+
+
+
+    <!-- Main area: this will become the scrollable region for long details -->
+    <main class="flex-1 p-10 overflow-auto">
+      <div id="detail" class="bg-white rounded-2xl shadow-lg p-8 min-h-[64vh] fade-up overflow-auto">
+        <div id="empty" class="text-center text-gray-500">
+          <h2 class="text-2xl font-black mb-2">Warship Catalogue</h2>
+          <p class="font-sans">INDIAN NAVY</p>
+          <br>
+
+          <div class="flex justify-center my-300 pb-7">
+            <img src="src/navy.png" alt="navy" class="w-60 h-auto logo">
+          </div>
+
+        </div>
+        <!-- ======= FOOTER SIGNATURE ======= -->
+      </div>
+      
+      <footer class="text-center pt-6 text-gray-500 border-t border-gray-300 text-sm">
+        © 2025 CBT System | Designed & Developed by
+        <a href="https://github.com/adiityachoudhary" target="_blank"
+          class="text-indigo-600 font-semibold hover:underline">
+          Tars
+        </a>
+      </footer>
+
+      
+    </main>
+  </div>
+  <script src="pk.js"></script>
+</body>
+
+</html>

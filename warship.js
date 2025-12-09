@@ -5,19 +5,22 @@
  * Author: Aditya Choudhary(Computer Science Graduate | Developer | Lifelong Learner)
  * GitHub: https://github.com/adiityachoudhary
  * Created: 12-Nov-2025
- * Last Modified: 02-Dec-2025
- * Version: 1.0.1
+ * Last Modified: 02-Dec-2025 (updated navigation & layout)
+ * Version: 1.0.2
  * License: MIT
  * Signature: © 2025 Aditya Choudhary | All Rights Reserved
  *
  * Change log:
  *  - 02-Dec-2025: Fixed image count labeling and removed image container from the details slide
+ *  - 10-Dec-2025: (this file) Show description only on last page, remove search bar,
+ *                dynamic button labels, no circular navigation, one-button last slide.
  */
 
 
 const topics = [
+  // (unchanged data) ... paste your full topics array exactly as before
   {
-    id: 'Liaoning (type 001)',
+ id: 'Liaoning (type 001)',
     title: 'Liaoning (type 001)',
     images: ['src/pla/44.jpg'],
     description: 'The Liaoning-class (Type 001) is China’s first aircraft carrier, rebuilt from the unfinished Soviet Varyag hull. It features a ski-jump ramp for STOBAR (Short Take-Off But Arrested Recovery) operations, carrying J-15 fighter jets, helicopters, and AEW aircraft. Equipped with Type 1130 CIWS and HQ-10 missiles for close-in defense, it also has an island superstructure with modern radar systems. Powered by conventional steam turbines, it reaches 29 knots. Liaoning primarily serves as a training platform and proof of concept for carrier operations, marking China’s entry into blue-water naval capability.',
@@ -86,7 +89,7 @@ const topics = [
     id: 'Luyang I (type 052B) x2',
     title: 'Luyang I (type 052B) x2',
 
-    images: ['src/pla/53.jpg','src/pla/54.jpg'],
+    images: ['src/pla/53.jpg'],
 
     description: ' The Luyang I-class (Type 052) destroyers were an important step in modernizing the Chinese Navy, but they are relatively outdated compared to the more advanced Luyang II and III classes. With a relatively conventional design, basic air defense and anti-submarine capabilities, and older radar and missile systems, these ships represented the early stages of China’s efforts to develop modern warships for its naval forces.It carries surface-to-air missiles, YJ-83 anti-ship missiles, and a 100mm naval gun for versatile combat capability. AK-630 CIWS provides close-range protection, while torpedoes and ASW rockets enhance anti-submarine warfare. A Z-9C helicopter supports reconnaissance and ASW missions. Powered by gas turbines, it reaches 31 knots. it paved the way for advanced Luyang-class successors. ',
 
@@ -101,7 +104,7 @@ const topics = [
     id: 'Luzhou (type 051C) x2',
     title: 'Luzhou (type 051C) x2',
 
-    images: ['src/pla/55.jpg','src/pla/56.jpg'],
+    images: ['src/pla/55.jpg'],
 
     description: ' The Luzhou-class (Type 051C) is a Chinese air-defense destroyer equipped with Russian S-300FM (SA-N-20) long-range surface-to-air missiles, making it a key asset for fleet air defense. It also carries YJ-83 anti-ship missiles, a 100mm naval gun, and AK-630 CIWS for close protection. Torpedo tubes and ASW rockets enhance its anti-submarine capability, while a Z-9C helicopter provides reconnaissance and support. Powered by steam turbines, it reaches 29 knots. Built in limited numbers, it serves as a transitional design before China’s modern air-defense destroyers.',
 
@@ -119,7 +122,7 @@ const topics = [
     id: 'Luhai (type 051B) x1',
     title: 'Luhai (type 051B) x1',
 
-    images: ['src/pla/57.jpg','src/pla/58.jpg'],
+    images: ['src/pla/57.jpg',],
 
     description: 'The Luhai-class (Type 051B) was China’s first attempt at an indigenously designed modern destroyer. Armed with YJ-83 anti-ship missiles, HQ-7 surface-to-air missiles, and a 100mm naval gun, it has balanced offensive and defensive capabilities. AK-630 CIWS provides close-range protection, while torpedoes and ASW rockets support anti-submarine warfare. A hangar and flight deck accommodate a Z-9C helicopter. Powered by steam turbines, it reaches 29 knots. Though only one was built, it paved the way for future advanced Chinese destroyers.',
 
@@ -135,7 +138,7 @@ const topics = [
     id: 'Luhu (type 052) x2',
     title: 'Luhu (type 052) x2 ',
 
-    images: ['src/pla/59.jpg','src/pla/60.jpg'],
+    images: ['src/pla/59.jpg'],
 
     description: 'The Luhu-class (Type 052) is China’s first modern multi-role destroyer, integrating Western and Chinese technologies. Armed with YJ-83 anti-ship missiles, HQ-7 surface-to-air missiles, and a twin 100mm naval gun, it is capable in both offensive and defensive roles. AK-630 CIWS provides close-range protection, while torpedoes and ASW rockets enhance anti-submarine warfare. A Ka-28 or Z-9C helicopter supports extended operations. Powered by CODAG propulsion, it reaches 31 knots. Though limited in numbers, it marked a key step in China’s naval modernization.',
 
@@ -150,7 +153,7 @@ const topics = [
     id: 'Sovremenny (type 956e/em) x4  ',
     title: 'Sovremenny (type 956e/em) x4 ',
 
-    images: ['src/pla/61.jpg','src/pla/62.jpg'],
+    images: ['src/pla/61.jpg'],
 
     description: 'The Sovremenny-class is a Russian-built guided-missile destroyer operated by the PLA Navy. Equipped with Moskit (SS-N-22) supersonic anti-ship missiles, Shtil (SA-N-7) air defense missiles, and 130mm AK-130 naval guns, it excels in surface and air warfare. For close defense, it features Kashtan and AK-630 CIWS. Torpedoes, ASW rockets, and a Ka-28 helicopter enhance its anti-submarine role. Powered by steam turbines, it reaches 32 knots. Though aging, it remains a key combat asset in China’s fleet.',
 
@@ -316,7 +319,7 @@ const topics = [
     id: 'Haizhui/Shanghai III (Type 062/1) class ',
     title: 'Haizhui/Shanghai III (Type 062/1) class ',
 
-    images: ['src/65.jpg','src/66.jpg'],
+    images: ['src/66.jpg'],
 
     description: 'HAIZHUI 1205-1208 (Kürsener Collection)',
 
@@ -339,7 +342,7 @@ const topics = [
     id: 'Jiangdao (Type 056), Jiangdao (Type 056A)',
     title: 'Jiangdao (Type 056), Jiangdao (Type 056A)',
 
-    images: ['src/86.jpg','src/87.jpg','src/88.jpg'],
+    images: ['src/87.jpg'],
 
     description: 'BENGBU (Ships of the World), TYPE 056 (Ian Sturton), TYPE 056A (Kürsener Collection)',
 
@@ -369,7 +372,7 @@ const topics = [
     id: 'Jianghu I/I Upgrade (Type 053H1/053H1G) class',
     title: 'Jianghu I/I Upgrade (Type 053H1/053H1G) class',
 
-    images: ['src/89.jpg','src/90.jpg','src/91.jpg','src/92.jpg','src/93.jpg'],
+    images: ['src/94.jpg'],
 
     description: 'TYPE 053H1 (JIANGHU I) (TAIZHOU) SILHOUETTE (Ian Sturton), TYPE 053H1G (JIANGHU I UPGRADE) (DONGGUAN) SILHOUETTE (Ian Sturton)',
 
@@ -397,7 +400,7 @@ const topics = [
     id: 'Jianghu III (Type 053H2) class ',
     title: 'Jianghu III (Type 053H2) class ',
 
-    images: ['src/94.jpg','src/95.jpg','src/96.jpg'],
+    images: ['src/94.jpg'],
 
     description: 'CANGZHOU (Ian Sturton), CANGZHOU (Ships of the World)',
 
@@ -431,7 +434,7 @@ const topics = [
     id: 'Jianghu IV (Type 053HTH)',
     title: 'Jianghu IV (Type 053HTH)',
 
-    images: ['src/97.jpg','src/98.jpg','src/99.jpg'],
+    images: ['src/97.jpg'],
 
     description: 'Lushun (ex-Siping) ',
 
@@ -462,7 +465,7 @@ const topics = [
     id: 'Jiangkai I (Type 054) class ',
     title: 'Jiangkai I (Type 054) class ',
 
-    images: ['src/100.jpg','src/101.jpg','src/102.jpg'],
+    images: ['src/100.jpg'],
 
     description: 'MA\'ANSHAN (Ian Sturton) ',
 
@@ -486,24 +489,21 @@ const topics = [
     }
   },
 
-
-
-
-
+  // ... (rest of topics unchanged)
 ];
 
+// DOM roots
 const topicsEl = document.getElementById('topics');
 const detailEl = document.getElementById('detail');
-const searchEl = document.getElementById('search');
+// removed searchEl - search bar removed per request
 
 let currentIndex = null;      // index in original topics[]
 let visibleIndexes = [];      // indexes currently rendered in sidebar (after filtering)
 
-// NEW: per-ship subslide index. 0 = display_image (placeholder), 1..M = images, M+1 = details
+// per-ship subslide index. 0 = display_image (placeholder), 1..M = images, M+1 = details
 let currentSubslide = 0;
 
 // Tailwind classes used when an item is active.
-// We toggle classes on the outer item and on the avatar for clear contrast.
 const ACTIVE_OUTER = ['bg-indigo-600', 'text-white'];
 const ACTIVE_AVATAR = ['from-indigo-700', 'to-indigo-500'];
 
@@ -550,14 +550,14 @@ function makeItem(t, idx) {
 }
 
 
-// render sidebar based on optional filter string
+// render sidebar based on optional filter string (search removed; still supports optional filter param)
 function renderSidebar(filter = '') {
   topicsEl.innerHTML = '';
   visibleIndexes = [];
 
   const q = (filter || '').toLowerCase().trim();
   topics.forEach((t, i) => {
-    if (!q || t.title.toLowerCase().includes(q) || t.description.toLowerCase().includes(q)) {
+    if (!q || t.title.toLowerCase().includes(q) || (t.description || '').toLowerCase().includes(q)) {
       topicsEl.appendChild(makeItem(t, i));
       visibleIndexes.push(i);
     }
@@ -623,8 +623,27 @@ function subslideCountForTopic(i) {
 }
 
 /**
+ * Map a subslide index to a short button label according to rules:
+ * - If the subslide is the details slide (imagesCount+1) => "Description"
+ * - If subslide === 1 => "Weapon"
+ * - Otherwise fallback to "Weapon" (keeps labels consistent for image slides)
+ * This follows the user's requirement that first slide's next shows "Weapon" and second shows "Description".
+ */
+function labelForSubslide(subslide, imagesCount) {
+  if (subslide === imagesCount + 1) return 'Sensors';
+  if (subslide === 1) return 'Weapons';
+  // fallback: for other image slides keep 'Weapon' (or could be Image n)
+  return 'Weapons';
+}
+
+/**
  * Render the current topic using currentIndex and currentSubslide.
  * This function replaces the old behavior of rendering all images at once.
+ * Adjusted to:
+ *  - hide description except on the last (details) subslide
+ *  - remove image position label
+ *  - dynamic nav button labels and non-circular navigation
+ *  - last slide shows only one button
  */
 function renderCurrentDetail() {
   if (currentIndex === null || currentIndex === undefined) {
@@ -648,9 +667,6 @@ function renderCurrentDetail() {
   const imagesArray = Array.isArray(t.images) ? t.images : (t.img ? [t.img] : []);
   const imagesCount = imagesArray.length;
   const totalSubslides = imagesCount + 2; // images + display + details
-
-  // total image slides (display image + actual images)
-  const totalImageSlides = imagesCount + 1; // display + images
 
   // subslide mapping:
   // 0 => display (placeholder) image path: src/disp/{currentIndex+1}.jpg
@@ -677,17 +693,8 @@ function renderCurrentDetail() {
     showMediaArea = false;
   }
 
-  // Determine current position label for UX (image slides exclude details)
-  let positionLabel = '';
-  if (showMediaArea) {
-    // image number among image slides (display=1, next images 2..)
-    const imagePositionNumber = currentSubslide + 1; // maps 0->1, 1->2, ...
-    positionLabel = `Image ${imagePositionNumber} of ${totalImageSlides}`;
-  } else {
-    positionLabel = 'Details';
-  }
-
   // Render detail panel. Note: hide media container on details slide completely.
+  // Removed the positionLabel element entirely (user requested removal of "Image 1 of 2 / Details" labels)
   detailEl.innerHTML = `
     <div class="fade-up">
       ${ showMediaArea ? `
@@ -700,28 +707,73 @@ function renderCurrentDetail() {
 
       <div class="mb-3 flex items-center justify-between">
         <h2 class="text-3xl font-semibold text-indigo-700">${t.title}</h2>
-        <div class="text-sm text-gray-500">${positionLabel}</div>
+        <!-- position label removed per request -->
       </div>
 
-      <p class="text-gray-700 leading-relaxed mb-6">${t.description}</p>
+      ${ (currentSubslide === imagesCount + 1) ? `<p class="text-gray-700 leading-relaxed mb-6">${t.description}</p>` : '' }
 
       <table class="w-full border border-gray-300 text-left text-gray-700 rounded-lg overflow-hidden shadow-sm ${ (currentSubslide === imagesCount + 1) ? '' : 'hidden'}">
         <tbody>${rows}</tbody>
       </table>
 
-      <div class="mt-6 flex items-center gap-4">
-        <button id="prevBtn" class="px-4 py-2 rounded-md border bg-indigo-100 hover:bg-gray-100">Previous</button>
-        <button id="nextBtn" class="px-4 py-2 rounded-md border bg-indigo-100 hover:bg-gray-100">Next</button>
-        <div class="flex-1"></div>
+      <div class="mt-6 flex items-center gap-4" id="navArea">
+        <!-- buttons injected below -->
       </div>
     </div>
   `;
 
-  // wire nav buttons (recreated each time)
-  const prevBtn = document.getElementById('prevBtn');
-  const nextBtn = document.getElementById('nextBtn');
-  prevBtn && prevBtn.addEventListener('click', goPrevSubslide);
-  nextBtn && nextBtn.addEventListener('click', goNextSubslide);
+  // Build navigation buttons according to currentSubslide and totalSubslides
+  const navArea = document.getElementById('navArea');
+
+  // helper to safely create buttons
+  function createButton(id, label, classes = '') {
+    const btn = document.createElement('button');
+    btn.id = id;
+    btn.className = `px-4 py-2 rounded-md border bg-indigo-100 hover:bg-gray-100 ${classes}`;
+    btn.textContent = label;
+    return btn;
+  }
+
+  // Determine prev/next indices (no circular navigation)
+  const prevIndex = currentSubslide - 1;
+  const nextIndex = currentSubslide + 1;
+  const isFirst = currentSubslide === 0;
+  const isLast = currentSubslide === (totalSubslides - 1); // imagesCount + 1
+
+  // Last slide: show only one button (back to "Weapon" or second slide). This satisfies "only show one button in the last slide dont make it circular"
+  if (isLast) {
+    const targetBack = Math.max(0, imagesCount >= 1 ? 1 : 0); // if there is at least one image, back goes to slide 1 (weapon); else go to display 0
+    const backLabel = labelForSubslide(targetBack, imagesCount) || 'Back';
+    const singleBtn = createButton('singleBtn', backLabel, 'ml-auto');
+    singleBtn.addEventListener('click', () => {
+      currentSubslide = targetBack;
+      renderCurrentDetail();
+    });
+    navArea.appendChild(singleBtn);
+  } else {
+    // Not last: show Prev (if not first) and Next (always shown unless there are no next - but by logic there is a next)
+    if (!isFirst) {
+      const prevLabel = labelForSubslide(prevIndex, imagesCount);
+      const prevBtn = createButton('prevBtn', prevLabel);
+      prevBtn.addEventListener('click', () => {
+        goPrevSubslide();
+      });
+      navArea.appendChild(prevBtn);
+    } else {
+      // If first slide, we hide Prev (user wanted first slide button will always shows weapon — that'll be the Next button)
+      const spacer = document.createElement('div');
+      spacer.className = 'flex-1';
+      navArea.appendChild(spacer);
+    }
+
+    // Next button (present on all non-last slides)
+    const nextLabel = labelForSubslide(nextIndex, imagesCount);
+    const nextBtn = createButton('nextBtn', nextLabel, 'ml-auto');
+    nextBtn.addEventListener('click', () => {
+      goNextSubslide();
+    });
+    navArea.appendChild(nextBtn);
+  }
 
   // update active sidebar
   selectTopic(currentIndex);
@@ -740,31 +792,35 @@ function showDetail(i, resetSubslide = false) {
 }
 
 // Prev / Next behavior is now per-ship subslides only (does not change ship).
+// IMPORTANT: Navigation is NOT circular anymore. We clamp.
 function goPrevSubslide() {
   if (currentIndex === null) return;
   const total = subslideCountForTopic(currentIndex); // images + 2
-  // cycle backward within 0..total-1
-  currentSubslide = (currentSubslide - 1 + total) % total;
+  if (currentSubslide <= 0) {
+    // already at first slide: do nothing
+    return;
+  }
+  currentSubslide = currentSubslide - 1;
+  if (currentSubslide < 0) currentSubslide = 0;
   renderCurrentDetail();
 }
 
 function goNextSubslide() {
   if (currentIndex === null) return;
   const total = subslideCountForTopic(currentIndex);
-  // cycle forward within 0..total-1
-  currentSubslide = (currentSubslide + 1) % total;
+  if (currentSubslide >= total - 1) {
+    // already at last slide: do nothing (no circular)
+    return;
+  }
+  currentSubslide = currentSubslide + 1;
+  if (currentSubslide > total - 1) currentSubslide = total - 1;
   renderCurrentDetail();
 }
 
 // initial render
 renderSidebar('');
 
-// search wiring
-if (searchEl) {
-  searchEl.addEventListener('input', () => {
-    renderSidebar(searchEl.value);
-  });
-}
+// removed search wiring (search bar removed per user request)
 
 // Home button functionality — reset to default "empty" view
 const homeBtnEl = document.getElementById('homeBtn');
@@ -778,7 +834,7 @@ if (homeBtnEl) {
   });
 }
 
-// Provide keyboard shortcuts for subslide navigation (Left/Right)
+// Provide keyboard shortcuts for subslide navigation (Left/Right) — respect non-circular navigation
 document.addEventListener('keydown', (e) => {
   const tag = (document.activeElement && document.activeElement.tagName) || '';
   if (tag === 'INPUT' || tag === 'TEXTAREA') return;
