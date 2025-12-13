@@ -579,10 +579,11 @@ function updateActiveSidebar() {
     const avatar = el.querySelector('.avatar');
     const subtitle = el.querySelector('.subtitle');
 
-    if (idx === currentIndex) {
-      // outer
-      ACTIVE_OUTER.forEach(c => el.classList.add(c));
-      el.style.borderColor = '#4338ca'; // indigo-700 tint for border
+if (idx === currentIndex) {
+  // outer
+  el.classList.remove('bg-white');       
+  ACTIVE_OUTER.forEach(c => el.classList.add(c));
+  el.style.borderColor = '#4338ca'; // indigo-700 tint for border
       // avatar: replace gradient to indigo shades for contrast
       if (avatar) {
         avatar.classList.remove('from-indigo-400', 'to-sky-300');
@@ -591,9 +592,10 @@ function updateActiveSidebar() {
       // subtitle color
       if (subtitle) subtitle.classList.remove('text-gray-400'), subtitle.classList.add('text-white/80');
     } else {
-      // remove
-      ACTIVE_OUTER.forEach(c => el.classList.remove(c));
-      el.style.borderColor = '';
+  ACTIVE_OUTER.forEach(c => el.classList.remove(c));
+  el.classList.add('bg-white');              // restore base bg
+  el.style.borderColor = '';
+
       if (avatar) {
         avatar.classList.remove(...ACTIVE_AVATAR);
         avatar.classList.add('from-indigo-400', 'to-sky-300');
