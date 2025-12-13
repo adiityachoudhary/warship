@@ -633,7 +633,7 @@ function labelForSubslide(subslide, imagesCount) {
   if (subslide === imagesCount + 1) return 'Sensors';
   if (subslide === 1) return 'Weapons';
   // fallback: for other image slides keep 'Weapon' (or could be Image n)
-  return 'Weapons';
+  return 'Image';
 }
 
 /**

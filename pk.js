@@ -20,54 +20,103 @@
 const topics = [
   // (unchanged data) ... paste your full topics array exactly as before
   {
- id: 'Zulfikar',
-    title: 'Zulfikar',
-    images: ['src/pla/44.jpg'],
-    description: ' ',
+ id: 'Zulfikar class',
+    title: 'Zulfikar class',
+    images: ['src/pk/1.jpg'],
+    description: 'The Zulfiquar-class frigate also known as F-22P or Sword class, is a class of multi-mission guided missile frigates. The class is based on an updated model of the Chinese Type 053H3 ( Jiangwei Class) The frigates perform missions including air defense, enemy interdiction, extraction and regularly carry out patrolling in the economic exclusive zone (EEZ). Only 02 ships of Pakistan that have kniferest – Zulfiquar and Tughril EW suite made by India to counter this radar is Shakti, being fitted in all capital ships when they are going into MLU, pressently in INS Satpura, Vishakhapatnam class, Nilgiri Class and INS Vikrant  ',
     details: {
-      // 'Displacement': '1,625 light; 4,325 full load',
+      'WEAPONS': '',
+      'SSM': '08 x C 802 , 120 KM',
+      'SAM': 'HHQ 7 , 13 KM',
+      'GUN': 'AK-176M; 76 mm , 16 KM',
+      'CIWS': 'Type 730; 30 mm , 1.5 KM',
+      '': '',
+      'SENSORS': '',
+      'AIR SURV': 'TYPE 517 KNIFEREST, A',
+      'SURF SURV': 'TYPE 363 SEAGULL, E/F',
+      'AIR/SURF': 'TYPE 364 SEAGULL C, G',
+      'FCR (SAM)': 'Type 345, I',
+      'FCR (SSM)': 'Type 343 G, I',
+      'FCR (MR GUN)': 'Type 343 G, I',
+      'FCR (CIWS)': 'Type 347 G, I',
     }
   },
 
   {
     id: 'Azmat',
     title: 'Azmat',
-    images: ['src/pla/45.jpg'],
-    description: 'The Shandong-class (Type 002) is China’s first domestically built aircraft carrier, based on the Soviet Kuznetsov design. It features a ski-jump ramp for STOBAR (Short Take-Off But Arrested Recovery) operations, carrying J-15 fighter jets, helicopters, and AEW aircraft. Equipped with Type 1130 CIWS and HQ-10 missiles for self-defense, it has an island superstructure with modern radar. Powered by conventional steam turbines.',
+    images: ['src/pk/2.jpg'],
+    description: ' The Azmat-class stealth fast attack craft is a class of missile-bearing fast attack craft, currently in service with the Pakistan Navy. The Azmat-class is based on the Chinese design, Houjian class. The Pakistani Azmat-class is the modernized version according to the requirements of Pakistan Navy. Spd – 30 kts ',
+
     details: {
-      // 'Displacement': '14200 tonnes (13975.7 (uk) t) (15652.8 t (short)) (14200000 kg)',
-    }
+ 'WEAPONS': '',
+      'SSM (AZMAT, DEHSAT)': '08 x C 802 , 180 KM',
+      'SSM(HIMMAT, HAIBAT)': '08 x HARBAH , 280 KM',
+      'GUN': '02 X 25 mm , 16 KM',
+      'CIWS': 'Type 730; 30 mm , 1.5 KM',
+      '': '',
+      'SENSORS': '',
+      'SURF SURV': 'SR 47BG, I',
+      'FCR (SSM)': 'Type 343 G, I',
+        }
   },
   {
     id: 'Yarmuk',
     title: 'Yarmuk',
-    images: ['src/pla/46.jpg'],
-    description: 'The Fujian-class (Type 003) is China’s most advanced aircraft carrier, featuring a CATOBAR (Catapult Assisted Take-Off But Arrested Recovery) system with electromagnetic catapults (EMALS) for launching heavier aircraft. It has a large flight deck, an island superstructure with advanced radar, and can carry a mix of J-35 stealth fighters, J-15B jets, and KJ-600 AEW aircraft. Powered by conventional steam turbines, it is China’s first carrier designed for true blue-water operations. Fujian significantly enhances the PLA Navy’s power projection and carrier strike capabilities. Assembly of the new aircraft carrier,  commenced at Jiangnan shipyard, Changxingdao',
+    images: ['src/pk/3.jpg'],
+    description: ' This class is primarily based on Damen Group\'s Offshore Patrol Vessel (OPV). This class of ships are made by the Damen group in Romania. These ships are primarily used for offshore patrolling and safety within Pakistan EEZ ',
     details: {
-      // 'Speed': '1,175 kt (2,175 km/h).',
+       'WEAPONS': '',
+      'GUN': 'SMASH remote weapon system, 16 KM',
+      'CIWS': 'Type 730; 30 mm , 1.5 KM',
+      '': '',
+      'SENSORS': '',
+      'SURF SURV': 'MR 36A, I',
     }
   },
   {
     id: 'Tughril',
     title: 'Tughril',
-    images: ['src/pla/49.jpg'],
-    description: 'Renhai class is associated with the Type 055 destroyers. These are large, advanced, and modern vessels used by the PLA Navy. These have a displacement of around 12,000 tons, making them some of the heaviest and most capable destroyers in the Chinese fleet. These ships can be distinguished by their stealth design. The most advanced guided-missile cruiser, featuring a dual-band AES (active electrnic scaaned array)  radar and a 112-cell VLS for HHQ-9 air-defense, YJ-18 anti-ship, CJ-10 land-attack, and Yu-8 ASW missiles. It is armed with a 130mm naval gun, Type 1130 CIWS, HQ-10 SAMs, and torpedoes for multi-role combat. A stealthy design, integrated mast, and advanced sensors enhance survivability. It carries two Z-20 helicopters for ASW and reconnaissance. Powered by gas turbines, it reaches 32 knots, serving as a key blue-water fleet leader.',
+    images: ['src/pk/4.jpg'],
+    description: ' The Tughril-class frigates, formally classified as the Type 054A/P (Jiangkai II) frigates, are a series of modified guided-missile frigates built by China for the Pakistan Navy. The Type 054A frigate was specifically customized to meet the operational requirements of the Pakistan Navy; the class features several capabilities - including anti-surface warfare (ASuW), anti-air warfare (AAW), anti-submarine warfare (ASW) and low radar observability. 04 Ships ',
     details: {
-      // 'Speed': '134 kt (248 km/h)',
+       'WEAPONS': '',
+      'SSM': 'CM 302 , 300 KM',
+      'SAM': 'HQ 16 , 40 KM',
+      'GUN': '01 x H/PJ-26; 76 mm , 16 KM',
+      'CIWS': '02 x Type 1130; 30 mm , 1.5 KM',
+      '': '',
+      'SENSORS': '',
+      'AIR SURV': 'TYPE 517 KNIFEREST, A',
+      'SURF SURV': 'SR 2410C, E/F',
+      'AIR/SURF': 'TYPE 364 SEAGULL C, G',
+      'FCR (SAM)': 'OREKH FRONT DOME, H/I',
+      'FCR (SSM)': ' MINERAL ME BAND STAND, I',
+      'FCR (MR GUN)': 'Type 344, I',
+      'FCR (CIWS)': 'Type 347 G, I',
     }
   },
   {
     id: 'Babur',
     title: 'Babur',
-    images: ['src/pla/50.jpg'],
-    description: 'The Luyang III-class destroyers are a class of advanced multi-role warships operated by the PLA NAvy. These ships are also known as Type 052D destroyers. These have a displacement of about 7,500 tons, slightly smaller than Renhai class, making them mid-sized for modern destroyers. It is a highly advanced multi-role destroyer, featuring a phased-array radar and a 64-cell vertical launch system (VLS) for HHQ-9 air-defense, YJ-18 anti-ship, and CJ-10 land-attack missiles. It is equipped with a 130mm naval gun, Type 1130 CIWS, torpedoes, and ASW rockets for comprehensive combat capabilities. A Z-20 or Z-9C helicopter enhances anti-submarine and reconnaissance roles. Powered by gas turbines, it reaches 31 knots. It is the backbone of China’s modern navy, excelling in air defense, strike, and escort missions.',
+    images: ['src/pk/5.jpg'],
+    description: ' The Babur-class corvette, also known as the PN MILGEM class, is a class of four heavy corvettes. As of DEC 24 Babur is commissioned and the rest 03 ships are in various stages of sea trials. This class is a subclass of the Turkish MILGEM project. The corvette class is heavier and larger than the Turkish Ada-class corvette and are also equipped with VLS for ssm and sam. SMART - Signal muti beam acquisition radar for tracking Band – S band ( 2- 4 Ghz) ',
     details: {
-      // 'Full Load': '59 tonnes (65 t (short)) (59000 kg) ',
+       'WEAPONS': '',
+      'SSM ': 'HARBAH, 280 KM',
+      'SAM': 'ALBATROSS, 45 KM',
+      'GUN': 'OTOMELARA , 16 KM',
+      'CIWS': 'ASELSAN; 35mm, 4 KM',
+      '': '',
+      'SENSORS': '',
+      'AIR/SURF': 'SMART-S MK 2 3D, E/F',
+      'FCR (SSM)': 'AKR-D BLOCK B-1/2',
+      
     }
   },
 
 
-  // ... (rest of topics unchanged)
+ 
 ];
 
 // DOM roots
@@ -90,7 +139,7 @@ const ACTIVE_AVATAR = ['from-indigo-700', 'to-indigo-500'];
  * As requested: "src/disp/1.jpg", "src/disp/2.jpg", ...
  */
 function displayImageSrcForShipIndex(idx) {
-  return `src/disp/${idx + 1}.jpg`;
+  return `src/pk/dp/${idx + 1}.jpg`;
 }
 
 // create a sidebar item with SERIAL NUMBER
@@ -211,7 +260,7 @@ function labelForSubslide(subslide, imagesCount) {
   if (subslide === imagesCount + 1) return 'Sensors';
   if (subslide === 1) return 'Weapons';
   // fallback: for other image slides keep 'Weapon' (or could be Image n)
-  return 'Weapons';
+  return 'Image';
 }
 
 /**
